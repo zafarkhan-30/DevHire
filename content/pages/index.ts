@@ -27,6 +27,7 @@ import hireUsReadyRemoteEngineering from "./hire-us-ready-remote-engineering";
 import howWeVet from "./how-we-vet";
 import industries from "./industries";
 import leadership from "./leadership";
+import pricing from "./pricing";
 import resourceDeveloperCostEstimate from "./resource-developer-cost-estimate";
 import resourceLegacyRiskAssessment from "./resource-legacy-risk-assessment";
 import serviceDedicatedDevelopers from "./service-dedicated-developers";
@@ -67,6 +68,7 @@ export const pages: PageDef[] = [
   howWeVet,
   industries,
   leadership,
+  pricing,
   resourceDeveloperCostEstimate,
   resourceLegacyRiskAssessment,
   serviceDedicatedDevelopers,

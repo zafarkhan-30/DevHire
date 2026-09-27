@@ -27,6 +27,7 @@ const page: PageDef = {
           items: [
             { label: "Home", href: "/" },
             { label: "About Us", href: "/about/" },
+            { label: "Pricing", href: "/pricing/" },
             { label: "Leadership", href: "/leadership/" },
             { label: "How We Vet", href: "/how-we-vet/" },
             { label: "Developer Retention", href: "/developer-retention/" },

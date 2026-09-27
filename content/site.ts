@@ -55,6 +55,9 @@ export const site = {
   ] as { country: string; address: string; phone: string }[],
 };
 
+// Plain links in the main menu, placed right after the mega menu named in `after`.
+export const navLinks: (NavLink & { after: string })[] = [{ label: "Pricing", href: "/pricing/", after: "services" }];
+
 export const megaMenus: MegaMenu[] = [
   {
     id: "services",
@@ -237,6 +240,7 @@ export const footer = {
       heading: "For Buyers",
       links: [
         { label: "How We Work", href: "/how-we-vet/" },
+        { label: "Pricing", href: "/pricing/" },
         { label: "Quality & Vetting", href: "/how-we-vet/" },
         { label: "Developer Retention", href: "/developer-retention/" },
       ],

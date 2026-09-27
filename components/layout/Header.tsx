@@ -25,7 +25,8 @@ import {
   X,
   type LucideIcon,
 } from "lucide-react";
-import { megaMenus, site } from "@/content/site";
+import { megaMenus, navLinks, site } from "@/content/site";
+import { Fragment } from "react";
 import { Logo } from "./Logo";
 
 const NAV_ICONS: Record<string, LucideIcon> = {
@@ -125,7 +126,8 @@ export function Header() {
           <nav className="site-nav" aria-label="Main">
             <ul>
               {megaMenus.map((menu) => (
-                <li key={menu.id} onMouseEnter={() => openMenu(menu.id)} onMouseLeave={scheduleClose}>
+                <Fragment key={menu.id}>
+                <li onMouseEnter={() => openMenu(menu.id)} onMouseLeave={scheduleClose}>
                   <button
                     type="button"
                     className={`site-nav__link${open === menu.id ? " is-active" : ""}`}
@@ -138,6 +140,16 @@ export function Header() {
                     <ChevronDown size={16} aria-hidden="true" />
                   </button>
                 </li>
+                {navLinks
+                  .filter((link) => link.after === menu.id)
+                  .map((link) => (
+                    <li key={link.href} onMouseEnter={scheduleClose}>
+                      <Link href={link.href} className="site-nav__link" onClick={close}>
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </Fragment>
               ))}
             </ul>
           </nav>
@@ -301,6 +313,13 @@ export function Header() {
                   ) : null}
                 </div>
               ) : null}
+              {navLinks
+                .filter((link) => link.after === menu.id)
+                .map((link) => (
+                  <Link key={link.href} href={link.href} className="drawer__toggle drawer__link" onClick={close}>
+                    {link.label}
+                  </Link>
+                ))}
             </div>
           ))}
           <Link href={site.primaryCta.href} className="btn btn--primary btn--block" onClick={close}>

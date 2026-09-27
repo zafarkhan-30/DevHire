@@ -968,3 +968,8 @@
   font-size: 14px;
   box-shadow: none;
 }
+
+/* Plain links in the mobile menu (e.g. Pricing) sit between the expandable groups */
+.drawer__link {
+  border-top: 1px solid var(--border_light);
+}
