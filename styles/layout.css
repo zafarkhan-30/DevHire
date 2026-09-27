@@ -515,32 +515,14 @@
   }
 }
 
-/* Below desktop the trust bar scrolls away and only the main bar stays pinned. */
-@media (max-width: 991px) {
-  .site-header {
-    top: calc(-1 * var(--trustbar-height));
+/* The trust bar is desktop only; below 1200px the header is just the logo bar. */
+@media (max-width: 1199px) {
+  .trustbar {
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
-  .trustbar__inner {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 6px 8px;
-    height: 100%;
-  }
-
-  .trustbar__item {
-    min-width: 0;
-    padding: 4px 10px;
-  }
-
-  .trustbar__item small {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
   .logo {
     min-height: 44px;
   }

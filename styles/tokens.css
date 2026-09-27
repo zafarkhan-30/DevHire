@@ -41,6 +41,8 @@
 @media (max-width: 1199px) {
   :root {
     --container-gutter: clamp(16px, 4vw, 40px);
+    /* Trust bar is hidden below desktop, so nothing above the header bar takes up space */
+    --trustbar-height: 0px;
   }
 }
 
@@ -55,6 +57,5 @@
     --section-padding: 2.5rem;
     --container-gutter: 16px;
     --header-height: 64px;
-    --trustbar-height: 76px;
   }
 }
