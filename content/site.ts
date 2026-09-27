@@ -40,14 +40,15 @@ export const site = {
     { label: "Terms", sub: "Month to month" },
     { label: "Exit", sub: "No penalty" },
   ] as { label: string; sub?: string }[],
-  // PLACEHOLDER: verified numbers only. Used everywhere stats appear so pages never disagree.
-  stats: {
-    developersPlaced: "—",
-    clients: "—",
-    countries: "—",
-    retention: "—",
-    rating: "—",
-  },
+  // DevHire proof numbers, shown in the stats row on the home page.
+  // Use only figures you can back up. A value left as "—" is hidden; the row appears once any value is filled in.
+  // `stars` draws five stars above the value (use it for the rating).
+  stats: [
+    { value: "—", label: "Average Rating", stars: true },
+    { value: "—", label: "Clients" },
+    { value: "—", label: "Countries Served" },
+    { value: "—", label: "Client Retention" },
+  ] as { value: string; label: string; stars?: boolean }[],
   offices: [
     { country: "India", address: "Office address goes here", phone: "" }, // PLACEHOLDER
   ] as { country: string; address: string; phone: string }[],

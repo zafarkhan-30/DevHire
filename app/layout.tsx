@@ -26,8 +26,9 @@ export const metadata: Metadata = {
   },
   description: site.description,
   icons: {
-    icon: [{ url: "/images/favicon.svg", type: "image/svg+xml" }],
-    apple: "/images/favicon.svg",
+    // Square icon; favicon.svg in the same folder is the wide logo despite its name.
+    icon: [{ url: "/images/gemini-svg.svg", type: "image/svg+xml" }],
+    apple: "/images/gemini-svg.svg",
   },
 };
 

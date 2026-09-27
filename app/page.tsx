@@ -6,6 +6,7 @@ import { LeadForm } from "@/components/sections/home/LeadForm";
 import { MarketCompare } from "@/components/sections/home/MarketCompare";
 import { MidCta } from "@/components/sections/home/MidCta";
 import { Paths } from "@/components/sections/home/Paths";
+import { ProofStats } from "@/components/sections/home/ProofStats";
 import { Reasons } from "@/components/sections/home/Reasons";
 import { RelatedInsights } from "@/components/sections/home/RelatedInsights";
 import { TechTabs } from "@/components/sections/home/TechTabs";
@@ -27,6 +28,7 @@ export default function HomePage() {
       <Guides />
       <Timeline />
       <Testimonials />
+      <ProofStats />
       <LeadForm />
       <RelatedInsights />
       <Faq />

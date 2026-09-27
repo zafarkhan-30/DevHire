@@ -134,10 +134,8 @@ export type VersionsBlock = Section & {
   items: { version: string; year: string; tag: string; tagTone?: "primary" | "blue" | "success" | "warning"; text: string }[];
 };
 
-export type TestimonialsBlock = Section & {
-  type: "testimonials";
-  items: { quote: string; name: string; role: string }[];
-};
+// Shows reviews from content/reviews.ts; hidden while that list is empty.
+export type TestimonialsBlock = Section & { type: "testimonials" };
 
 export type PricingBlock = Section & {
   type: "pricing";

@@ -71,13 +71,8 @@ export function buildHirePage(tech: TechData): PageDef {
       ],
     },
     {
-      // PLACEHOLDER: client quotes for this technology, approved in writing.
       type: "testimonials",
       title: "What Clients [Say]",
-      items: [
-        { quote: "Approved client quote goes here.", name: "Client Name", role: "Role, Company" },
-        { quote: "Approved client quote goes here.", name: "Client Name", role: "Role, Company" },
-      ],
     },
     {
       type: "accordion",

@@ -332,20 +332,6 @@ export const testimonials = {
   eyebrow: "Client Stories",
   title: "Real Work, [Real People]",
   intro: "In their own words",
-  // PLACEHOLDER: only publish quotes that clients have approved in writing.
-  items: [
-    { quote: "Approved client quote goes here. Two to four sentences works best in this card.", name: "Client Name", role: "Role, Company" },
-    { quote: "Approved client quote goes here. Two to four sentences works best in this card.", name: "Client Name", role: "Role, Company" },
-    { quote: "Approved client quote goes here. Two to four sentences works best in this card.", name: "Client Name", role: "Role, Company" },
-    { quote: "Approved client quote goes here. Two to four sentences works best in this card.", name: "Client Name", role: "Role, Company" },
-  ],
-  // PLACEHOLDER: verified numbers only.
-  stats: [
-    { value: "—", label: "Average Rating", stars: true },
-    { value: "—", label: "Clients" },
-    { value: "—", label: "Countries Served" },
-    { value: "—", label: "Client Retention" },
-  ],
 };
 
 export const lead = {

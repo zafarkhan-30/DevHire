@@ -3,10 +3,12 @@ import type { ReactNode } from "react";
 import { ArrowRight, Check, ChevronRight, CircleCheck, Minus, Quote, X } from "lucide-react";
 import type { Block, Cta, HeroBlock, Pad, Stat, Tone } from "@/content/types";
 import { testimonials } from "@/content/home";
+import { reviews } from "@/content/reviews";
 import { latestPosts } from "@/lib/blog";
 import { Accent } from "@/components/ui/Accent";
 import { Icon } from "@/components/ui/Icon";
 import { LogoRow } from "@/components/ui/LogoRow";
+import { ReviewList } from "@/components/ui/ReviewCard";
 import { Calculator } from "./Calculator";
 import { AccordionView, LinkGridView, PdfGateView, QuizView, TabsView } from "./Interactive";
 import { LeadFormCard } from "./LeadFormCard";
@@ -392,22 +394,11 @@ function BlockView({ block }: { block: Block }) {
       );
 
     case "testimonials":
+      // Real reviews live in content/reviews.ts. With none yet, the section is left out entirely.
+      if (reviews.length === 0) return null;
       return (
         <Shell block={block} name="testimonials" pad="md">
-          <ul className={`cardgrid cardgrid--${Math.min(Math.max(block.items.length, 1), 3)}`}>
-            {block.items.map((item, index) => (
-              <li key={index}>
-                <figure className="card quotecard">
-                  <Quote size={22} className="reviews__icon" aria-hidden="true" />
-                  <blockquote>{item.quote}</blockquote>
-                  <figcaption>
-                    <strong>{item.name}</strong>
-                    <small>{item.role}</small>
-                  </figcaption>
-                </figure>
-              </li>
-            ))}
-          </ul>
+          <ReviewList items={reviews.slice(0, 3)} />
         </Shell>
       );
 
@@ -690,6 +681,7 @@ function BlockView({ block }: { block: Block }) {
       );
 
     case "marquee":
+      if (reviews.length === 0) return null;
       return (
         <section className="section section--navy reviews blk blk--pad-lg">
           <div className="container">
@@ -699,27 +691,9 @@ function BlockView({ block }: { block: Block }) {
               </h2>
               <span className="heading__rule" aria-hidden="true" />
             </div>
+            {reviews.length <= 3 ? <ReviewList items={reviews} /> : null}
           </div>
-          <div className="reviews__viewport">
-            <div className="reviews__track">
-              {[0, 1].map((copy) => (
-                <div key={copy} className="reviews__clone" aria-hidden={copy === 1}>
-                  {testimonials.items.map((item, index) => (
-                    <figure key={index} className="reviews__card">
-                      <Quote size={22} className="reviews__icon" aria-hidden="true" />
-                      <blockquote>{item.quote}</blockquote>
-                      <figcaption>
-                        <span>
-                          <strong>{item.name}</strong>
-                          <small>{item.role}</small>
-                        </span>
-                      </figcaption>
-                    </figure>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </div>
+          {reviews.length > 3 ? <ReviewList items={reviews} /> : null}
         </section>
       );
   }

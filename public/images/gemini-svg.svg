@@ -7,5 +7,5 @@
     <path d="M 32 75 Q 50 50 68 75 Z" fill="#FFFFFF"/>
   </g>
   <!-- Brand Text -->
-  <text x="85" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF" letter-spacing="-1">Syntax<tspan fill="#FF4D00">Hires</tspan></text>
+  <text x="85" y="62" font-family="'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="42" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Syntax<tspan fill="#FF4D00">Hires</tspan></text>
 </svg>

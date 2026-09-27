@@ -2032,3 +2032,189 @@
     transform: translateX(50%) rotate(90deg);
   }
 }
+
+/* Review cards: Google-review style, white card on the navy band */
+.reviews-grid {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+}
+
+.reviews-grid--1 {
+  grid-template-columns: minmax(0, 480px);
+}
+
+.reviews-grid--2 {
+  grid-template-columns: repeat(2, minmax(0, 440px));
+}
+
+.reviews-grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  margin: 0;
+  padding: 22px 22px 20px;
+  border: 1px solid #e3e6ea;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(60, 64, 67, 0.12), 0 2px 8px rgba(60, 64, 67, 0.08);
+  color: #3c4043;
+  text-align: left;
+}
+
+.reviews__track .review {
+  flex: none;
+  width: 360px;
+  height: auto;
+}
+
+.review__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review__avatar {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.review__who {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.35;
+}
+
+.review__who strong {
+  font-size: 15px;
+  font-weight: 600;
+  color: #202124;
+}
+
+.review__who small {
+  font-size: 12px;
+  color: #70757a;
+}
+
+.review__meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #70757a;
+}
+
+.review__stars {
+  display: inline-flex;
+  gap: 1px;
+}
+
+.review__stars svg {
+  fill: #dadce0;
+}
+
+.review__stars svg.is-on {
+  fill: #fbbc04;
+}
+
+.review__quote {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3c4043;
+}
+
+.review__quote.is-clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.review__more {
+  align-self: flex-start;
+  min-height: 32px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a73e8;
+}
+
+.review__more:hover {
+  text-decoration: underline;
+}
+
+/* The inner-page testimonial band is light, so cards sit on grey there */
+.blk--testimonials .review {
+  box-shadow: var(--shadow-card);
+}
+
+/* Stats row: large white figures, muted labels */
+.proofstats {
+  padding-block: 56px;
+}
+
+.proofstats .reviews__stats {
+  margin-top: 0;
+  gap: 24px 80px;
+}
+
+.proofstats .reviews__stats strong {
+  font-size: 46px;
+  line-height: 1.1;
+}
+
+.proofstats .reviews__stats span:not(.reviews__stars) {
+  margin-top: 8px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.proofstats .reviews__stars {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 991px) {
+  .reviews-grid--3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews-grid--2,
+  .reviews-grid--3 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .reviews__track .review {
+    width: 290px;
+  }
+
+  .review__more {
+    min-height: 44px;
+  }
+
+  .proofstats .reviews__stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 16px;
+  }
+
+  .proofstats .reviews__stats strong {
+    font-size: 34px;
+  }
+}

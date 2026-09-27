@@ -77,15 +77,9 @@ const page: PageDef = {
       footnote: "See the industries page for more detail on each.",
     },
     {
-      // PLACEHOLDER: three client quotes approved in writing, with name, role and company.
       type: "testimonials",
       title: "In Their [Own Words]",
       align: "center",
-      items: [
-        { quote: "Approved client quote goes here.", name: "Client Name", role: "Role, Company" },
-        { quote: "Approved client quote goes here.", name: "Client Name", role: "Role, Company" },
-        { quote: "Approved client quote goes here.", name: "Client Name", role: "Role, Company" },
-      ],
     },
     {
       type: "cta",

@@ -241,15 +241,9 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: three client quotes approved in writing, with name, role and company.
       type: "testimonials",
       title: "What Clients [Say]",
       align: "center",
-      items: [
-        { quote: "Approved client quote goes here.", name: "Client Name", role: "Role, Company" },
-        { quote: "Approved client quote goes here.", name: "Client Name", role: "Role, Company" },
-        { quote: "Approved client quote goes here.", name: "Client Name", role: "Role, Company" },
-      ],
     },
     {
       type: "form",

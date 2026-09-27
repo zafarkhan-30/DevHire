@@ -92,11 +92,9 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: one client quote approved in writing, with name, role and company.
       type: "testimonials",
       title: "From The [Client]",
       align: "center",
-      items: [{ quote: "Approved client quote goes here.", name: "Client Name", role: "Role, Company" }],
     },
     {
       // PLACEHOLDER: the four main technologies used on this project, each with one line on what it was used for.
