@@ -16,6 +16,10 @@ import {
   Menu,
   Server,
   ShieldCheck,
+  FileLock2,
+  KeyRound,
+  CalendarClock,
+  DoorOpen,
   Smartphone,
   Users,
   X,
@@ -36,6 +40,14 @@ const NAV_ICONS: Record<string, LucideIcon> = {
   server: Server,
   smartphone: Smartphone,
   users: Users,
+};
+
+// One icon per trust badge, matched to its meaning; unknown keys fall back to a shield.
+const TRUST_ICONS: Record<string, LucideIcon> = {
+  nda: FileLock2,
+  ip: KeyRound,
+  terms: CalendarClock,
+  exit: DoorOpen,
 };
 
 // Delay before a panel closes, so moving the pointer from the menu word into the panel does not flicker it shut.
@@ -91,15 +103,18 @@ export function Header() {
     <header className="site-header">
       <div className="trustbar">
         <div className="container trustbar__inner">
-          {site.trustBadges.map((badge) => (
+          {site.trustBadges.map((badge) => {
+            const BadgeIcon = (badge.icon && TRUST_ICONS[badge.icon]) || ShieldCheck;
+            return (
             <span key={badge.label} className="trustbar__item">
-              <ShieldCheck size={14} aria-hidden="true" />
+              <BadgeIcon size={15} aria-hidden="true" />
               <span>
                 <strong>{badge.label}</strong>
                 {badge.sub ? <small>{badge.sub}</small> : null}
               </span>
             </span>
-          ))}
+            );
+          })}
         </div>
       </div>
 

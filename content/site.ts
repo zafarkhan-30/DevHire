@@ -35,11 +35,12 @@ export const site = {
   ],
   // Contract terms shown in the top bar. Add certifications here only once SyntaxHires holds them.
   trustBadges: [
-    { label: "NDA", sub: "Before code access" },
-    { label: "IP", sub: "Assigned to you" },
-    { label: "Terms", sub: "Month to month" },
-    { label: "Exit", sub: "No penalty" },
-  ] as { label: string; sub?: string }[],
+    // icon: key from TRUST_ICONS in components/layout/Header.tsx
+    { label: "NDA", sub: "Before code access", icon: "nda" },
+    { label: "IP", sub: "Assigned to you", icon: "ip" },
+    { label: "Terms", sub: "Month to month", icon: "terms" },
+    { label: "Exit", sub: "No penalty", icon: "exit" },
+  ] as { label: string; sub?: string; icon?: string }[],
   // SyntaxHires proof numbers, shown in the stats row on the home page.
   // Use only figures you can back up. A value left as "—" is hidden; the row appears once any value is filled in.
   // `stars` draws five stars above the value (use it for the rating).
