@@ -1,0 +1,551 @@
+[
+ {
+  "cls": "about-hero",
+  "height": 1011,
+  "padTop": 140,
+  "padBottom": 0,
+  "bg": "rgb(21, 55, 98)",
+  "bgImage": "",
+  "containerWidth": null,
+  "containerLeft": null,
+  "headingTag": "H1",
+  "heading": {
+   "font": "48px/800",
+   "lineHeight": "55.2px",
+   "color": "rgb(255, 255, 255)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "center",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(164, 167, 171)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": {
+   "font": "16px/600",
+   "lineHeight": "25px",
+   "color": "rgb(255, 255, 255)",
+   "radius": "8px",
+   "shadow": "",
+   "padding": "14 30 14 30",
+   "border": "",
+   "background": "rgb(255, 65, 3)"
+  },
+  "grid": {
+   "count": 2,
+   "perRow": 2,
+   "itemWidth": 343,
+   "gap": -200,
+   "card": {
+    "font": "48px/800",
+    "lineHeight": "55.2px",
+    "color": "rgb(255, 65, 3)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "",
+    "background": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "about-layout",
+  "height": 6800,
+  "padTop": 0,
+  "padBottom": 0,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1120,
+  "containerLeft": 320,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "left",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 6,
+   "perRow": 3,
+   "itemWidth": 352,
+   "gap": 0,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "28 16 28 16",
+    "border": "1px rgba(255, 255, 255, 0.06)",
+    "background": "rgba(255, 255, 255, 0.04)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "about-section about_best_for_Sec",
+  "height": 843,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1120,
+  "containerLeft": 320,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "left",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": null,
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "about-section about_our_story_Sec",
+  "height": 929,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1120,
+  "containerLeft": 320,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "left",
+  "para": {
+   "font": "15.2px/400",
+   "lineHeight": "25.84px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 5,
+   "perRow": 2,
+   "itemWidth": 3,
+   "gap": 30,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "",
+    "background": "rgb(224, 224, 224)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "about-section about_leadership_Sec",
+  "height": 751,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1120,
+  "containerLeft": 320,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "left",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 2,
+   "perRow": 2,
+   "itemWidth": 223,
+   "gap": 32,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "",
+    "background": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "about-section about_core_differentiator_Sec",
+  "height": 774,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1120,
+  "containerLeft": 320,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "left",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 5,
+   "perRow": 5,
+   "itemWidth": 192,
+   "gap": 24,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "",
+    "background": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "about-section bg-dark about_industries_Sec",
+  "height": 1291,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgb(11, 10, 10)",
+  "bgImage": "",
+  "containerWidth": 1120,
+  "containerLeft": 320,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(255, 255, 255)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "left",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(164, 167, 171)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 6,
+   "perRow": 3,
+   "itemWidth": 352,
+   "gap": 0,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "28 16 28 16",
+    "border": "1px rgba(255, 255, 255, 0.06)",
+    "background": "rgba(255, 255, 255, 0.04)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "about-section about_Compliance_Security_sec",
+  "height": 467,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1120,
+  "containerLeft": 320,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "left",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 5,
+   "perRow": 5,
+   "itemWidth": 199,
+   "gap": 16,
+   "card": {
+    "font": "13.6px/600",
+    "lineHeight": "23.12px",
+    "color": "rgb(74, 74, 74)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "",
+    "background": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "about-section about_why_choose_us_Sec",
+  "height": 1353,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1120,
+  "containerLeft": 320,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "left",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 5,
+   "perRow": 3,
+   "itemWidth": 339,
+   "gap": 20,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "12px",
+    "shadow": "",
+    "padding": "32 24 24 24",
+    "border": "1px rgb(224, 224, 224)",
+    "background": "rgb(255, 255, 255)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "about-section about_clients_logo_Sec",
+  "height": 392,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1120,
+  "containerLeft": 320,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "left",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": null,
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "about-cta about-cta-final-sec",
+  "height": 386,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgb(21, 55, 98)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(255, 255, 255)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "center",
+  "para": {
+   "font": "16.8px/400",
+   "lineHeight": "28.56px",
+   "color": "rgb(164, 167, 171)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": {
+   "font": "16px/600",
+   "lineHeight": "25px",
+   "color": "rgb(255, 255, 255)",
+   "radius": "8px",
+   "shadow": "",
+   "padding": "14 30 14 30",
+   "border": "",
+   "background": "rgb(255, 65, 3)"
+  },
+  "grid": {
+   "count": 2,
+   "perRow": 2,
+   "itemWidth": 175,
+   "gap": 16,
+   "card": {
+    "font": "16px/600",
+    "lineHeight": "25px",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px",
+    "shadow": "",
+    "padding": "14 30 14 30",
+    "border": "",
+    "background": "rgb(255, 65, 3)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ }
+]

@@ -1,0 +1,347 @@
+[
+ {
+  "cls": "ourwork-hero",
+  "height": 620,
+  "padTop": 48,
+  "padBottom": 48,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "linear-gradient(rgb(248, 249, 250) 0px, rgb(255, 255, 255) 100%)",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": "H1",
+  "heading": {
+   "font": "44px/800",
+   "lineHeight": "50.6px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "center",
+  "para": {
+   "font": "17px/400",
+   "lineHeight": "26.35px",
+   "color": "rgb(95, 111, 137)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 4,
+   "perRow": 4,
+   "itemWidth": 207,
+   "gap": 24,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "12px",
+    "shadow": "",
+    "padding": "32 24 32 24",
+    "border": "1px rgb(224, 224, 224)",
+    "background": "rgb(255, 255, 255)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "ourwork-featured",
+  "height": 991,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgb(255, 255, 255)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "center",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 4,
+   "perRow": 2,
+   "itemWidth": 635,
+   "gap": 0,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "16px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "",
+    "background": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "ourwork-logos section-light",
+  "height": 1783,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgb(248, 249, 250)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "center",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": null,
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "ourwork-industries",
+  "height": 1060,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgb(255, 255, 255)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "center",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 8,
+   "perRow": 4,
+   "itemWidth": 318,
+   "gap": 0,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "16px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "",
+    "background": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "ourwork-testimonials section-light",
+  "height": 1060,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgb(248, 249, 250)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "center",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(26, 26, 26)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 3,
+   "perRow": 3,
+   "itemWidth": 399,
+   "gap": 24,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "16px",
+    "shadow": "rgba(0, 0, 0, 0.04) 0px 4px 20px 0px",
+    "padding": "32 32 32 32",
+    "border": "",
+    "background": "rgb(255, 255, 255)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "ourwork-cta",
+  "height": 1100,
+  "padTop": 100,
+  "padBottom": 100,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "linear-gradient(135deg, rgb(21, 55, 98) 0px, rgb(15, 40, 71) 100%)",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(255, 255, 255)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "center",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(164, 167, 171)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": {
+   "font": "16px/600",
+   "lineHeight": "25px",
+   "color": "rgb(255, 255, 255)",
+   "radius": "8px",
+   "shadow": "",
+   "padding": "14 30 14 30",
+   "border": "",
+   "background": "rgb(255, 65, 3)"
+  },
+  "grid": null,
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "w-100 section-padding section-light Related_Insights_sec",
+  "height": 1060,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgb(248, 249, 250)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "45px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "start",
+  "para": {
+   "font": "15px/400",
+   "lineHeight": "24px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 24 0 24",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": {
+   "font": "16px/600",
+   "lineHeight": "25px",
+   "color": "rgb(11, 10, 10)",
+   "radius": "8px",
+   "shadow": "",
+   "padding": "14 30 14 30",
+   "border": "1px rgb(187, 187, 187)",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "grid": {
+   "count": 3,
+   "perRow": 3,
+   "itemWidth": 423,
+   "gap": 0,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(119, 119, 119)",
+    "radius": "16px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "1px rgb(224, 224, 224)",
+    "background": "rgb(255, 255, 255)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ }
+]

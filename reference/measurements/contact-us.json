@@ -1,0 +1,95 @@
+[
+ {
+  "cls": "h_contactpage_form_wrap position-relative",
+  "height": 970,
+  "padTop": 50,
+  "padBottom": 65,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": null,
+  "heading": null,
+  "headingAlign": null,
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 2,
+   "perRow": 2,
+   "itemWidth": 635,
+   "gap": 0,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "",
+    "background": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "tables": 0,
+  "forms": 1
+ },
+ {
+  "cls": "reviews-section reviews-section-dark",
+  "height": 1090,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgb(21, 55, 98)",
+  "bgImage": "",
+  "containerWidth": 1200,
+  "containerLeft": 120,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(255, 255, 255)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "center",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(164, 167, 171)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 8,
+   "perRow": 8,
+   "itemWidth": 380,
+   "gap": 24,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "16px",
+    "shadow": "rgba(0, 0, 0, 0.04) 0px 4px 20px 0px",
+    "padding": "28 28 28 28",
+    "border": "1px rgba(255, 255, 255, 0.09)",
+    "background": "rgba(255, 255, 255, 0.04)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ }
+]

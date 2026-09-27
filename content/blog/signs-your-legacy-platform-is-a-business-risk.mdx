@@ -1,0 +1,35 @@
+Old software is not a problem in itself. Plenty of systems have run for decades without trouble. The problem begins when a system becomes hard to change, hard to staff or hard to keep secure, and the business depends on it anyway.
+
+These are the signs worth checking. Each one can be measured with information you already have.
+
+## Releases are getting rarer
+
+Look at how often you shipped changes to the system over the last two years. If the gap between releases is growing, the cost of change is rising. Teams release less often when each release is risky, slow to test or needs a specific person to be present.
+
+A falling release rate also hides a second problem. Changes pile up, so each release is larger, which makes it riskier still.
+
+## The same incidents keep coming back
+
+Read through your incident log and group the entries by cause. Repeated causes point to something structural: a batch job that fails when data grows, a dependency that times out under load, a manual step that gets missed.
+
+When fixes are patches rather than cures, the team has usually judged that a proper fix is too dangerous to attempt. That judgement is the risk.
+
+## Only a few people can change it
+
+Count the people who can safely modify the system. Then ask what happens if one of them leaves.
+
+A short list is a staffing risk and a delivery risk at once. It also makes hiring harder. Engineers with experience in older stacks are fewer each year, and newer engineers are reluctant to build a career on them.
+
+## Vendors have stopped supporting parts of it
+
+List the operating system, language runtime, database and main libraries, and check each against its vendor's support dates. Unsupported components no longer receive security fixes.
+
+This matters beyond security. Auditors, insurers and enterprise customers increasingly ask about it, and an unsupported component can hold up a contract.
+
+## What to do with what you find
+
+Put the four findings on one page. For most systems the picture is mixed: some parts are stable and can be left alone, and one or two carry most of the risk.
+
+That is useful, because it means you do not have to replace everything. Start with the part that scores worst, move it behind a clear interface and modernise it while the rest keeps running. A full rewrite is rarely the first step and often not needed at all.
+
+The aim is not new technology for its own sake. It is a system that your team can change safely, your company can staff and your customers can trust.

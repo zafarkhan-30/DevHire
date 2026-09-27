@@ -1,0 +1,563 @@
+[
+ {
+  "cls": "hire_dedicated_hero_banner position-relative hire_dedicated_developer_hero_banne",
+  "height": 624,
+  "padTop": 48,
+  "padBottom": 48,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": "H1",
+  "heading": {
+   "font": "48px/800",
+   "lineHeight": "53.76px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "start",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "25.6px",
+   "color": "rgb(74, 74, 74)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": {
+   "font": "16px/600",
+   "lineHeight": "25px",
+   "color": "rgb(255, 255, 255)",
+   "radius": "8px",
+   "shadow": "",
+   "padding": "14 30 14 30",
+   "border": "",
+   "background": "rgb(255, 65, 3)"
+  },
+  "grid": {
+   "count": 3,
+   "perRow": 3,
+   "itemWidth": 194,
+   "gap": 8,
+   "card": {
+    "font": "13px/500",
+    "lineHeight": "22.1px",
+    "color": "rgb(55, 65, 81)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "",
+    "background": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "w-100 section-padding section-tech-matrix",
+  "height": 1662,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "45px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "center",
+  "para": null,
+  "button": null,
+  "grid": {
+   "count": 7,
+   "perRow": 7,
+   "itemWidth": 152,
+   "gap": 8,
+   "card": {
+    "font": "18.72px/700",
+    "lineHeight": "22.464px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "",
+    "background": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "w-100 section-padding section-how-teams-starts",
+  "height": 1060,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": null,
+  "heading": null,
+  "headingAlign": null,
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 3,
+   "perRow": 3,
+   "itemWidth": 350,
+   "gap": 82,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "12px",
+    "shadow": "",
+    "padding": "16 20 16 20",
+    "border": "",
+    "background": "rgb(255, 255, 255)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "w-100 section-padding section-dark dedi_section-protocols",
+  "height": 1060,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgb(11, 10, 10)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "41.4px",
+   "color": "rgb(255, 255, 255)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 30 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "center",
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(164, 167, 171)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 4,
+   "perRow": 4,
+   "itemWidth": 318,
+   "gap": 0,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "16px",
+    "shadow": "",
+    "padding": "32 32 32 32",
+    "border": "",
+    "background": "rgb(255, 255, 255)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "w-100 section-padding section-trust-matrixs",
+  "height": 1060,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1200,
+  "containerLeft": 120,
+  "headingTag": null,
+  "heading": null,
+  "headingAlign": null,
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 2,
+   "perRow": 2,
+   "itemWidth": 349,
+   "gap": 32,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "",
+    "background": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "w-100 section-padding dedi_section_pricing_range",
+  "height": 1060,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": null,
+  "heading": null,
+  "headingAlign": null,
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 2,
+   "perRow": 2,
+   "itemWidth": 529,
+   "gap": 0,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "",
+    "background": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "w-100 section-padding section-dark section_recent_outcomes",
+  "height": 1060,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgb(11, 10, 10)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": null,
+  "heading": null,
+  "headingAlign": null,
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "28.8px",
+   "color": "rgb(164, 167, 171)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 2,
+   "perRow": 2,
+   "itemWidth": 635,
+   "gap": 0,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "0 12 0 12",
+    "border": "",
+    "background": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "w-100 py-5 section-muted dedi_new_Cta_section",
+  "height": 996,
+  "padTop": 48,
+  "padBottom": 48,
+  "bg": "rgb(248, 249, 250)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": null,
+  "heading": null,
+  "headingAlign": null,
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": {
+   "font": "16px/600",
+   "lineHeight": "25px",
+   "color": "rgb(255, 255, 255)",
+   "radius": "8px",
+   "shadow": "",
+   "padding": "14 30 14 30",
+   "border": "",
+   "background": "rgb(255, 65, 3)"
+  },
+  "grid": null,
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "w-100 section-padding section-muted hire_dedi_section_guarantee",
+  "height": 1060,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgb(248, 249, 250)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": null,
+  "heading": null,
+  "headingAlign": null,
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": null,
+  "grid": {
+   "count": 2,
+   "perRow": 2,
+   "itemWidth": 635,
+   "gap": 0,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "0 12 0 12",
+    "border": "",
+    "background": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "w-100 section-padding section-light section-decision-routings",
+  "height": 1060,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgb(248, 249, 250)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": null,
+  "heading": null,
+  "headingAlign": null,
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": {
+   "font": "15px/600",
+   "lineHeight": "25.5px",
+   "color": "rgb(255, 255, 255)",
+   "radius": "8px",
+   "shadow": "",
+   "padding": "14 28 14 28",
+   "border": "2px rgb(255, 65, 3)",
+   "background": "rgb(255, 65, 3)"
+  },
+  "grid": {
+   "count": 3,
+   "perRow": 3,
+   "itemWidth": 423,
+   "gap": 0,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "16px",
+    "shadow": "",
+    "padding": "40 32 40 32",
+    "border": "",
+    "background": "rgb(255, 255, 255)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "w-100 section-padding section-light Related_Insights_sec",
+  "height": 1060,
+  "padTop": 80,
+  "padBottom": 80,
+  "bg": "rgb(248, 249, 250)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": "H2",
+  "heading": {
+   "font": "36px/700",
+   "lineHeight": "45px",
+   "color": "rgb(21, 55, 98)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "headingAlign": "start",
+  "para": {
+   "font": "15px/400",
+   "lineHeight": "24px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 24 0 24",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": {
+   "font": "16px/600",
+   "lineHeight": "25px",
+   "color": "rgb(11, 10, 10)",
+   "radius": "8px",
+   "shadow": "",
+   "padding": "14 30 14 30",
+   "border": "1px rgb(187, 187, 187)",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "grid": {
+   "count": 3,
+   "perRow": 3,
+   "itemWidth": 423,
+   "gap": 0,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(119, 119, 119)",
+    "radius": "16px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "1px rgb(224, 224, 224)",
+    "background": "rgb(255, 255, 255)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ },
+ {
+  "cls": "n_hire_faq_sec",
+  "height": 900,
+  "padTop": 0,
+  "padBottom": 0,
+  "bg": "rgba(0, 0, 0, 0)",
+  "bgImage": "",
+  "containerWidth": 1270,
+  "containerLeft": 85,
+  "headingTag": null,
+  "heading": null,
+  "headingAlign": null,
+  "para": {
+   "font": "16px/400",
+   "lineHeight": "27.2px",
+   "color": "rgb(119, 119, 119)",
+   "radius": "0px",
+   "shadow": "",
+   "padding": "0 0 0 0",
+   "border": "",
+   "background": "rgba(0, 0, 0, 0)"
+  },
+  "button": {
+   "font": "16px/600",
+   "lineHeight": "25px",
+   "color": "rgb(255, 255, 255)",
+   "radius": "8px",
+   "shadow": "",
+   "padding": "14 30 14 30",
+   "border": "",
+   "background": "rgb(255, 65, 3)"
+  },
+  "grid": {
+   "count": 2,
+   "perRow": 2,
+   "itemWidth": 423,
+   "gap": 0,
+   "card": {
+    "font": "16px/400",
+    "lineHeight": "27.2px",
+    "color": "rgb(11, 10, 10)",
+    "radius": "0px",
+    "shadow": "",
+    "padding": "0 0 0 0",
+    "border": "",
+    "background": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "tables": 0,
+  "forms": 0
+ }
+]
