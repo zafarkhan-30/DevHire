@@ -6,6 +6,7 @@ import { testimonials } from "@/content/home";
 import { latestPosts } from "@/lib/blog";
 import { Accent } from "@/components/ui/Accent";
 import { Icon } from "@/components/ui/Icon";
+import { LogoRow } from "@/components/ui/LogoRow";
 import { Calculator } from "./Calculator";
 import { AccordionView, LinkGridView, PdfGateView, QuizView, TabsView } from "./Interactive";
 import { LeadFormCard } from "./LeadFormCard";
@@ -162,13 +163,7 @@ function BlockView({ block }: { block: Block }) {
     case "logos":
       return (
         <Shell block={block} name="logos" pad="sm">
-          <ul className="trusted__grid">
-            {Array.from({ length: 8 }, (_, index) => (
-              <li key={index} className="trusted__placeholder" aria-hidden="true">
-                Client logo
-              </li>
-            ))}
-          </ul>
+          <LogoRow />
           {block.badges?.length ? (
             <ul className="chips chips--center logos__badges">
               {block.badges.map((badge) => (

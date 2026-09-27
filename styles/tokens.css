@@ -35,7 +35,7 @@
   --gradient-cta: linear-gradient(100deg, #ff4103 0%, #e03a02 45%, #a30f00 100%);
 
   --header-height: 64px;
-  --trustbar-height: 38px;
+  --trustbar-height: 44px;
 }
 
 @media (max-width: 1199px) {

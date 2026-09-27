@@ -9,6 +9,8 @@
 }
 
 .trustbar {
+  box-sizing: border-box;
+  height: var(--trustbar-height);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(0, 0, 0, 0.18);
 }
@@ -18,7 +20,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 12px;
-  min-height: var(--trustbar-height);
+  height: 100%;
   padding-block: 6px;
 }
 
@@ -506,7 +508,7 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 6px 8px;
-    height: var(--trustbar-height);
+    height: 100%;
   }
 
   .trustbar__item {

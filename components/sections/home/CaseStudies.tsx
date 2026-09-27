@@ -52,12 +52,12 @@ export function CaseStudies() {
                 </li>
               ))}
             </ul>
-            <blockquote className="cases__quote">
-              <p>{item.quote.text}</p>
-              <cite>{item.quote.author}</cite>
-            </blockquote>
-            <Link href={item.href} className="link-arrow">
-              Read Full Case Study
+            <div className="cases__quote">
+              <p className="cases__note-label">{item.note.label}</p>
+              <p>{item.note.text}</p>
+            </div>
+            <Link href={item.link.href} className="link-arrow">
+              {item.link.label}
               <ArrowRight size={14} aria-hidden="true" />
             </Link>
           </div>

@@ -14,7 +14,9 @@ export const hero = {
       cta: { label: "View Developer Profiles", href: "/technologies/" },
       micro: "Tell us the stack. Meet the shortlist. Start this month.",
       chips: ["Works inside your tools", "No bench-time billing", "Scale up or down monthly"],
-      image: "",
+      image: "/images/hero/hero-1.webp",
+      // Pushes the photo toward the right edge and deepens the shade behind the text.
+      imageAlign: "right",
       tone: "amber",
     },
     {
@@ -25,7 +27,7 @@ export const hero = {
       text: "A small cross-functional squad that takes you from scoped idea to a release your first customers can use.",
       cta: { label: "Get A Launch Plan", href: "/contact-us/" },
       chips: ["Fixed weekly demos", "Scope you can read", "Code you own"],
-      image: "",
+      image: "/images/hero/hero-2.webp",
       tone: "violet",
     },
     {
@@ -36,7 +38,7 @@ export const hero = {
       text: "Engineers who have moved old platforms to modern stacks while production traffic kept flowing.",
       cta: { label: "Request A Migration Review", href: "/service/legacy-system-modernization/" },
       chips: ["Incremental cut-over", "Rollback at every step", "Documented as we go"],
-      image: "",
+      image: "/images/hero/hero-3.webp",
       tone: "teal",
     },
     {
@@ -47,7 +49,7 @@ export const hero = {
       text: "We handle hiring, payroll, equipment and compliance. You run the engineering.",
       cta: { label: "Talk To A Product Engineer", href: "/contact-us/" },
       chips: ["Hiring handled", "Compliance handled", "You direct the work"],
-      image: "",
+      image: "/images/hero/hero-4.webp",
       tone: "blue",
     },
   ],
@@ -57,8 +59,16 @@ export const trustedBy = {
   // Words wrapped in [] render in the accent color.
   title: "Teams That Build With [DevHire] Engineers Across [Industries] And Time Zones",
   caption: "From first-product startups to established engineering organisations. References on request.",
-  // PLACEHOLDER: add real client logos to /public/images/clients and list them here.
-  logos: [] as { name: string; src: string }[],
+  // Real clients only, with their permission. Files live in /public/images/Partners; use a copy with the empty border trimmed off so every logo lines up at the same height.
+  logos: [
+    { name: "Infosys", src: "/images/Partners/trimmed/infosys.png" },
+    { name: "Tata Consultancy Services", src: "/images/Partners/trimmed/tcs-tata-consultancy-services.png" },
+    { name: "Capital One", src: "/images/Partners/trimmed/capital-one.png" },
+    { name: "Swiggy", src: "/images/Partners/trimmed/swiggy-logo.png" },
+    { name: "Freed", src: "/images/Partners/trimmed/freed-logo.png" },
+    { name: "Park+", src: "/images/Partners/trimmed/park-car-app.png" },
+    { name: "CView Survey", src: "/images/Partners/trimmed/cview-survey-logo.png" },
+  ] as { name: string; src: string }[],
   placeholderCount: 10,
 };
 
@@ -239,41 +249,48 @@ export const technologies = {
 
 export const caseStudies = {
   eyebrow: "Case Studies",
-  title: "Outcomes From Real Engagements",
-  intro: "How teams in different industries grew their engineering capacity and shipped sooner with DevHire.",
-  // PLACEHOLDER: replace with real engagements, real metrics and approved client quotes.
+  title: "How An Engagement [Runs]",
+  intro: "Two sample engagements showing how a DevHire team is shaped, how it works and what you get at the end.",
+  // SAMPLE CONTENT: these are illustrative engagements, not client stories. They carry no client
+  // names, results or quotes. Replace each with a real, client-approved case study when available.
   items: [
     {
-      tab: "Case Study 1",
-      tag: "Project Type",
-      title: "Case study headline: the result, stated as a number",
+      tab: "SaaS Product Team",
+      tag: "Sample engagement",
+      title: "Adding a dedicated React and Node.js squad to a growing SaaS product",
       summary:
-        "Two or three sentences on where the client started, what was getting in the way and what the DevHire team changed. Keep it specific and keep it true.",
+        "A product company has more roadmap than engineers. A three-person DevHire squad joins their sprints, works in their repository and takes ownership of the reporting and billing screens, so the in-house team can focus on the core platform.",
       metrics: [
-        { icon: "trending", value: "00%", label: "Primary metric" },
-        { icon: "clock", value: "00%", label: "Second metric" },
-        { icon: "users", value: "0", label: "Third metric" },
+        { icon: "users", value: "3", label: "Engineers in the squad" },
+        { icon: "code", value: "React · Node", label: "Stack" },
+        { icon: "clock", value: "Monthly", label: "Contract terms" },
       ],
-      quote: { text: "Approved client quote goes here.", author: "Client name, role" },
-      href: "/case-study/our-work/",
-      chip: "Project Type",
-      image: "",
+      note: {
+        label: "What you get",
+        text: "Interviewed engineers, a shared backlog, pull requests reviewed by your team and a written handover if anyone ever changes.",
+      },
+      link: { label: "See how dedicated teams work", href: "/service/dedicated-developers/" },
+      chip: "Dedicated Team",
+      image: "/images/hero/hero-2.webp",
     },
     {
-      tab: "Case Study 2",
-      tag: "Project Type",
-      title: "Second case study headline with its own headline number",
+      tab: "Legacy Platform Upgrade",
+      tag: "Sample engagement",
+      title: "Moving an ageing .NET billing system to the cloud one module at a time",
       summary:
-        "Two or three sentences on where the client started, what was getting in the way and what the DevHire team changed. Keep it specific and keep it true.",
+        "A company depends on a billing platform that few people can still change safely. A DevHire team maps the system, moves one module at a time behind a stable interface and runs old and new side by side before each cut-over.",
       metrics: [
-        { icon: "trending", value: "00%", label: "Primary metric" },
-        { icon: "clock", value: "00%", label: "Second metric" },
-        { icon: "users", value: "0", label: "Third metric" },
+        { icon: "users", value: "4", label: "Engineers in the team" },
+        { icon: "cloud", value: ".NET → Cloud", label: "Migration path" },
+        { icon: "refresh", value: "Per module", label: "Rollback plan" },
       ],
-      quote: { text: "Approved client quote goes here.", author: "Client name, role" },
-      href: "/case-study/our-work/",
-      chip: "Project Type",
-      image: "",
+      note: {
+        label: "What you get",
+        text: "A system map, a phased plan you can read, tested rollback at every step and documentation written as the work happens.",
+      },
+      link: { label: "See the modernisation approach", href: "/service/legacy-system-modernization/" },
+      chip: "Legacy Modernisation",
+      image: "/images/hero/hero-3.webp",
     },
   ],
   all: { label: "View All Case Studies", href: "/case-study/our-work/" },

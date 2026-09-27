@@ -43,7 +43,7 @@ for (const width of widths) {
       return `${el.tagName.toLowerCase()}${cls ? "." + cls : ""}`;
     };
     // Carousels and the marquee are wider than the viewport by design.
-    const skip = ".reviews__viewport, .hero__viewport, .sr-only";
+    const skip = ".reviews__viewport, .hero__stage, .sr-only";
     const outside = new Set();
     for (const el of document.querySelectorAll("body *")) {
       if (el.closest(skip) || el.closest("svg")?.parentElement?.closest(skip)) continue;

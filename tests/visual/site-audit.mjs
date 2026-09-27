@@ -54,7 +54,7 @@ async function audit(route, width) {
       const cls = typeof el.className === "string" ? el.className.split(" ")[0] : "";
       return `${el.tagName.toLowerCase()}${cls ? "." + cls : ""}`;
     };
-    const skip = ".reviews__viewport, .hero__viewport, .sr-only";
+    const skip = ".reviews__viewport, .hero__stage, .sr-only";
     const outside = new Set();
     for (const el of document.querySelectorAll("body *")) {
       if (el.closest(skip)) continue;
