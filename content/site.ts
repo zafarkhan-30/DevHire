@@ -27,7 +27,10 @@ export const site = {
   description:
     "SyntaxHires places vetted remote engineers and dedicated teams inside your sprint. Shortlist in days, no long contracts, no idle-hour billing.",
   primaryCta: { label: "Talk To An Engineer", href: "/contact-us/" },
-  whatsapp: "", // PLACEHOLDER: international number, digits only. Empty hides the button.
+  // WhatsApp chat button (bottom-right on every page). Number in international format, digits only,
+  // e.g. "919876543210" for +91 98765 43210. Left empty, the button is hidden.
+  whatsapp: "918433833146",
+  whatsappMessage: "Hi SyntaxHires, I would like to talk about hiring developers.",
   social: [
     { label: "LinkedIn", href: "#", icon: "linkedin" },
     { label: "Instagram", href: "#", icon: "instagram" },
