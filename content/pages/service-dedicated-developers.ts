@@ -1,6 +1,6 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values DevHire must confirm before launch.
+// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
 const page: PageDef = {
   path: "/service/dedicated-developers/",
   meta: {
@@ -26,12 +26,12 @@ const page: PageDef = {
       title: "What Is The [Dedicated Developer] Model?",
       align: "left",
       paragraphs: [
-        "A dedicated developer is a full-time engineer employed by DevHire who works on one client only. You set priorities and review the work. We handle hiring, payroll, equipment and continuity.",
+        "A dedicated developer is a full-time engineer employed by SyntaxHires who works on one client only. You set priorities and review the work. We handle hiring, payroll, equipment and continuity.",
         "It sits between hiring in-house and outsourcing a project. You keep control of the roadmap without carrying the cost and delay of recruitment.",
       ],
       aside: {
         title: "In short",
-        items: ["Full-time on your product", "Managed day to day by you", "Employed and supported by DevHire", "Month-to-month terms"],
+        items: ["Full-time on your product", "Managed day to day by you", "Employed and supported by SyntaxHires", "Month-to-month terms"],
       },
     },
     {
@@ -58,7 +58,7 @@ const page: PageDef = {
           items: ["Product direction and priorities", "Acceptance of delivered work", "Access to systems and environments", "Architecture decisions"],
         },
         {
-          title: "DevHire",
+          title: "SyntaxHires",
           mood: "good",
           items: ["Hiring, screening and onboarding", "Payroll, equipment and leave cover", "Performance management", "Replacement if the fit is wrong"],
         },
@@ -72,7 +72,7 @@ const page: PageDef = {
       columns: ["", "Dedicated team", "Staff augmentation", "Project outsourcing"],
       highlight: 1,
       rows: [
-        ["Who directs daily work", "You, with a DevHire lead if wanted", "You", "The vendor"],
+        ["Who directs daily work", "You, with a SyntaxHires lead if wanted", "You", "The vendor"],
         ["Best for", "Ongoing product development", "Filling specific skill gaps", "Fixed, well-defined scope"],
         ["Knowledge retention", "High: same people long term", "Medium", "Low once the project ends"],
         ["Flexibility to change scope", "High", "High", "Low without a change request"],
@@ -92,7 +92,7 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: replace with measured DevHire delivery data.
+      // PLACEHOLDER: replace with measured SyntaxHires delivery data.
       type: "stats",
       tone: "dark",
       title: "Delivery Data",
@@ -136,7 +136,7 @@ const page: PageDef = {
     {
       type: "faq",
       items: [
-        { q: "How is a dedicated developer different from a freelancer?", a: "A dedicated developer works full time on your product, is employed and supported by DevHire, and is covered by a replacement commitment. A freelancer usually splits time between clients and carries no continuity cover." },
+        { q: "How is a dedicated developer different from a freelancer?", a: "A dedicated developer works full time on your product, is employed and supported by SyntaxHires, and is covered by a replacement commitment. A freelancer usually splits time between clients and carries no continuity cover." },
         { q: "Can I interview the developers?", a: "Yes. You interview every candidate and make the final decision." },
         { q: "What is the minimum commitment?", a: "Engagements run month to month. The notice period is stated in the contract." },
         { q: "Who manages the team day to day?", a: "You can manage the team directly, or we can provide a lead who runs delivery and reports to you." },

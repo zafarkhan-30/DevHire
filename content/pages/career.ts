@@ -1,12 +1,12 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values DevHire must confirm before launch.
+// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
 const page: PageDef = {
   path: "/career/",
   meta: {
     title: "Careers",
     description:
-      "Work as a DevHire developer: one client at a time, inside a real product team, with code review on every change.",
+      "Work as a SyntaxHires developer: one client at a time, inside a real product team, with code review on every change.",
   },
   blocks: [
     {
@@ -15,13 +15,13 @@ const page: PageDef = {
       align: "center",
       eyebrow: "Careers",
       title: "Do Focused Work On [One Product] At A Time",
-      text: "DevHire developers join a client's team and stay with it. You work on one codebase, learn it well and see your work reach production.",
+      text: "SyntaxHires developers join a client's team and stay with it. You work on one codebase, learn it well and see your work reach production.",
       ctas: [{ label: "See Open Roles", href: "#roles" }],
     },
     {
       type: "cards",
       title: "How We [Work]",
-      intro: "What a working day looks like for a DevHire developer.",
+      intro: "What a working day looks like for a SyntaxHires developer.",
       align: "center",
       columns: 4,
       items: [

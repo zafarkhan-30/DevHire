@@ -1,4 +1,4 @@
-# DevHire — Build Plan
+# SyntaxHires — Build Plan
 
 Reference: `HireDeveloper.dev — Site Teardown.pdf` (48 pages, crawled 27 Sep 2026).
 Target: a site with the same design system, layout, components, and page structure as the reference.
@@ -11,7 +11,7 @@ Target: a site with the same design system, layout, components, and page structu
 | Font | Plus Jakarta Sans 200–800, self-hosted woff2 (open-source, SIL OFL) |
 | Layout, section order, component behaviour, motion timings | Replicate exactly |
 | Page inventory and URL structure | Replicate (79 marketing pages + blog) |
-| Brand name, logo, marketing copy, blog articles | Ours — written for DevHire, same length and structure so the layout holds |
+| Brand name, logo, marketing copy, blog articles | Ours — written for SyntaxHires, same length and structure so the layout holds |
 | Client logos, testimonials, named people, stats, certification badges, office addresses | Ours — only claims we can back up |
 | Photos and illustrations | Ours, or licensed stock with the same crop and treatment |
 
@@ -160,7 +160,7 @@ tests/visual/           Playwright specs
 
 | Question | Decision |
 |---|---|
-| Brand | DevHire is a separate brand. All copy, logos, testimonials, stats and images are DevHire's own. |
+| Brand | SyntaxHires is a separate brand. All copy, logos, testimonials, stats and images are SyntaxHires' own. |
 | Stack | Next.js |
 | CRM | Not decided. Forms post to `/api/lead`, which validates and logs. Add the CRM call in `deliver()` in `app/api/lead/route.ts`. |
 | Blog post count at launch | Open |

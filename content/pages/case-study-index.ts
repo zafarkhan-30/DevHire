@@ -1,12 +1,12 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER: DevHire has not supplied case studies yet. Both cards below are templates.
+// PLACEHOLDER: SyntaxHires has not supplied case studies yet. Both cards below are templates.
 const page: PageDef = {
   path: "/case-study/",
   meta: {
     title: "Case Studies",
     description:
-      "Case studies from DevHire engagements. Each one sets out the client's starting point, the work the team did and the result, as approved by the client.",
+      "Case studies from SyntaxHires engagements. Each one sets out the client's starting point, the work the team did and the result, as approved by the client.",
   },
   blocks: [
     {
@@ -29,7 +29,7 @@ const page: PageDef = {
           title: "Case study headline",
           // PLACEHOLDER: the headline metric for case study 1.
           metric: "—",
-          text: "Two or three sentences on where the client started, what was getting in the way and what the DevHire team changed.",
+          text: "Two or three sentences on where the client started, what was getting in the way and what the SyntaxHires team changed.",
           href: "/case-study/case-study-1/",
           linkLabel: "Read The Case Study",
         },
@@ -38,7 +38,7 @@ const page: PageDef = {
           title: "Case study headline",
           // PLACEHOLDER: the headline metric for case study 2.
           metric: "—",
-          text: "Two or three sentences on where the client started, what was getting in the way and what the DevHire team changed.",
+          text: "Two or three sentences on where the client started, what was getting in the way and what the SyntaxHires team changed.",
           href: "/case-study/case-study-2/",
           linkLabel: "Read The Case Study",
         },

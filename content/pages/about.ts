@@ -1,12 +1,12 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values DevHire must confirm before launch.
+// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
 const page: PageDef = {
   path: "/about/",
   meta: {
-    title: "About DevHire",
+    title: "About Us",
     description:
-      "DevHire places remote developers who are ready to contribute inside your team. One developer per client, month-to-month terms and code you own.",
+      "SyntaxHires places remote developers who are ready to contribute inside your team. One developer per client, month-to-month terms and code you own.",
   },
   blocks: [
     {
@@ -14,7 +14,7 @@ const page: PageDef = {
       tone: "navy",
       size: "lg",
       align: "center",
-      eyebrow: "About DevHire",
+      eyebrow: "About SyntaxHires",
       title: "Remote Developers Chosen For [Readiness], Not Only For Skills",
       text: "We place developers who can join a working team, read an unfamiliar codebase and contribute without being carried. You interview them first. You decide.",
       ctas: [
@@ -25,7 +25,7 @@ const page: PageDef = {
     {
       type: "cards",
       title: "Who We Are [Best For]",
-      intro: "DevHire suits teams that already know what they want to build and need capable people to build it.",
+      intro: "SyntaxHires suits teams that already know what they want to build and need capable people to build it.",
       align: "center",
       columns: 4,
       items: [
@@ -36,12 +36,12 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: founders should replace these four steps with the real DevHire story.
+      // PLACEHOLDER: founders should replace these four steps with the real SyntaxHires story.
       type: "steps",
       tone: "muted",
       layout: "list",
       title: "Our [Story]",
-      intro: "Why a company like DevHire needs to exist, told through what we see across the staffing industry.",
+      intro: "Why a company like SyntaxHires needs to exist, told through what we see across the staffing industry.",
       align: "left",
       items: [
         {
@@ -63,14 +63,14 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: real names, roles, bios and photos of the DevHire founders.
+      // PLACEHOLDER: real names, roles, bios and photos of the SyntaxHires founders.
       type: "people",
       title: "[Leadership]",
       intro: "The people accountable for every engagement.",
       align: "center",
       items: [
-        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at DevHire." },
-        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at DevHire." },
+        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at SyntaxHires." },
+        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at SyntaxHires." },
       ],
     },
     {
@@ -92,7 +92,7 @@ const page: PageDef = {
           ],
         },
         {
-          title: "DevHire",
+          title: "SyntaxHires",
           mood: "good",
           items: [
             "Match on the kind of system you run",
@@ -120,7 +120,7 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: verified DevHire track record numbers. Keep in step with site.stats.
+      // PLACEHOLDER: verified SyntaxHires track record numbers. Keep in step with site.stats.
       type: "stats",
       tone: "dark",
       title: "Track Record",
@@ -148,7 +148,7 @@ const page: PageDef = {
     {
       type: "cards",
       tone: "muted",
-      title: "Why [DevHire]",
+      title: "Why [SyntaxHires]",
       align: "center",
       columns: 3,
       numbered: true,
@@ -163,7 +163,7 @@ const page: PageDef = {
     {
       // PLACEHOLDER: client logos, shown only with each client's permission.
       type: "logos",
-      title: "Teams That Build With [DevHire]",
+      title: "Teams That Build With [SyntaxHires]",
       caption: "References on request.",
     },
     {

@@ -1,12 +1,12 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values DevHire must confirm before launch.
+// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
 const page: PageDef = {
   path: "/leadership/",
   meta: {
     title: "Leadership",
     description:
-      "Meet the people who lead DevHire and the working standards they hold every engagement to.",
+      "Meet the people who lead SyntaxHires and the working standards they hold every engagement to.",
   },
   blocks: [
     {
@@ -15,20 +15,20 @@ const page: PageDef = {
       align: "center",
       eyebrow: "Leadership",
       title: "The People [Accountable] For Your Engagement",
-      text: "DevHire is led by people who stay close to the work. When something needs a decision, you can reach the person who makes it.",
+      text: "SyntaxHires is led by people who stay close to the work. When something needs a decision, you can reach the person who makes it.",
       ctas: [
         { label: "Talk To Our Team", href: "/contact-us/" },
-        { label: "About DevHire", href: "/about/", variant: "outline" },
+        { label: "About SyntaxHires", href: "/about/", variant: "outline" },
       ],
     },
     {
-      // PLACEHOLDER: real names, roles, bios and photos of the DevHire directors.
+      // PLACEHOLDER: real names, roles, bios and photos of the SyntaxHires directors.
       type: "people",
       title: "Our [Directors]",
       align: "center",
       items: [
-        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at DevHire." },
-        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at DevHire." },
+        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at SyntaxHires." },
+        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at SyntaxHires." },
       ],
     },
     {

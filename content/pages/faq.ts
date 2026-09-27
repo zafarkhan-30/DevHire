@@ -5,7 +5,7 @@ const page: PageDef = {
   meta: {
     title: "Frequently Asked Questions",
     description:
-      "Answers about hiring DevHire developers: pricing and contracts, vetting, security and IP, working together and legacy modernisation.",
+      "Answers about hiring SyntaxHires developers: pricing and contracts, vetting, security and IP, working together and legacy modernisation.",
   },
   blocks: [
     {
@@ -26,9 +26,9 @@ const page: PageDef = {
       title: "[General]",
       align: "left",
       items: [
-        { title: "What does DevHire do?", text: "We place remote developers and dedicated teams with companies that need engineering capacity. We also help teams modernise legacy systems." },
+        { title: "What does SyntaxHires do?", text: "We place remote developers and dedicated teams with companies that need engineering capacity. We also help teams modernise legacy systems." },
         { title: "Who do you work with?", text: "Founders building a first release, engineering leaders growing a team and companies that need to update an older platform." },
-        { title: "How is this different from hiring a freelancer?", text: "A DevHire developer works on one client only and is supported by us. If the fit is wrong, we replace them. A freelancer usually splits time between clients and carries no replacement cover." },
+        { title: "How is this different from hiring a freelancer?", text: "A SyntaxHires developer works on one client only and is supported by us. If the fit is wrong, we replace them. A freelancer usually splits time between clients and carries no replacement cover." },
         { title: "Which technologies do you cover?", text: "Frontend, backend, mobile, cloud, data and AI, CMS and design. The technologies page lists every stack." },
         { title: "How do we get started?", text: "Send a request through the contact page. We reply within two working days with questions and a proposed next step." },
       ],

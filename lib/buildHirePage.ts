@@ -1,7 +1,7 @@
 import type { Block, PageDef, TechData } from "@/content/types";
 
 // Turns one technology data file into the 19-section hire page.
-// Sections that describe DevHire itself are shared; sections about the technology come from the data file.
+// Sections that describe SyntaxHires itself are shared; sections about the technology come from the data file.
 export function buildHirePage(tech: TechData): PageDef {
   const path = `/hire/${tech.slug}/`;
   const singular = tech.role.replace(/s$/, "");
@@ -32,7 +32,7 @@ export function buildHirePage(tech: TechData): PageDef {
     {
       type: "logos",
       tone: "muted",
-      title: "Teams That Build With [DevHire]",
+      title: "Teams That Build With [SyntaxHires]",
       caption: "References available on request.",
     },
     {
@@ -119,7 +119,7 @@ export function buildHirePage(tech: TechData): PageDef {
       ],
     },
     {
-      // PLACEHOLDER: DevHire rate card for this role.
+      // PLACEHOLDER: SyntaxHires rate card for this role.
       type: "pricing",
       pad: "xs",
       title: `${singular} [Pricing Tiers]`,
@@ -153,7 +153,7 @@ export function buildHirePage(tech: TechData): PageDef {
       type: "table",
       pad: "xs",
       title: "What Is Included In [The Rate]",
-      columns: ["", "DevHire dedicated developer", "Typical freelancer"],
+      columns: ["", "SyntaxHires dedicated developer", "Typical freelancer"],
       highlight: 1,
       rows: [
         ["Screening and onboarding", "Included", "Your time"],

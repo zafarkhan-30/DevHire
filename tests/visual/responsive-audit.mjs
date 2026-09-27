@@ -31,7 +31,7 @@ for (const width of widths) {
     hasTouch: touch,
   });
   const page = await context.newPage();
-  await page.addInitScript(() => localStorage.setItem("devhire-consent", "rejected"));
+  await page.addInitScript(() => localStorage.setItem("syntaxhires-consent", "rejected"));
   await page.goto(base, { waitUntil: "load" });
   await page.evaluate(() => document.fonts.ready);
   await page.waitForTimeout(500);

@@ -6,7 +6,7 @@ const page: PageDef = {
   meta: {
     title: "Sitemap",
     description:
-      "Every page on the DevHire site in one list: company, services, developers by technology, comparisons, guides, resources and legal pages.",
+      "Every page on the SyntaxHires site in one list: company, services, developers by technology, comparisons, guides, resources and legal pages.",
   },
   blocks: [
     {

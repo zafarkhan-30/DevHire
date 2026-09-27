@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const STORAGE_KEY = "devhire-consent";
+const STORAGE_KEY = "syntaxhires-consent";
 
 export type Consent = "accepted" | "rejected";
 
@@ -30,7 +30,7 @@ export function CookieBanner() {
     } catch {
       // Storage unavailable: the choice applies to this page view only.
     }
-    window.dispatchEvent(new CustomEvent("devhire:consent", { detail: value }));
+    window.dispatchEvent(new CustomEvent("syntaxhires:consent", { detail: value }));
     setVisible(false);
   }
 

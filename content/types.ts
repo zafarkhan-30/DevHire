@@ -92,7 +92,7 @@ export type TableBlock = Section & {
   type: "table";
   columns: string[];
   rows: string[][];
-  // Zero-based index of the column to emphasise (usually the DevHire column).
+  // Zero-based index of the column to emphasise (usually the SyntaxHires column).
   highlight?: number;
   footnote?: string;
 };
@@ -234,6 +234,6 @@ export type TechData = {
   versions: { version: string; year: string; tag: string; text: string }[]; // 4 to 6, factual history
   chooseWhen: TitledText[]; // 4
   chooseNot: TitledText[]; // 3 or 4
-  whyUs: TitledText[]; // 4 or 5, about how DevHire works, no numbers
+  whyUs: TitledText[]; // 4 or 5, about how SyntaxHires works, no numbers
   faqs: { q: string; a: string }[]; // 5 or 6
 };

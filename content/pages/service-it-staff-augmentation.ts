@@ -1,6 +1,6 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values DevHire must confirm before launch.
+// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
 const page: PageDef = {
   path: "/service/it-staff-augmentation-services/",
   meta: {
@@ -20,7 +20,7 @@ const page: PageDef = {
         { label: "Get Developer Profiles", href: "/contact-us/" },
         { label: "Estimate Cost", href: "/resources/developer-cost-estimate/", variant: "outline-light" },
       ],
-      // PLACEHOLDER: replace each "—" with a verified DevHire figure, or remove the tile.
+      // PLACEHOLDER: replace each "—" with a verified SyntaxHires figure, or remove the tile.
       stats: [
         { value: "—", label: "Developers placed" },
         { value: "—", label: "Time to first shortlist" },
@@ -209,9 +209,9 @@ const page: PageDef = {
       highlight: 1,
       rows: [
         ["Shape", "Individual developers added to your team", "A complete team working only on your product"],
-        ["Who leads delivery", "Your lead", "Your lead, or a DevHire lead who reports to you"],
+        ["Who leads delivery", "Your lead", "Your lead, or a SyntaxHires lead who reports to you"],
         ["Best for", "Filling skill or capacity gaps", "Ongoing product development"],
-        ["Management effort on your side", "Higher, as you run the work directly", "Lower if a DevHire lead is included"],
+        ["Management effort on your side", "Higher, as you run the work directly", "Lower if a SyntaxHires lead is included"],
         ["Commercial model", "Monthly per developer", "Monthly per developer"],
         ["Terms", "Month to month", "Month to month"],
       ],
@@ -236,7 +236,7 @@ const page: PageDef = {
       items: [
         {
           q: "What is IT staff augmentation?",
-          a: "It is a way to add developers to your existing team for as long as you need them. The developers are employed by DevHire and work under your direction, in your repository and tools.",
+          a: "It is a way to add developers to your existing team for as long as you need them. The developers are employed by SyntaxHires and work under your direction, in your repository and tools.",
         },
         {
           q: "Can I interview developers before I commit?",

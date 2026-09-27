@@ -1,6 +1,6 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values DevHire must confirm before launch.
+// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
 const page: PageDef = {
   path: "/hire/ai-developers/",
   meta: {
@@ -24,7 +24,7 @@ const page: PageDef = {
       note: "You interview the developer before any contract.",
     },
     {
-      // PLACEHOLDER: five verified DevHire figures for AI work. Replace every value and confirm each label.
+      // PLACEHOLDER: five verified SyntaxHires figures for AI work. Replace every value and confirm each label.
       type: "stats",
       tone: "muted",
       pad: "xs",
@@ -214,7 +214,7 @@ const page: PageDef = {
       footnote: "Developer engagements run month to month with no exit fee. If the fit is wrong, we replace the developer.",
     },
     {
-      // PLACEHOLDER: replace with real developer profiles once DevHire supplies them and each developer has approved publication.
+      // PLACEHOLDER: replace with real developer profiles once SyntaxHires supplies them and each developer has approved publication.
       type: "cards",
       tone: "muted",
       title: "Developer [Profiles]",

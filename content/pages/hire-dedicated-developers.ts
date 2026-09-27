@@ -1,6 +1,6 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values DevHire must confirm before launch.
+// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
 const page: PageDef = {
   path: "/hire/dedicated-developers/",
   meta: {
@@ -141,7 +141,7 @@ const page: PageDef = {
         { tag: "Access", title: "Accounts and environment", text: "NDA signed. Repository, tracker and chat access granted. The developer sets up a working local environment and notes any gaps in the setup guide." },
         { tag: "Context", title: "Walkthrough with your team", text: "Your lead explains the architecture, the release process and the current priorities. The developer asks questions and writes down what they learn." },
         { tag: "First task", title: "A small, real change", text: "The developer picks up a ticket small enough to finish, opens a pull request and goes through your normal review." },
-        { tag: "Review", title: "First-week check-in", text: "You, the developer and DevHire discuss what went well and what needs to change. You decide whether to continue." },
+        { tag: "Review", title: "First-week check-in", text: "You, the developer and SyntaxHires discuss what went well and what needs to change. You decide whether to continue." },
       ],
       footnote: "This describes activities, not a guaranteed result.",
     },
@@ -150,7 +150,7 @@ const page: PageDef = {
       title: "Roles And [Responsibilities]",
       align: "center",
       intro: "Who does what, stated before work starts.",
-      columns: ["Area", "You", "DevHire"],
+      columns: ["Area", "You", "SyntaxHires"],
       highlight: 2,
       rows: [
         ["Hiring decision", "Interview and choose the developer", "Source, screen and present candidates"],
@@ -171,9 +171,9 @@ const page: PageDef = {
       paragraphs: [
         "You pay a monthly figure per developer. That figure depends on four things: seniority, how scarce the skill is, how many developers you need and how much overlap you want with your working hours.",
         "Seniority has the largest effect. A senior engineer costs more per month and usually needs less direction. Scarce skills cost more than common ones. Larger teams may need a lead, which adds a role.",
-        "We quote in writing before you commit to anything. The ranges below will be filled in once DevHire has confirmed its rate card.",
+        "We quote in writing before you commit to anything. The ranges below will be filled in once SyntaxHires has confirmed its rate card.",
       ],
-      // PLACEHOLDER: monthly cost ranges per seniority level from DevHire's confirmed rate card. Replace every "—".
+      // PLACEHOLDER: monthly cost ranges per seniority level from SyntaxHires' confirmed rate card. Replace every "—".
       list: [
         "Junior developer, per month: —",
         "Mid-level developer, per month: —",

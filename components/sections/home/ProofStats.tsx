@@ -7,7 +7,7 @@ export function ProofStats() {
   if (stats.length === 0) return null;
 
   return (
-    <section className="section section--navy proofstats" aria-label="DevHire in numbers">
+    <section className="section section--navy proofstats" aria-label="SyntaxHires in numbers">
       <div className="container">
         <ul className="reviews__stats">
           {stats.map((stat) => (

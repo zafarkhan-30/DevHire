@@ -27,7 +27,7 @@ const page: PageDef = {
       paragraphs: [
         "A dedicated team is a group of engineers who work only on your product and operate as a unit. You set the goals and priorities. The team plans and delivers against them, with a lead if you want one. It suits work that needs its own rhythm and ownership.",
         "Staff augmentation places individual engineers inside your existing team. They attend your stand-ups, follow your process and take tasks from your lead. It suits teams that already work well and need more hands or a missing skill.",
-        "In both models the engineers are employed by DevHire, work in your repository and tools, and are interviewed by you before any contract. The models differ in structure, not in the quality of the people.",
+        "In both models the engineers are employed by SyntaxHires, work in your repository and tools, and are interviewed by you before any contract. The models differ in structure, not in the quality of the people.",
       ],
       aside: {
         title: "In short",
@@ -46,7 +46,7 @@ const page: PageDef = {
       columns: ["", "Dedicated team", "Staff augmentation"],
       rows: [
         ["What you add", "A team that works as a unit", "Individual engineers"],
-        ["Who directs daily work", "You, with a DevHire lead if wanted", "Your own lead or manager"],
+        ["Who directs daily work", "You, with a SyntaxHires lead if wanted", "Your own lead or manager"],
         ["Who plans the work", "The team, against goals you set", "Your existing team"],
         ["Best for", "Ongoing product development or a new workstream", "Skill gaps and extra capacity in a working team"],
         ["Management load on you", "Lower day to day, higher at goal-setting", "Higher day to day"],
@@ -144,7 +144,7 @@ const page: PageDef = {
         },
         {
           q: "Who manages the engineers in each model?",
-          a: "In staff augmentation, your lead manages them directly. In a dedicated team, you set the goals and can either manage the team yourself or have a DevHire lead run delivery and report to you.",
+          a: "In staff augmentation, your lead manages them directly. In a dedicated team, you set the goals and can either manage the team yourself or have a SyntaxHires lead run delivery and report to you.",
         },
         {
           q: "Do I interview the engineers in both models?",

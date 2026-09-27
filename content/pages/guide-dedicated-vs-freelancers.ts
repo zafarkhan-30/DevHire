@@ -44,7 +44,7 @@ const page: PageDef = {
       title: "Total Cost Of [Ownership]",
       align: "center",
       intro: "Costs are described by who carries them, not by amount. Your own figures will depend on the role and the engagement.",
-      columns: ["Cost item", "Freelancer", "Dedicated developer from DevHire"],
+      columns: ["Cost item", "Freelancer", "Dedicated developer from SyntaxHires"],
       highlight: 2,
       rows: [
         ["Rate for the work", "Often lower per hour", "Fixed monthly fee"],
@@ -121,7 +121,7 @@ const page: PageDef = {
     {
       type: "stats",
       tone: "muted",
-      title: "DevHire Terms At A [Glance]",
+      title: "SyntaxHires Terms At A [Glance]",
       align: "center",
       items: [
         { value: "Monthly", label: "Contract term", note: "Engagements run month to month" },

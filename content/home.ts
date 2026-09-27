@@ -1,4 +1,4 @@
-// Home page content. Copy is original to DevHire.
+// Home page content. Copy is original to SyntaxHires.
 // Items marked PLACEHOLDER need real, verifiable data before launch.
 
 export const hero = {
@@ -57,7 +57,7 @@ export const hero = {
 
 export const trustedBy = {
   // Words wrapped in [] render in the accent color.
-  title: "Teams That Build With [DevHire] Engineers Across [Industries] And Time Zones",
+  title: "Teams That Build With [SyntaxHires] Engineers Across [Industries] And Time Zones",
   caption: "From first-product startups to established engineering organisations. References on request.",
   // Real clients only, with their permission. Files live in /public/images/Partners; use a copy with the empty border trimmed off so every logo lines up at the same height.
   logos: [
@@ -90,7 +90,7 @@ export const compare = {
     ],
   },
   ours: {
-    heading: "DevHire",
+    heading: "SyntaxHires",
     sub: "How we work",
     rows: [
       { title: "Nothing to pay upfront.", text: "No deposit and no minimum term. Interview the developer first, then decide." },
@@ -102,7 +102,7 @@ export const compare = {
     ],
   },
   callout:
-    "Good developers exist on every platform. The difference is the incentive. When a vendor bills by the hour, more hours are good for the vendor whether or not you get value. DevHire is set up so that we do well only when your sprint ships.",
+    "Good developers exist on every platform. The difference is the incentive. When a vendor bills by the hour, more hours are good for the vendor whether or not you get value. SyntaxHires is set up so that we do well only when your sprint ships.",
 };
 
 export const midCta = {
@@ -115,7 +115,7 @@ export const midCta = {
 export const reasons = {
   title: "Why Engineering Leaders Work With [Our Developers]",
   intro:
-    "Teams use DevHire to add remote developers, build a dedicated squad or hand over a full build. Month-to-month terms. No exit fees.",
+    "Teams use SyntaxHires to add remote developers, build a dedicated squad or hand over a full build. Month-to-month terms. No exit fees.",
   cards: [
     {
       icon: "zap",
@@ -250,7 +250,7 @@ export const technologies = {
 export const caseStudies = {
   eyebrow: "Case Studies",
   title: "How An Engagement [Runs]",
-  intro: "Two sample engagements showing how a DevHire team is shaped, how it works and what you get at the end.",
+  intro: "Two sample engagements showing how a SyntaxHires team is shaped, how it works and what you get at the end.",
   // SAMPLE CONTENT: these are illustrative engagements, not client stories. They carry no client
   // names, results or quotes. Replace each with a real, client-approved case study when available.
   items: [
@@ -259,7 +259,7 @@ export const caseStudies = {
       tag: "Sample engagement",
       title: "Adding a dedicated React and Node.js squad to a growing SaaS product",
       summary:
-        "A product company has more roadmap than engineers. A three-person DevHire squad joins their sprints, works in their repository and takes ownership of the reporting and billing screens, so the in-house team can focus on the core platform.",
+        "A product company has more roadmap than engineers. A three-person SyntaxHires squad joins their sprints, works in their repository and takes ownership of the reporting and billing screens, so the in-house team can focus on the core platform.",
       metrics: [
         { icon: "users", value: "3", label: "Engineers in the squad" },
         { icon: "code", value: "React · Node", label: "Stack" },
@@ -278,7 +278,7 @@ export const caseStudies = {
       tag: "Sample engagement",
       title: "Moving an ageing .NET billing system to the cloud one module at a time",
       summary:
-        "A company depends on a billing platform that few people can still change safely. A DevHire team maps the system, moves one module at a time behind a stable interface and runs old and new side by side before each cut-over.",
+        "A company depends on a billing platform that few people can still change safely. A SyntaxHires team maps the system, moves one module at a time behind a stable interface and runs old and new side by side before each cut-over.",
       metrics: [
         { icon: "users", value: "4", label: "Engineers in the team" },
         { icon: "cloud", value: ".NET → Cloud", label: "Migration path" },

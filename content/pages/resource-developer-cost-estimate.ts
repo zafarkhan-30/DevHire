@@ -1,6 +1,6 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values DevHire must confirm before launch.
+// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
 const page: PageDef = {
   path: "/resources/developer-cost-estimate/",
   meta: {
@@ -74,14 +74,14 @@ const page: PageDef = {
       title: "Where The [Numbers] Come From",
       align: "left",
       paragraphs: [
-        "The calculator uses two sources. The DevHire rate comes from our own rate card or from the quote we gave you. Every other figure is one you enter yourself.",
+        "The calculator uses two sources. The SyntaxHires rate comes from our own rate card or from the quote we gave you. Every other figure is one you enter yourself.",
         "We do not supply salary data, market averages or benchmark rates. You know your own costs better than a published survey does, and the result is only as accurate as the figures you put in.",
         "The calculation is simple arithmetic and the method is described on this page. If you want us to check your inputs, send them with the quote request below.",
       ],
-      // PLACEHOLDER: confirm the DevHire rate card and set devhireMonthlyRate in content/calculator.ts. Until then the DevHire rate field starts empty.
+      // PLACEHOLDER: confirm the SyntaxHires rate card and set syntaxhiresMonthlyRate in content/calculator.ts. Until then the SyntaxHires rate field starts empty.
       aside: {
         title: "Inputs",
-        items: ["DevHire rate: our rate card or your quote", "Salary and overhead: your entry", "Recruitment cost: your entry", "Freelancer rate: your entry", "Productive hours: your entry"],
+        items: ["SyntaxHires rate: our rate card or your quote", "Salary and overhead: your entry", "Recruitment cost: your entry", "Freelancer rate: your entry", "Productive hours: your entry"],
       },
     },
     {
@@ -109,7 +109,7 @@ const page: PageDef = {
         },
         {
           q: "Is the result a quote?",
-          a: "No. It is arithmetic on the figures you enter, for comparison only. A quote from DevHire is given in writing after we understand the role.",
+          a: "No. It is arithmetic on the figures you enter, for comparison only. A quote from SyntaxHires is given in writing after we understand the role.",
         },
         {
           q: "Which currency should I use?",

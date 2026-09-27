@@ -170,7 +170,7 @@ const page: PageDef = {
           a: "Capture the current behaviour in tests and documentation. Whichever approach you choose, this reduces the chance of losing rules that the business depends on.",
         },
         {
-          q: "Who owns the code that DevHire engineers write?",
+          q: "Who owns the code that SyntaxHires engineers write?",
           a: "You do. You own all code and IP. An NDA is signed before anyone has code access, and the work happens in your repository and tools.",
         },
       ],

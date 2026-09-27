@@ -1,6 +1,6 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values DevHire must confirm before launch.
+// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
 // No market rates are stated on this page. Every rate or currency value is "—" until the rate card is supplied.
 const page: PageDef = {
   path: "/hire/dedicated-developers/offshore-developers-cost/",
@@ -41,24 +41,24 @@ const page: PageDef = {
       tone: "dark",
       title: "Cost Components And Their [Drivers]",
       align: "center",
-      intro: "The final column will show DevHire figures once the rate card is confirmed. Components paid in your own time are marked as such.",
-      columns: ["Cost component", "What drives it", "How to control it", "DevHire figure"],
+      intro: "The final column will show SyntaxHires figures once the rate card is confirmed. Components paid in your own time are marked as such.",
+      columns: ["Cost component", "What drives it", "How to control it", "SyntaxHires figure"],
       highlight: 3,
       rows: [
-        // PLACEHOLDER: DevHire rate card needed
+        // PLACEHOLDER: SyntaxHires rate card needed
         ["Developer rate", "Seniority, stack, location and demand for the skill", "Hire the level the work needs", "—"],
         ["Management time", "Clarity of requirements, team size and experience of your lead", "Written specifications and a named owner for priorities", "Your time"],
-        // PLACEHOLDER: DevHire rate card needed
+        // PLACEHOLDER: SyntaxHires rate card needed
         ["Tooling and licences", "Seats for source control, build systems, environments and communication tools", "Review seats and access when the team changes", "—"],
         ["Onboarding", "State of your documentation, setup complexity and access approvals", "Setup scripts and an up-to-date guide to the codebase", "Your time"],
-        // PLACEHOLDER: DevHire rate card needed
+        // PLACEHOLDER: SyntaxHires rate card needed
         ["Overlap hours", "Time-zone gap and the number of live meetings you require", "Agree a fixed overlap window and use written updates", "—"],
         ["Turnover", "Engagement length, quality of the work and how the engineer is treated", "Include remote engineers in planning and give feedback early", "Your time to re-onboard"],
-        // PLACEHOLDER: DevHire rate card needed
+        // PLACEHOLDER: SyntaxHires rate card needed
         ["Replacement", "Search, interviews, handover and lost context", "Keep decisions and setup documented in your own systems", "—"],
         ["Rework", "Unclear requirements and late review", "Small changes reviewed often", "Your time"],
       ],
-      footnote: "DevHire replaces a developer if the fit is wrong. You interview the replacement before they start.",
+      footnote: "SyntaxHires replaces a developer if the fit is wrong. You interview the replacement before they start.",
     },
     {
       type: "cards",
@@ -107,16 +107,16 @@ const page: PageDef = {
     {
       type: "stats",
       tone: "dark",
-      title: "DevHire [Rate Card]",
+      title: "SyntaxHires [Rate Card]",
       align: "center",
       items: [
-        // PLACEHOLDER: DevHire rate card needed
+        // PLACEHOLDER: SyntaxHires rate card needed
         { value: "—", label: "Monthly rate, junior engineer" },
-        // PLACEHOLDER: DevHire rate card needed
+        // PLACEHOLDER: SyntaxHires rate card needed
         { value: "—", label: "Monthly rate, mid-level engineer" },
-        // PLACEHOLDER: DevHire rate card needed
+        // PLACEHOLDER: SyntaxHires rate card needed
         { value: "—", label: "Monthly rate, senior engineer" },
-        // PLACEHOLDER: DevHire rate card needed
+        // PLACEHOLDER: SyntaxHires rate card needed
         { value: "—", label: "Monthly rate, delivery lead" },
       ],
     },
@@ -187,7 +187,7 @@ const page: PageDef = {
           a: "It differs between teams. Management time and turnover are the two that are most often left out of a budget. Both depend heavily on how well requirements and decisions are documented.",
         },
         {
-          q: "How does DevHire handle replacement?",
+          q: "How does SyntaxHires handle replacement?",
           a: "If the fit is wrong, we replace the developer. You interview the replacement before they start. Engagements run month to month with no exit fee.",
         },
         {

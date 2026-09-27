@@ -116,11 +116,11 @@ const page: PageDef = {
       title: "Managed Pods vs [Freelancers]",
       intro: "Both can write good code. The difference is what stands behind the developer.",
       align: "center",
-      columns: ["", "DevHire managed pod", "Freelancer"],
+      columns: ["", "SyntaxHires managed pod", "Freelancer"],
       highlight: 1,
       rows: [
         ["Focus", "One developer works on one client", "Often split between several clients"],
-        ["Screening", "Screened by DevHire, then interviewed by you", "Screened by you alone"],
+        ["Screening", "Screened by SyntaxHires, then interviewed by you", "Screened by you alone"],
         ["If the developer leaves", "Documented handover and a replacement", "You start the search again"],
         ["Contract terms", "Month to month, no exit fee", "Varies by person"],
         ["Code and IP", "Assigned to you by contract", "Depends on the agreement you write"],

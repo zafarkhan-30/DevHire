@@ -5,7 +5,7 @@ const page: PageDef = {
   meta: {
     title: "Thank You",
     description:
-      "Thank you for contacting DevHire. We have received your request and will reply within two working days. Here is what happens next.",
+      "Thank you for contacting SyntaxHires. We have received your request and will reply within two working days. Here is what happens next.",
   },
   blocks: [
     {

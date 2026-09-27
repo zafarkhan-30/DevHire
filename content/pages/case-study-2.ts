@@ -8,7 +8,7 @@ const page: PageDef = {
     title: "Case Study 2",
     // PLACEHOLDER: one sentence naming the industry, the problem and the result.
     description:
-      "Case study template. It will set out the client's starting point, the work the DevHire team did and the measured result, once the client has approved it.",
+      "Case study template. It will set out the client's starting point, the work the SyntaxHires team did and the measured result, once the client has approved it.",
   },
   blocks: [
     {
@@ -33,7 +33,7 @@ const page: PageDef = {
         { label: "Industry", value: "—" },
         // PLACEHOLDER: the client's country or region, if approved for publication.
         { label: "Location", value: "—" },
-        // PLACEHOLDER: number and roles of DevHire engineers.
+        // PLACEHOLDER: number and roles of SyntaxHires engineers.
         { label: "Team size", value: "—" },
         // PLACEHOLDER: length of the engagement.
         { label: "Duration", value: "—" },
@@ -74,7 +74,7 @@ const page: PageDef = {
       align: "left",
       paragraphs: [
         "This section explains the approach step by step. Describe the first thing the team did and why, then each stage that followed.",
-        "Show how the DevHire engineers fitted into the client's process: planning, code review, releases and reporting. Be open about trade-offs and anything that had to change.",
+        "Show how the SyntaxHires engineers fitted into the client's process: planning, code review, releases and reporting. Be open about trade-offs and anything that had to change.",
       ],
       list: ["Team shape and roles", "The approach, stage by stage", "Trade-offs and the reasons for them", "How progress was reported"],
     },

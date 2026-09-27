@@ -180,7 +180,7 @@ const page: PageDef = {
           a: "Often, yes. Changes are made in small steps behind tests and released through the normal process. Some changes, particularly to data structures, need careful sequencing. No approach removes all risk.",
         },
         {
-          q: "How do DevHire engineers take part?",
+          q: "How do SyntaxHires engineers take part?",
           a: "They join your team and work in your repository and tools. You interview each developer before any contract. You own all code and IP.",
         },
       ],

@@ -1,5 +1,5 @@
 // Single source of truth for brand, navigation, footer and global proof numbers.
-// Values marked PLACEHOLDER must be replaced with verified DevHire data before launch.
+// Values marked PLACEHOLDER must be replaced with verified SyntaxHires data before launch.
 
 export type NavLink = { label: string; href: string };
 
@@ -21,11 +21,11 @@ export type MegaMenu = {
 };
 
 export const site = {
-  name: "DevHire",
+  name: "SyntaxHires",
   tagline: "Engineering teams, on demand.",
-  url: "https://devhire.example", // PLACEHOLDER
+  url: "https://syntaxhires.example", // PLACEHOLDER
   description:
-    "DevHire places vetted remote engineers and dedicated teams inside your sprint. Shortlist in days, no long contracts, no idle-hour billing.",
+    "SyntaxHires places vetted remote engineers and dedicated teams inside your sprint. Shortlist in days, no long contracts, no idle-hour billing.",
   primaryCta: { label: "Talk To An Engineer", href: "/contact-us/" },
   whatsapp: "", // PLACEHOLDER: international number, digits only. Empty hides the button.
   social: [
@@ -33,14 +33,14 @@ export const site = {
     { label: "Instagram", href: "#", icon: "instagram" },
     { label: "YouTube", href: "#", icon: "youtube" },
   ],
-  // Contract terms shown in the top bar. Add certifications here only once DevHire holds them.
+  // Contract terms shown in the top bar. Add certifications here only once SyntaxHires holds them.
   trustBadges: [
     { label: "NDA", sub: "Before code access" },
     { label: "IP", sub: "Assigned to you" },
     { label: "Terms", sub: "Month to month" },
     { label: "Exit", sub: "No penalty" },
   ] as { label: string; sub?: string }[],
-  // DevHire proof numbers, shown in the stats row on the home page.
+  // SyntaxHires proof numbers, shown in the stats row on the home page.
   // Use only figures you can back up. A value left as "—" is hidden; the row appears once any value is filled in.
   // `stars` draws five stars above the value (use it for the rating).
   stats: [
@@ -180,7 +180,7 @@ export const megaMenus: MegaMenu[] = [
       {
         heading: "About Us",
         links: [
-          { label: "About DevHire", href: "/about/" },
+          { label: "About SyntaxHires", href: "/about/" },
           { label: "Leadership", href: "/leadership/" },
           { label: "Company Insights", href: "/insights/" },
         ],

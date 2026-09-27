@@ -43,7 +43,7 @@ async function audit(route, width) {
     // Missing placeholder images are expected until real assets are supplied.
     if (message.type() === "error" && !/Failed to load resource/.test(message.text())) errors.push(message.text());
   });
-  await page.addInitScript(() => localStorage.setItem("devhire-consent", "rejected"));
+  await page.addInitScript(() => localStorage.setItem("syntaxhires-consent", "rejected"));
   const response = await page.goto(base + route, { waitUntil: "load" });
   await page.evaluate(() => document.fonts.ready);
   await page.waitForTimeout(150);

@@ -1,12 +1,12 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values DevHire must confirm before launch.
+// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
 const page: PageDef = {
   path: "/how-we-vet/",
   meta: {
     title: "How We Vet Developers",
     description:
-      "How DevHire screens developers for real production work: code review, system thinking, communication and a practical task, before you interview anyone.",
+      "How SyntaxHires screens developers for real production work: code review, system thinking, communication and a practical task, before you interview anyone.",
   },
   blocks: [
     {
@@ -62,7 +62,7 @@ const page: PageDef = {
         "A client on month-to-month terms with no exit fee can leave at any point. When they stay, it is because the developer is doing useful work. That makes engagement length an honest measure of fit.",
         "We track it for that reason, and we use what we learn to adjust how we screen.",
       ],
-      // PLACEHOLDER: DevHire's measured average engagement length.
+      // PLACEHOLDER: SyntaxHires' measured average engagement length.
       aside: { title: "Average engagement length", items: ["—"] },
     },
     {
