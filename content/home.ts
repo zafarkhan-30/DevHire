@@ -14,7 +14,7 @@ export const hero = {
       cta: { label: "View Developer Profiles", href: "/technologies/" },
       micro: "Tell us the stack. Meet the shortlist. Start this month.",
       chips: ["Works inside your tools", "No bench-time billing", "Scale up or down monthly"],
-      image: "/images/Hero-section-1.jpg",
+      image: "",
       tone: "amber",
     },
     {
