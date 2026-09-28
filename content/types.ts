@@ -214,16 +214,19 @@ export type SavingsBlock = Section & {
   note: string;
 };
 
-export type Block =
+// draft: true hides a block until it holds real content (templates, sample results, unverified figures).
+export type Block = (
   | HeroBlock | PainHookBlock | LogosBlock | CardsBlock | SplitBlock | TableBlock | StepsBlock | StatsBlock
   | TabsBlock | QuoteBlock | AccordionBlock | VersionsBlock | TestimonialsBlock | PricingBlock | QuizBlock
   | FormBlock | CtaBlock | InsightsBlock | FaqBlock | TextBlock | LinkGridBlock | PeopleBlock | JobsBlock
-  | CaseMetaBlock | PdfGateBlock | CalculatorBlock | MarqueeBlock | SavingsBlock;
+  | CaseMetaBlock | PdfGateBlock | CalculatorBlock | MarqueeBlock | SavingsBlock
+) & { draft?: boolean };
 
 export type PageDef = {
   // URL path with leading and trailing slash, e.g. "/service/dedicated-developers/"
   path: string;
-  meta: { title: string; description: string };
+  // noindex keeps a page out of search results and the sitemap (e.g. while it waits for real content).
+  meta: { title: string; description: string; noindex?: boolean };
   blocks: Block[];
 };
 

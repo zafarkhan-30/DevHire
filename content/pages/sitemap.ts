@@ -159,7 +159,6 @@ const page: PageDef = {
             { label: "Developer Cost Estimate", href: "/resources/developer-cost-estimate/" },
             { label: "Legacy Risk Assessment", href: "/resources/legacy-risk-assessment/" },
             { label: "Our Work", href: "/case-study/our-work/" },
-            { label: "Case Studies", href: "/case-study/" },
             { label: "Insights", href: "/insights/" },
             { label: "FAQs", href: "/faq/" },
             { label: "Sitemap", href: "/sitemap/" },

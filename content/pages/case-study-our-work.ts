@@ -18,14 +18,26 @@ const page: PageDef = {
       title: "Work We Have [Delivered]",
       text: "Each case study sets out where the client started, what the team changed and what happened next. We publish only what the client has approved.",
       ctas: [
-        { label: "See Featured Work", href: "#featured" },
+        { label: "Case Studies", href: "#featured" },
         { label: "Talk To An Engineer", href: "/contact-us/", variant: "outline" },
       ],
     },
     {
+      type: "text",
+      id: "featured",
+      tone: "muted",
+      title: "Case Studies [Coming Soon]",
+      align: "center",
+      paragraphs: [
+        "We publish a case study only once the client has approved every word and figure in it. They will appear here as they are approved.",
+        "In the meantime, we are happy to talk you through similar work on a call.",
+      ],
+      ctas: [{ label: "Ask About Similar Work", href: "/contact-us/" }],
+    },
+    {
       // PLACEHOLDER: two real, client-approved case studies with headline, summary and one measured result each.
       type: "cards",
-      id: "featured",
+      draft: true, // hidden until real content replaces the template
       tone: "muted",
       title: "Featured [Work]",
       align: "center",
@@ -52,11 +64,11 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: client logos, each approved in writing for public use. Do not add badges unless SyntaxHires holds them.
+      // Logos come from trustedBy.logos in content/home.ts. Do not add badges unless SyntaxHires holds them.
       type: "logos",
       title: "Teams We Have [Worked With]",
       align: "center",
-      caption: "Client logos appear here once each client has approved their use.",
+      caption: "References on request.",
     },
     {
       type: "cards",

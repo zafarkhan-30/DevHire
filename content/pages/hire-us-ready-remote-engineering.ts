@@ -164,6 +164,7 @@ const page: PageDef = {
     {
       // PLACEHOLDER: replace with real client results approved in writing. Do not publish these generic cards.
       type: "cards",
+      draft: true, // hidden until real content replaces the template
       tone: "dark",
       title: "Client [Results]",
       align: "center",

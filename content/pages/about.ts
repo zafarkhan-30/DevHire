@@ -38,6 +38,7 @@ const page: PageDef = {
     {
       // PLACEHOLDER: founders should replace these four steps with the real SyntaxHires story.
       type: "steps",
+      draft: true, // hidden until real content replaces the template
       tone: "muted",
       layout: "list",
       title: "Our [Story]",
@@ -161,7 +162,7 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: client logos, shown only with each client's permission.
+      // Logos come from trustedBy.logos in content/home.ts (real clients, with permission).
       type: "logos",
       title: "Teams That Build With [SyntaxHires]",
       caption: "References on request.",

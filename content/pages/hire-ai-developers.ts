@@ -216,6 +216,7 @@ const page: PageDef = {
     {
       // PLACEHOLDER: replace with real developer profiles once SyntaxHires supplies them and each developer has approved publication.
       type: "cards",
+      draft: true, // hidden until real content replaces the template
       tone: "muted",
       title: "Developer [Profiles]",
       align: "center",

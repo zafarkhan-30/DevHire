@@ -189,6 +189,7 @@ const page: PageDef = {
     {
       // PLACEHOLDER: replace with three real, client-approved outcomes. Do not publish these generic cards.
       type: "cards",
+      draft: true, // hidden until real content replaces the template
       tone: "dark",
       title: "Recent [Outcomes]",
       align: "center",

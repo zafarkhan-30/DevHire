@@ -282,6 +282,7 @@ const page: PageDef = {
     {
       // PLACEHOLDER: anonymised outcomes. Replace every "—" with verified figures from approved engagements, or remove this block.
       type: "text",
+      draft: true, // hidden until real content replaces the template
       tone: "dark",
       eyebrow: "Outcomes",
       title: "Measured [Outcomes]",

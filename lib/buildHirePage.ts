@@ -166,6 +166,7 @@ export function buildHirePage(tech: TechData): PageDef {
     {
       // PLACEHOLDER: a real, client-approved outcome for this technology.
       type: "cards",
+      draft: true, // hidden until real content replaces the template
       pad: "xs",
       title: "Case [Outcome]",
       columns: 3,

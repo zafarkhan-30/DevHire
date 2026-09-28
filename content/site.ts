@@ -200,7 +200,7 @@ export const megaMenus: MegaMenu[] = [
       {
         heading: "Proof & Comparison",
         links: [
-          { label: "Case Studies", href: "/case-study/our-work/" },
+          { label: "Our Work", href: "/case-study/our-work/" },
           { label: "Comparison Guides", href: "/comparison-guides/" },
         ],
       },
@@ -316,7 +316,7 @@ export const footer = {
     {
       heading: "Resources",
       links: [
-        { label: "Case Studies", href: "/case-study/our-work/" },
+        { label: "Our Work", href: "/case-study/our-work/" },
         { label: "FAQs", href: "/faq/" },
       ],
     },

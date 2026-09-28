@@ -123,6 +123,7 @@ const page: PageDef = {
     {
       // PLACEHOLDER: reference client outline. Replace every "—" with verified details and confirm the client has approved the wording.
       type: "text",
+      draft: true, // hidden until real content replaces the template
       tone: "navy",
       eyebrow: "Reference outline",
       title: "A Reference [Engagement]",

@@ -158,6 +158,7 @@ const page: PageDef = {
     {
       // PLACEHOLDER: anonymised case outline. Replace every "—" with verified figures and confirm the client has approved the wording.
       type: "text",
+      draft: true, // hidden until real content replaces the template
       eyebrow: "Case outline",
       title: "A Platform With [No Maintenance Window]",
       align: "left",

@@ -5,6 +5,7 @@ const page: PageDef = {
   path: "/case-study/",
   meta: {
     title: "Case Studies",
+    noindex: true, // remove once real case studies are published
     description:
       "Case studies from SyntaxHires engagements. Each one sets out the client's starting point, the work the team did and the result, as approved by the client.",
   },
@@ -19,8 +20,20 @@ const page: PageDef = {
       text: "How the work went, told in plain terms. We publish only what the client has approved.",
     },
     {
+      type: "text",
+      tone: "muted",
+      title: "Case Studies [Coming Soon]",
+      align: "center",
+      paragraphs: [
+        "We publish a case study only once the client has approved every word and figure in it. They will appear here as they are approved.",
+        "In the meantime, we are happy to talk you through similar work on a call.",
+      ],
+      ctas: [{ label: "Ask About Similar Work", href: "/contact-us/" }],
+    },
+    {
       // PLACEHOLDER: replace both cards with real, client-approved case studies.
       type: "cards",
+      draft: true, // hidden until real content replaces the template
       tone: "muted",
       columns: 2,
       items: [

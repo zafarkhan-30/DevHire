@@ -118,6 +118,7 @@ const page: PageDef = {
     {
       // PLACEHOLDER: replace with real client results, approved by each client in writing.
       type: "cards",
+      draft: true, // hidden until real content replaces the template
       tone: "muted",
       title: "Client [Results]",
       align: "center",

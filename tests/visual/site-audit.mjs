@@ -10,7 +10,7 @@ import { mkdir } from "node:fs/promises";
 const base = process.env.BASE_URL ?? "http://localhost:3100";
 const out = "reference/build/pages";
 const widths = [375, 768, 1440];
-const extra = ["/thank-you/", "/case-study/case-study-1/", "/case-study/case-study-2/"];
+const extra = ["/thank-you/", "/case-study/"];
 const shots = (process.env.SHOTS ?? "").split(",").filter(Boolean);
 
 await mkdir(out, { recursive: true });

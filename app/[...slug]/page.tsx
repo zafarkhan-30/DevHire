@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: page.meta.description,
     alternates: { canonical: page.path },
     openGraph: { title: page.meta.title, description: page.meta.description, url: page.path },
+    ...(page.meta.noindex ? { robots: { index: false, follow: true } } : {}),
   };
 }
 

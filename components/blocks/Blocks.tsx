@@ -72,7 +72,12 @@ function Shell({
   );
 }
 
-function StatRow({ items }: { items: (Stat & { note?: string })[] }) {
+// A value of "—" means the figure is not verified yet; that tile is left out, and the row too if none remain.
+const realStats = <T extends Stat>(items: T[] = []) => items.filter((item) => item.value.trim() !== "—");
+
+function StatRow({ items: all }: { items: (Stat & { note?: string })[] }) {
+  const items = realStats(all);
+  if (!items.length) return null;
   return (
     <ul className={`statrow statrow--${Math.min(items.length, 5)}`}>
       {items.map((item) => (
@@ -336,6 +341,7 @@ function BlockView({ block }: { block: Block }) {
     }
 
     case "stats":
+      if (!realStats(block.items).length) return null;
       return (
         <Shell block={block} name="stats" pad="md">
           <StatRow items={block.items} />
@@ -555,17 +561,21 @@ function BlockView({ block }: { block: Block }) {
         </section>
       );
 
-    case "text":
+    case "text": {
+      // Lines ending in "—" wait for a verified figure and are left out until then.
+      const list = block.list?.filter((item) => !/—s*$/.test(item));
+      const asideItems = block.aside?.items.filter((item) => !/—s*$/.test(item)) ?? [];
+      const aside = block.aside && asideItems.length ? { ...block.aside, items: asideItems } : null;
       return (
         <Shell block={{ ...block, align: block.align ?? "left" }} name="text">
-          <div className={`textblock${block.aside ? " textblock--aside" : ""}`}>
+          <div className={`textblock${aside ? " textblock--aside" : ""}`}>
             <div className="textblock__body">
               {block.paragraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
-              {block.list?.length ? (
+              {list?.length ? (
                 <ul className="checks">
-                  {block.list.map((item) => (
+                  {list.map((item) => (
                     <li key={item}>
                       <CircleCheck size={18} aria-hidden="true" />
                       {item}
@@ -575,11 +585,11 @@ function BlockView({ block }: { block: Block }) {
               ) : null}
               <Buttons ctas={block.ctas} dark={block.tone === "dark" || block.tone === "navy"} />
             </div>
-            {block.aside ? (
+            {aside ? (
               <aside className="card textblock__aside">
-                <h3 className="card__title">{block.aside.title}</h3>
+                <h3 className="card__title">{aside.title}</h3>
                 <ul className="checks checks--small">
-                  {block.aside.items.map((item) => (
+                  {aside.items.map((item) => (
                     <li key={item}>
                       <Check size={15} aria-hidden="true" />
                       {item}
@@ -591,6 +601,7 @@ function BlockView({ block }: { block: Block }) {
           </div>
         </Shell>
       );
+    }
 
     case "linkGrid":
       return (
@@ -710,9 +721,11 @@ function BlockView({ block }: { block: Block }) {
 export function Blocks({ blocks }: { blocks: Block[] }) {
   return (
     <div className="page">
-      {blocks.map((block, index) => (
-        <BlockView key={index} block={block} />
-      ))}
+      {blocks
+        .filter((block) => !block.draft)
+        .map((block, index) => (
+          <BlockView key={index} block={block} />
+        ))}
     </div>
   );
 }

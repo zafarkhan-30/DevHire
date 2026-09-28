@@ -2,8 +2,7 @@
 import type { PageDef } from "@/content/types";
 import about from "./about";
 import career from "./career";
-import caseStudy1 from "./case-study-1";
-import caseStudy2 from "./case-study-2";
+// case-study-1.ts and case-study-2.ts are templates. Add them back here once they hold real, client-approved stories.
 import caseStudyIndex from "./case-study-index";
 import caseStudyOurWork from "./case-study-our-work";
 import compareInHouseVsOutsourced from "./compare-in-house-vs-outsourced";
@@ -43,8 +42,6 @@ import thankYou from "./thank-you";
 export const pages: PageDef[] = [
   about,
   career,
-  caseStudy1,
-  caseStudy2,
   caseStudyIndex,
   caseStudyOurWork,
   compareInHouseVsOutsourced,

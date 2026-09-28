@@ -42,7 +42,7 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: client logos, shown only with each client's permission.
+      // Logos come from trustedBy.logos in content/home.ts (real clients, with permission).
       type: "logos",
       tone: "muted",
       title: "Teams That Build With [SyntaxHires]",
