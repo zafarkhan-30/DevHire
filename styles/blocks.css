@@ -2071,6 +2071,12 @@
     content: none;
   }
 
+  .dtable td.calc__missing a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
   .dtable td.is-highlight,
   .dtable tr.is-highlight td,
   .dtable tr.is-highlight th {
