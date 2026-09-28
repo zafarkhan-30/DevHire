@@ -5,6 +5,7 @@ import { allPosts, formatDate } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Insights",
+  alternates: { canonical: "/insights/" },
   description: "Practical notes on hiring remote developers, running distributed teams and modernising legacy systems.",
 };
 

@@ -4,6 +4,9 @@ import { Blocks } from "@/components/blocks/Blocks";
 import { AccordionView } from "@/components/blocks/Interactive";
 import { LeadFormCard } from "@/components/blocks/LeadFormCard";
 import { NewsletterForm } from "@/components/layout/NewsletterForm";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { site } from "@/content/site";
+import { article, breadcrumbs, shareImage } from "@/lib/jsonld";
 import { allPosts, findPost, formatDate } from "@/lib/blog";
 import { slugify } from "@/lib/slug";
 
@@ -19,10 +22,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = findPost((await params).slug);
   if (!post) return {};
   return {
-    title: post.title,
+    title: post.seoTitle ?? post.title,
     description: post.excerpt,
     alternates: { canonical: `/insights/${post.slug}/` },
-    openGraph: { type: "article", title: post.title, description: post.excerpt, publishedTime: post.date },
+    openGraph: { type: "article", siteName: site.name, title: post.title, description: post.excerpt, publishedTime: post.date, images: [shareImage] },
   };
 }
 
@@ -33,6 +36,7 @@ export default async function PostPage({ params }: Props) {
 
   return (
     <div className="page">
+      <JsonLd data={[article(post), breadcrumbs(`/insights/${post.slug}/`, post.seoTitle ?? post.title, [{ name: "Insights", path: "/insights/" }])]} />
       <header className="posthead">
         <div className="container">
           <span className="pill">{post.category}</span>

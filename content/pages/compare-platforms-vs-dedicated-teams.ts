@@ -4,7 +4,7 @@ import type { PageDef } from "@/content/types";
 const page: PageDef = {
   path: "/compare/marketplaces-vs-freelance-platforms-vs-dedicated-teams/",
   meta: {
-    title: "Talent Marketplaces vs Freelance Platforms vs Dedicated Teams",
+    title: "Marketplaces vs Freelancers vs Dedicated Teams",
     description:
       "A plain comparison of four ways to hire remote developers: talent marketplaces, freelance platforms, AI-matching networks and a dedicated team. Cost shape, risk, speed and reversibility.",
   },

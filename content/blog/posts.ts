@@ -3,6 +3,8 @@ import type { ComponentType } from "react";
 export type Post = {
   slug: string;
   title: string;
+  // Shorter title for search results and browser tabs, when title is over about 45 characters.
+  seoTitle?: string;
   excerpt: string;
   category: string;
   date: string; // ISO date
@@ -20,6 +22,7 @@ export const posts: Post[] = [
   {
     slug: "brief-a-remote-developer-for-week-one",
     title: "How to brief a remote developer so week one is productive",
+    seoTitle: "How to Brief a Remote Developer for Week One",
     excerpt: "A short checklist covering access, context and a first task that is small enough to finish.",
     category: "Hiring",
     date: "2026-09-22",
@@ -35,6 +38,7 @@ export const posts: Post[] = [
   {
     slug: "staff-augmentation-or-dedicated-team",
     title: "Staff augmentation or a dedicated team: a decision you can make in ten minutes",
+    seoTitle: "Staff Augmentation or a Dedicated Team?",
     excerpt: "Four questions about ownership, runway and management time that settle the choice.",
     category: "Project Management",
     date: "2026-09-15",
@@ -50,6 +54,7 @@ export const posts: Post[] = [
   {
     slug: "signs-your-legacy-platform-is-a-business-risk",
     title: "Signs your legacy platform has become a business risk",
+    seoTitle: "Signs Your Legacy Platform Is a Business Risk",
     excerpt: "What to look for in release frequency, incident history and hiring difficulty.",
     category: "Modernisation",
     date: "2026-09-08",

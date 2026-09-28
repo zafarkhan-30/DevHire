@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { CaseStudies } from "@/components/sections/home/CaseStudies";
 import { Faq } from "@/components/sections/home/Faq";
 import { Guides } from "@/components/sections/home/Guides";
@@ -13,10 +14,16 @@ import { TechTabs } from "@/components/sections/home/TechTabs";
 import { Testimonials } from "@/components/sections/home/Testimonials";
 import { Timeline } from "@/components/sections/home/Timeline";
 import { TrustedBy } from "@/components/sections/home/TrustedBy";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { faq } from "@/content/home";
+import { faqPage } from "@/lib/jsonld";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 export default function HomePage() {
   return (
     <>
+      <JsonLd data={faqPage(faq.items)} />
       <HeroSlider />
       <TrustedBy />
       <MarketCompare />

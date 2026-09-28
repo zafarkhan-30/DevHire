@@ -4,6 +4,8 @@ import { CookieBanner } from "@/components/layout/CookieBanner";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { organization, website } from "@/lib/jsonld";
 import { site } from "@/content/site";
 import "@/styles/tokens.css";
 import "@/styles/base.css";
@@ -26,6 +28,8 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description: site.description,
+  openGraph: { siteName: site.name, type: "website", locale: "en_IN" },
+  twitter: { card: "summary_large_image" },
   icons: {
     // Square icon; favicon.svg in the same folder is the wide logo despite its name.
     icon: [{ url: "/images/gemini-svg.svg", type: "image/svg+xml" }],
@@ -47,6 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="main">{children}</main>
         <Footer />
+        <JsonLd data={[organization(), website()]} />
         <WhatsAppButton />
         <CookieBanner />
       </body>

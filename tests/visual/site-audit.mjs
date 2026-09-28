@@ -2,7 +2,7 @@
 //   npm run build && npx next start -p 3100     (one terminal)
 //   npm run test:site                           (another)
 // Checks: horizontal overflow, elements outside the viewport, touch targets under 44px (phone),
-// exactly one H1, a title, a meta description, console errors, and that every internal link resolves.
+// exactly one H1, a title of 60 characters or less, a meta description, console errors, and that every internal link resolves.
 // Exits 1 on any failure.
 import { chromium } from "@playwright/test";
 import { mkdir } from "node:fs/promises";
@@ -93,6 +93,8 @@ async function audit(route, width) {
   if (width === 1440) {
     if (report.h1 !== 1) problems.push(`h1 count ${report.h1}`);
     if (!report.title) problems.push("no title");
+    // Search results cut titles at about 60 characters.
+    if (report.title && report.title.length > 60) problems.push(`title ${report.title.length} chars: "${report.title}"`);
     if (report.description.length < 30) problems.push("meta description missing or too short");
     if (report.unresolved) problems.push("h1 shows raw [brackets]");
     for (const link of report.links) links.add(link.split("#")[0]);
