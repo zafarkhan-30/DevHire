@@ -15,7 +15,7 @@ export function organization() {
     "@type": "Organization",
     name: site.name,
     url: abs("/"),
-    logo: abs("/images/gemini-svg.svg"),
+    logo: abs("/images/logo-mark-512.png"),
     description: site.description,
     ...(sameAs.length ? { sameAs } : {}),
   };
@@ -72,7 +72,7 @@ export function article(post: { title: string; excerpt: string; date: string; sl
     description: post.excerpt,
     datePublished: post.date,
     url: abs(`/insights/${post.slug}/`),
-    publisher: { "@type": "Organization", name: site.name, logo: { "@type": "ImageObject", url: abs("/images/gemini-svg.svg") } },
+    publisher: { "@type": "Organization", name: site.name, logo: { "@type": "ImageObject", url: abs("/images/logo-mark-512.png") } },
   };
 }
 

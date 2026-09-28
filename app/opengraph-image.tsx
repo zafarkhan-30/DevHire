@@ -23,11 +23,10 @@ export default function OpengraphImage() {
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
-          <svg width="150" height="100" viewBox="8 26 84 56">
-            <path d="M 30 30 L 12 50 L 30 70" fill="none" stroke="#FF4D00" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M 70 30 L 88 50 L 70 70" fill="none" stroke="#FF4D00" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round" />
-            <circle cx="50" cy="42" r="12" fill="#FFFFFF" />
-            <path d="M 32 75 Q 50 50 68 75 Z" fill="#FFFFFF" />
+          <svg width="104" height="104" viewBox="0 0 64 64">
+            <rect width="64" height="64" rx="15" fill="#FFFFFF" />
+            <path d="M24 19 L13 32 L24 45" fill="none" stroke="#153762" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M29 33 L37 41 L52 22" fill="none" stroke="#FF4103" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <div style={{ display: "flex", fontSize: 92, fontWeight: 800, letterSpacing: -2 }}>
             <span>Syntax</span>

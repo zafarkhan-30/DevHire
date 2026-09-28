@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   openGraph: { siteName: site.name, type: "website", locale: "en_IN" },
   twitter: { card: "summary_large_image" },
   icons: {
-    // Square icon; favicon.svg in the same folder is the wide logo despite its name.
-    icon: [{ url: "/images/gemini-svg.svg", type: "image/svg+xml" }],
-    apple: "/images/gemini-svg.svg",
+    // Brand mark (bracket + check). Regenerate the PNGs from logo-mark.svg if it changes.
+    icon: [{ url: "/images/logo-mark.svg", type: "image/svg+xml" }],
+    apple: "/images/apple-touch-icon.png",
   },
 };
 

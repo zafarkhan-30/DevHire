@@ -81,7 +81,7 @@ function layout({ preheader, eyebrow, title, body, footer }: { preheader: string
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#eef1f5"><tr><td align="center" style="padding:28px 12px">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:100%;max-width:600px">
 <tr><td style="background:${NAVY};border-radius:14px 14px 0 0;padding:22px 32px">
-<span style="font-family:${FONT};font-size:24px;font-weight:800;color:#ffffff;letter-spacing:-0.3px">&lt;/&gt; Syntax<span style="color:${ORANGE}">Hires</span></span>
+<span style="font-family:${FONT};font-size:24px;font-weight:800;color:#ffffff;letter-spacing:-0.3px">Syntax<span style="color:${ORANGE}">Hires</span></span>
 </td></tr>
 <tr><td style="background:#ffffff;padding:32px;border-radius:0 0 14px 14px">
 <p style="margin:0 0 8px;font-family:${FONT};font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:${ORANGE}">${escapeHtml(eyebrow)}</p>
