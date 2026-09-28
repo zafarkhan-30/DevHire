@@ -31,6 +31,7 @@ export const site = {
   // e.g. "919876543210" for +91 98765 43210. Left empty, the button is hidden.
   whatsapp: "918433833146",
   whatsappMessage: "Hi SyntaxHires, I would like to talk about hiring developers.",
+  // PLACEHOLDER: real profile URLs. Links left as "#" are hidden, and the "Follow Us" column with them.
   social: [
     { label: "LinkedIn", href: "#", icon: "linkedin" },
     { label: "Instagram", href: "#", icon: "instagram" },

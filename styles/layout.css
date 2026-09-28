@@ -684,6 +684,10 @@
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.site-footer__bottom--two {
+  grid-template-columns: 1fr 1fr;
+}
+
 .site-footer__label {
   margin-bottom: 10px;
   font-size: 12px;

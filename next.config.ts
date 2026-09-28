@@ -3,6 +3,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   trailingSlash: true,
+  // Stop next dev from writing AGENTS.md and CLAUDE.md into the project.
+  agentRules: false,
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   async redirects() {
     return [

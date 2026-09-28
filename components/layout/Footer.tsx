@@ -6,6 +6,7 @@ import { NewsletterForm } from "./NewsletterForm";
 
 export function Footer() {
   const year = new Date().getFullYear();
+  const social = site.social.filter((item) => item.href && item.href !== "#");
 
   return (
     <footer className="site-footer">
@@ -58,16 +59,17 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="site-footer__bottom">
+        <div className={`site-footer__bottom${social.length ? "" : " site-footer__bottom--two"}`}>
           <div>
             <p className="site-footer__label site-footer__label--title">{footer.newsletter.title}</p>
             <p className="small">{footer.newsletter.text}</p>
             <NewsletterForm />
           </div>
+          {social.length ? (
           <div>
             <p className="site-footer__label">Follow Us</p>
             <ul className="site-footer__social">
-              {site.social.map((item) => (
+              {social.map((item) => (
                 <li key={item.label}>
                   <a href={item.href} aria-label={item.label} rel="noopener noreferrer">
                     <SocialIcon name={item.icon} />
@@ -76,6 +78,7 @@ export function Footer() {
               ))}
             </ul>
           </div>
+          ) : null}
           <div>
             <p className="site-footer__label">Where We Work</p>
             <ul className="site-footer__offices">

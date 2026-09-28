@@ -209,4 +209,8 @@ Changes from the original plan:
 - Breakpoints 1199 / 991 / 767 / 576 are written as plain media queries with CSS grid. Bootstrap is not installed.
 - The case study block uses tab state with the 0.4s panel fade. Embla is used for the hero slider only.
 
-Content still to supply (search the `content/` folder for `PLACEHOLDER`): client logos, case studies, testimonials, proof numbers, social links, WhatsApp number, site URL, hero and case study photos.
+- Launch readiness (2026-09-28), at the user's request: template content is hidden instead of shown. A block with `draft: true` is skipped; stat tiles with the value "—" and list lines ending in "—" are left out; the template case study pages are unpublished and /case-study/ is noindex. Founders stay visible because the user is supplying them.
+- Rates live in `content/rates.ts` only. Share image, JSON-LD (Organization, WebSite, BreadcrumbList, FAQPage, Article) and canonical URLs added. The site audit fails titles over 60 characters.
+- Footer hides social links that are still "#". `agentRules: false` stops next dev writing AGENTS.md and CLAUDE.md.
+
+Content still to supply (search the `content/` folder for `PLACEHOLDER`): site URL, lead inbox and Resend key, rate card (`content/rates.ts`), founders, social links, legal details, offer terms (free trial, paid assessment, AI assistant pricing), Legacy Risk Assessment PDF, US-ready contracting facts, case studies, verified stats, reviews, open roles. To bring back a hidden block, replace its template content and remove `draft: true`.
