@@ -1,3 +1,4 @@
+import { ratePrice, rates } from "@/content/rates";
 import type { Block, PageDef, TechData } from "@/content/types";
 
 // Turns one technology data file into the 19-section hire page.
@@ -119,7 +120,7 @@ export function buildHirePage(tech: TechData): PageDef {
       ],
     },
     {
-      // PLACEHOLDER: SyntaxHires rate card for this role.
+      // Prices from content/rates.ts; "On request" until set.
       type: "pricing",
       pad: "xs",
       title: `${singular} [Pricing Tiers]`,
@@ -127,14 +128,16 @@ export function buildHirePage(tech: TechData): PageDef {
         {
           name: "Entry",
           level: "Early career",
-          price: "On request",
+          price: ratePrice(rates.junior),
+          priceNote: rates.junior === null ? undefined : "per developer, per month",
           features: ["Works on defined tasks", "Pairs with a senior reviewer", "Suited to well-scoped backlog items"],
           cta: { label: "Ask For Rates", href: "/contact-us/" },
         },
         {
           name: "Experienced",
           level: "Mid level",
-          price: "On request",
+          price: ratePrice(rates.mid),
+          priceNote: rates.mid === null ? undefined : "per developer, per month",
           featured: true,
           features: ["Owns features end to end", "Reviews others' code", "Suited to most product teams"],
           cta: { label: "Ask For Rates", href: "/contact-us/" },
@@ -142,7 +145,8 @@ export function buildHirePage(tech: TechData): PageDef {
         {
           name: "Expert",
           level: "Senior",
-          price: "On request",
+          price: ratePrice(rates.senior),
+          priceNote: rates.senior === null ? undefined : "per developer, per month",
           features: ["Leads architecture decisions", "Mentors the team", "Suited to complex or legacy systems"],
           cta: { label: "Ask For Rates", href: "/contact-us/" },
         },

@@ -78,7 +78,7 @@ const page: PageDef = {
         "We do not supply salary data, market averages or benchmark rates. You know your own costs better than a published survey does, and the result is only as accurate as the figures you put in.",
         "The calculation is simple arithmetic and the method is described on this page. If you want us to check your inputs, send them with the quote request below.",
       ],
-      // PLACEHOLDER: confirm the SyntaxHires rate card and set syntaxhiresMonthlyRate in content/calculator.ts. Until then the SyntaxHires rate field starts empty.
+      // The SyntaxHires rate field starts from the mid-level rate in content/rates.ts, or empty until it is set.
       aside: {
         title: "Inputs",
         items: ["SyntaxHires rate: our rate card or your quote", "Salary and overhead: your entry", "Recruitment cost: your entry", "Freelancer rate: your entry", "Productive hours: your entry"],

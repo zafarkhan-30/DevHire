@@ -1,8 +1,10 @@
+import { rateMidpoint, rates } from "@/content/rates";
+
 // Cost estimate calculator settings.
 // Defaults are illustrative inputs for the visitor to overwrite. They are not market data.
 export const calculator = {
-  // PLACEHOLDER: SyntaxHires monthly rate per developer from the rate card. null leaves the field empty.
-  syntaxhiresMonthlyRate: null as number | null,
+  // Starts from the mid-level rate in content/rates.ts. null leaves the field empty.
+  syntaxhiresMonthlyRate: rateMidpoint(rates.mid),
   defaults: {
     teamSize: 3,
     months: 12,

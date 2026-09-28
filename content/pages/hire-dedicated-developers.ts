@@ -1,3 +1,4 @@
+import { hasRates, rateText, rates } from "@/content/rates";
 import type { PageDef } from "@/content/types";
 
 // PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
@@ -171,14 +172,16 @@ const page: PageDef = {
       paragraphs: [
         "You pay a monthly figure per developer. That figure depends on four things: seniority, how scarce the skill is, how many developers you need and how much overlap you want with your working hours.",
         "Seniority has the largest effect. A senior engineer costs more per month and usually needs less direction. Scarce skills cost more than common ones. Larger teams may need a lead, which adds a role.",
-        "We quote in writing before you commit to anything. The ranges below will be filled in once SyntaxHires has confirmed its rate card.",
+        hasRates
+          ? "We quote in writing before you commit to anything. Current monthly rates are below."
+          : "We quote in writing before you commit to anything. Tell us the roles and seniority and we will send the figures.",
       ],
-      // PLACEHOLDER: monthly cost ranges per seniority level from SyntaxHires' confirmed rate card. Replace every "—".
+      // From content/rates.ts. Lines without a rate are left out.
       list: [
-        "Junior developer, per month: —",
-        "Mid-level developer, per month: —",
-        "Senior developer, per month: —",
-        "Technical lead, per month: —",
+        `Junior developer, per month: ${rateText(rates.junior)}`,
+        `Mid-level developer, per month: ${rateText(rates.mid)}`,
+        `Senior developer, per month: ${rateText(rates.senior)}`,
+        `Technical lead, per month: ${rateText(rates.lead)}`,
       ],
       aside: {
         title: "What drives cost",

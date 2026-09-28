@@ -1,7 +1,8 @@
+import { rateSpan, rateText, rates } from "@/content/rates";
 import type { PageDef } from "@/content/types";
 
 // PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
-// No market rates are stated on this page. Every rate or currency value is "—" until the rate card is supplied.
+// No market rates are stated on this page. SyntaxHires rates come from content/rates.ts; unset rates are left out.
 const page: PageDef = {
   path: "/hire/dedicated-developers/offshore-developers-cost/",
   meta: {
@@ -41,21 +42,17 @@ const page: PageDef = {
       tone: "dark",
       title: "Cost Components And Their [Drivers]",
       align: "center",
-      intro: "The final column will show SyntaxHires figures once the rate card is confirmed. Components paid in your own time are marked as such.",
+      intro: "The final column shows what each component costs with SyntaxHires. Components paid in your own time are marked as such.",
       columns: ["Cost component", "What drives it", "How to control it", "SyntaxHires figure"],
       highlight: 3,
       rows: [
-        // PLACEHOLDER: SyntaxHires rate card needed
-        ["Developer rate", "Seniority, stack, location and demand for the skill", "Hire the level the work needs", "—"],
+        ["Developer rate", "Seniority, stack, location and demand for the skill", "Hire the level the work needs", rateSpan() ? `${rateSpan()} per month` : "Quoted in writing"],
         ["Management time", "Clarity of requirements, team size and experience of your lead", "Written specifications and a named owner for priorities", "Your time"],
-        // PLACEHOLDER: SyntaxHires rate card needed
-        ["Tooling and licences", "Seats for source control, build systems, environments and communication tools", "Review seats and access when the team changes", "—"],
+        ["Tooling and licences", "Seats for source control, build systems, environments and communication tools", "Review seats and access when the team changes", "Quoted in writing"],
         ["Onboarding", "State of your documentation, setup complexity and access approvals", "Setup scripts and an up-to-date guide to the codebase", "Your time"],
-        // PLACEHOLDER: SyntaxHires rate card needed
-        ["Overlap hours", "Time-zone gap and the number of live meetings you require", "Agree a fixed overlap window and use written updates", "—"],
+        ["Overlap hours", "Time-zone gap and the number of live meetings you require", "Agree a fixed overlap window and use written updates", "Quoted in writing"],
         ["Turnover", "Engagement length, quality of the work and how the engineer is treated", "Include remote engineers in planning and give feedback early", "Your time to re-onboard"],
-        // PLACEHOLDER: SyntaxHires rate card needed
-        ["Replacement", "Search, interviews, handover and lost context", "Keep decisions and setup documented in your own systems", "—"],
+        ["Replacement", "Search, interviews, handover and lost context", "Keep decisions and setup documented in your own systems", "Quoted in writing"],
         ["Rework", "Unclear requirements and late review", "Small changes reviewed often", "Your time"],
       ],
       footnote: "SyntaxHires replaces a developer if the fit is wrong. You interview the replacement before they start.",
@@ -110,14 +107,11 @@ const page: PageDef = {
       title: "SyntaxHires [Rate Card]",
       align: "center",
       items: [
-        // PLACEHOLDER: SyntaxHires rate card needed
-        { value: "—", label: "Monthly rate, junior engineer" },
-        // PLACEHOLDER: SyntaxHires rate card needed
-        { value: "—", label: "Monthly rate, mid-level engineer" },
-        // PLACEHOLDER: SyntaxHires rate card needed
-        { value: "—", label: "Monthly rate, senior engineer" },
-        // PLACEHOLDER: SyntaxHires rate card needed
-        { value: "—", label: "Monthly rate, delivery lead" },
+        // Hidden until rates are set in content/rates.ts
+        { value: rateText(rates.junior), label: "Monthly rate, junior engineer" },
+        { value: rateText(rates.mid), label: "Monthly rate, mid-level engineer" },
+        { value: rateText(rates.senior), label: "Monthly rate, senior engineer" },
+        { value: rateText(rates.lead), label: "Monthly rate, delivery lead" },
       ],
     },
     {
