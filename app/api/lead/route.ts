@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server";
+import { site } from "@/content/site";
+import { leadAlert, visitorConfirmation, type Lead } from "@/lib/email";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MAX_FIELD = 2000;
-
-type Lead = Record<string, string>;
 
 function clean(input: unknown): Lead {
   if (!input || typeof input !== "object") return {};
@@ -14,63 +14,39 @@ function clean(input: unknown): Lead {
   return out;
 }
 
-const escapeHtml = (text: string) =>
-  text.replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char] ?? char);
-
-// Field names as they appear in the email, in this order; any other fields follow.
-const LABELS: Record<string, string> = {
-  name: "Name",
-  email: "Email",
-  phone: "Phone",
-  company: "Company",
-  goal: "Goal",
-  teamSize: "Team size",
-  timeline: "Timeline",
-  message: "Message",
-  type: "Form",
-  page: "Page",
-};
-
 let warned = false;
+
+async function sendEmail(key: string, email: { from: string; to: string[]; replyTo?: string; subject: string; html: string; text: string }) {
+  const response = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+    body: JSON.stringify({ from: email.from, to: email.to, reply_to: email.replyTo, subject: email.subject, html: email.html, text: email.text }),
+  });
+  if (!response.ok) console.error("[lead] Resend error", response.status, await response.text());
+  return response.ok;
+}
 
 // Emails each lead through Resend (resend.com). Settings live in .env.local (see .env.example):
 // RESEND_API_KEY, LEAD_TO_EMAIL (one address or several, comma separated) and optionally LEAD_FROM_EMAIL.
-// Without a key or inbox the lead is only logged, so local development works without sending mail.
+// Two emails go out: a confirmation to the visitor (best effort) and the lead alert to SyntaxHires.
+// Only the lead alert decides success. Without a key or inbox the lead is only logged.
 async function deliver(lead: Lead): Promise<boolean> {
   const key = process.env.RESEND_API_KEY;
-  const to = process.env.LEAD_TO_EMAIL?.split(",").map((address) => address.trim()).filter(Boolean) ?? [];
-  if (!key || !to.length) {
+  const team = process.env.LEAD_TO_EMAIL?.split(",").map((address) => address.trim()).filter(Boolean) ?? [];
+  if (!key || !team.length) {
     if (!warned) console.warn("[lead] RESEND_API_KEY or LEAD_TO_EMAIL not set; leads are logged only.");
     warned = true;
     console.info("[lead]", { type: lead.type ?? "lead", email: lead.email });
     return true;
   }
 
-  const keys = [...Object.keys(LABELS).filter((k) => lead[k]), ...Object.keys(lead).filter((k) => !(k in LABELS) && k !== "website")];
-  const rows = keys
-    .map((k) => `<tr><th align="left" style="padding:6px 12px 6px 0;vertical-align:top">${escapeHtml(LABELS[k] ?? k)}</th><td style="padding:6px 0;white-space:pre-wrap">${escapeHtml(lead[k])}</td></tr>`)
-    .join("");
-  const text = keys.map((k) => `${LABELS[k] ?? k}: ${lead[k]}`).join("\n");
-  const form = lead.type ?? "lead";
+  const from = process.env.LEAD_FROM_EMAIL || `${site.name} <onboarding@resend.dev>`;
+  // Until a domain is verified in Resend, the test sender can only reach the account owner, so this may fail.
+  const confirmation = visitorConfirmation(lead);
+  const confirmed = await sendEmail(key, { from, to: [lead.email], replyTo: team[0], ...confirmation });
 
-  const response = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-    body: JSON.stringify({
-      from: process.env.LEAD_FROM_EMAIL || "SyntaxHires Website <onboarding@resend.dev>",
-      to,
-      reply_to: lead.email,
-      subject: form === "newsletter" ? `Newsletter signup: ${lead.email}` : `New ${form} enquiry from ${lead.name ?? lead.email}`,
-      html: `<table style="font-family:sans-serif;font-size:14px">${rows}</table>`,
-      text,
-    }),
-  });
-
-  if (!response.ok) {
-    console.error("[lead] Resend error", response.status, await response.text());
-    return false;
-  }
-  return true;
+  const alert = leadAlert(lead, { confirmed });
+  return sendEmail(key, { from, to: team, replyTo: lead.email, ...alert });
 }
 
 export async function POST(request: Request) {
