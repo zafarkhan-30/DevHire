@@ -234,7 +234,6 @@ export const megaMenus: MegaMenu[] = [
         heading: "About Us",
         links: [
           { label: "About SyntaxHires", href: "/about/" },
-          { label: "Leadership", href: "/leadership/" },
           { label: "Company Insights", href: "/insights/" },
         ],
       },

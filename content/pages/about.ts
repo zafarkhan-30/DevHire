@@ -66,6 +66,7 @@ const page: PageDef = {
     {
       // PLACEHOLDER: real names, roles, bios and photos of the SyntaxHires founders.
       type: "people",
+      draft: true, // hidden until founder details are added
       title: "[Leadership]",
       intro: "The people accountable for every engagement.",
       align: "center",

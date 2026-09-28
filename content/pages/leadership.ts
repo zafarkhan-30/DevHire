@@ -5,6 +5,7 @@ const page: PageDef = {
   path: "/leadership/",
   meta: {
     title: "Leadership",
+    noindex: true, // remove once the team section is back
     description:
       "Meet the people who lead SyntaxHires and the working standards they hold every engagement to.",
   },
@@ -24,6 +25,7 @@ const page: PageDef = {
     {
       // PLACEHOLDER: real names, roles, bios and photos of the SyntaxHires directors.
       type: "people",
+      draft: true, // hidden until founder details are added
       title: "Our [Directors]",
       align: "center",
       items: [
