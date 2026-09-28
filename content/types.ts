@@ -169,7 +169,7 @@ export type CtaBlock = {
 
 export type InsightsBlock = { type: "insights"; title?: string };
 
-export type FaqBlock = { type: "faq"; title?: string; items: { q: string; a: string }[]; button?: Cta };
+export type FaqBlock = { type: "faq"; id?: string; title?: string; items: { q: string; a: string }[]; button?: Cta };
 
 export type TextBlock = Section & {
   type: "text";

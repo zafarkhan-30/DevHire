@@ -537,7 +537,7 @@ function BlockView({ block }: { block: Block }) {
 
     case "faq":
       return (
-        <section className="section section--light faq blk blk--pad-lg">
+        <section id={block.id} className="section section--light faq blk blk--pad-lg">
           <div className="container faq__layout">
             <div className="faq__aside">
               <div className="heading">

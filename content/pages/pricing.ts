@@ -99,6 +99,7 @@ const page: PageDef = {
     },
     {
       type: "table",
+      id: "compare",
       title: "The Models [Side By Side]",
       columns: ["Pricing model", "Structure and cost", "Why teams choose it", "Best suited for"],
       rows: [
@@ -130,6 +131,7 @@ const page: PageDef = {
     },
     {
       type: "steps",
+      id: "which-model",
       tone: "muted",
       title: "Which Model [Fits You?]",
       layout: "row",
@@ -142,6 +144,7 @@ const page: PageDef = {
     },
     {
       type: "faq",
+      id: "pricing-faq",
       title: "Pricing [Questions]",
       items: [
         {

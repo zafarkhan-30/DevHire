@@ -76,7 +76,7 @@ Project scaffold, tokens, font loading (`font-display: swap`), type scale, conta
 
 ### Phase 2 — Global shell
 - Trust bar with compliance badges
-- Header: logo, 4 mega-menus (title, intro, featured card, link columns), CTA button, mobile drawer
+- Header: logo, 5 mega-menus: Services, Pricing, Hire Developers, Resources, Company (title, intro, featured card, link columns), CTA button, mobile drawer
 - Footer: tool cards + proof points, 5 link columns, newsletter, social, "Where We Work" (remote and global, no office address), legal bar
 - Floating: chat launcher, WhatsApp button, cookie banner with explicit opt-in
 

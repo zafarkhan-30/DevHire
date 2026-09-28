@@ -61,7 +61,7 @@ export const site = {
 };
 
 // Plain links in the main menu, placed right after the mega menu named in `after`.
-export const navLinks: (NavLink & { after: string })[] = [{ label: "Pricing", href: "/pricing/", after: "services" }];
+export const navLinks: (NavLink & { after: string })[] = [];
 
 export const megaMenus: MegaMenu[] = [
   {
@@ -95,6 +95,49 @@ export const megaMenus: MegaMenu[] = [
         ],
       },
     ],
+  },
+  {
+    id: "pricing",
+    label: "Pricing",
+    title: "Pricing",
+    intro: "Clear prices in rupees. Pay per hire, for a bundle of hires or by the month.",
+    quickLinks: [{ label: "Pricing Overview", href: "/pricing/" }],
+    featured: {
+      title: "Calculate Your Costs",
+      text: "Compare in-house, freelance and dedicated costs using your own numbers. No email needed.",
+      linkLabel: "Open the calculator.",
+      href: "/resources/developer-cost-estimate/",
+    },
+    columns: [
+      {
+        heading: "Pricing Models",
+        links: [
+          { label: "Standard Contingency", href: "/pricing/#models" },
+          { label: "Flat Fee Per Hire", href: "/pricing/#models" },
+          { label: "Bulk Bucket Package", href: "/pricing/#models" },
+          { label: "Recruitment As A Service", href: "/pricing/#models" },
+        ],
+      },
+      {
+        heading: "Calculators",
+        links: [
+          { label: "Calculate Your Costs", href: "/resources/developer-cost-estimate/" },
+          { label: "See How Much You Save", href: "/pricing/#savings" },
+          { label: "Compare The Models", href: "/pricing/#compare" },
+          { label: "Which Model Fits You", href: "/pricing/#which-model" },
+        ],
+      },
+      {
+        heading: "Cost Guides",
+        links: [
+          { label: "Offshore Developer Cost Guide", href: "/hire/dedicated-developers/offshore-developers-cost/" },
+          { label: "Dedicated vs Freelancers", href: "/hire/dedicated-developers/dedicated-developers-vs-freelancers/" },
+          { label: "Dedicated vs Staff Augmentation", href: "/hire/dedicated-developers/dedicated-team-vs-staff-augmentation/" },
+          { label: "Pricing FAQs", href: "/pricing/#pricing-faq" },
+        ],
+      },
+    ],
+    button: { label: "View Pricing", href: "/pricing/" },
   },
   {
     id: "hire",
