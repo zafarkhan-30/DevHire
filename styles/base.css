@@ -387,6 +387,31 @@ button {
   }
 }
 
+/* Scroll-in motion (components/layout/Motion.tsx). Only active once JavaScript adds html.motion. */
+html.motion .reveal {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) var(--reveal-delay, 0ms),
+    transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) var(--reveal-delay, 0ms);
+}
+
+html.motion .reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+html.motion .reveal.is-instant {
+  transition: none;
+}
+
+/* Cards that are not links still respond to the pointer, more quietly than link cards. */
+@media (hover: hover) {
+  .card:not(.card--link):hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import { Accent } from "@/components/ui/Accent";
 import { caseStudies } from "@/content/home";
 import { Icon } from "@/components/ui/Icon";
 
@@ -16,7 +17,9 @@ export function CaseStudies() {
         <div className="cases__head">
           <div className="heading">
             <span className="pill">{caseStudies.eyebrow}</span>
-            <h2 className="h2">{caseStudies.title}</h2>
+            <h2 className="h2">
+              <Accent text={caseStudies.title} />
+            </h2>
             <span className="heading__rule" aria-hidden="true" />
           </div>
           <p className="cases__intro">{caseStudies.intro}</p>
