@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useId, useState } from "react";
 import { calculator } from "@/content/calculator";
 
@@ -47,7 +48,7 @@ export function Calculator() {
   const models = [
     { name: "In-house hire", monthly: inHouse },
     { name: "Freelancers", monthly: freelance },
-    { name: "SyntaxHires dedicated", monthly: dedicated, highlight: true },
+    { name: "SyntaxHires dedicated", monthly: dedicated, highlight: true, missing: dedicated <= 0 },
   ];
 
   return (
@@ -74,6 +75,7 @@ export function Calculator() {
       </div>
 
       <div className="calc__results" aria-live="polite">
+        <p className="calc__example">{calculator.exampleNote}</p>
         <table className="dtable dtable--compact">
           <thead>
             <tr>
@@ -87,19 +89,28 @@ export function Calculator() {
             {models.map((model) => (
               <tr key={model.name} className={model.highlight ? "is-highlight" : undefined}>
                 <th scope="row">{model.name}</th>
-                <td data-label="Monthly cost">{format(model.monthly)}</td>
-                <td data-label="Per productive hour">{format(hours > 0 ? model.monthly / hours : 0)}</td>
-                <td data-label={`Over ${span} months`}>{format(model.monthly * span)}</td>
+                {model.missing ? (
+                  <td colSpan={3} className="calc__missing">
+                    {calculator.missingRate} <Link href={calculator.quoteLink.href}>{calculator.quoteLink.label}</Link>
+                  </td>
+                ) : (
+                  <>
+                    <td data-label="Monthly cost">{format(model.monthly)}</td>
+                    <td data-label="Per productive hour">{format(hours > 0 ? model.monthly / hours : 0)}</td>
+                    <td data-label={`Over ${span} months`}>{format(model.monthly * span)}</td>
+                  </>
+                )}
               </tr>
             ))}
           </tbody>
         </table>
 
-        <p className="calc__saving">
-          Annual difference, in-house vs SyntaxHires:{" "}
-          <strong>{inHouse > 0 && dedicated > 0 ? format(Math.abs(inHouse - dedicated) * 12) : "—"}</strong>
-          {inHouse > 0 && dedicated > 0 ? (inHouse >= dedicated ? " lower with SyntaxHires" : " higher with SyntaxHires") : ""}
-        </p>
+        {inHouse > 0 && dedicated > 0 ? (
+          <p className="calc__saving">
+            Annual difference, in-house vs SyntaxHires: <strong>{format(Math.abs(inHouse - dedicated) * 12)}</strong>
+            {inHouse >= dedicated ? " lower with SyntaxHires" : " higher with SyntaxHires"}
+          </p>
+        ) : null}
         <p className="calc__note">{calculator.disclaimer}</p>
       </div>
     </div>

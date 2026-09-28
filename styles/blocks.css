@@ -1524,6 +1524,21 @@
   font-size: 13px;
 }
 
+.calc__example {
+  font-size: 13px;
+  color: var(--body_color);
+}
+
+.calc__missing {
+  font-size: 13px;
+}
+
+.calc__missing a {
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: underline;
+}
+
 /* Blog index */
 .blogtop {
   padding-block: 64px;
@@ -2046,6 +2061,14 @@
   .section--dark .dtable td::before,
   .section--navy .dtable td::before {
     color: var(--white);
+  }
+
+  .dtable td.calc__missing {
+    display: block;
+  }
+
+  .dtable td.calc__missing::before {
+    content: none;
   }
 
   .dtable td.is-highlight,
