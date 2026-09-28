@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { site } from "@/content/site";
-import { leadAlert, visitorConfirmation, type Lead } from "@/lib/email";
+import { leadAlert, logoAttachment, visitorConfirmation, type Lead } from "@/lib/email";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MAX_FIELD = 2000;
@@ -20,7 +20,15 @@ async function sendEmail(key: string, email: { from: string; to: string[]; reply
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from: email.from, to: email.to, reply_to: email.replyTo, subject: email.subject, html: email.html, text: email.text }),
+    body: JSON.stringify({
+      from: email.from,
+      to: email.to,
+      reply_to: email.replyTo,
+      subject: email.subject,
+      html: email.html,
+      text: email.text,
+      attachments: [logoAttachment],
+    }),
   });
   if (!response.ok) console.error("[lead] Resend error", response.status, await response.text());
   return response.ok;
