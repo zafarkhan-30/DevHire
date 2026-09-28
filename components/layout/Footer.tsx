@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Check, MapPin } from "lucide-react";
+import { ArrowRight, Check, Globe } from "lucide-react";
 import { footer, site } from "@/content/site";
 import { Icon, SocialIcon } from "@/components/ui/Icon";
 import { NewsletterForm } from "./NewsletterForm";
@@ -77,18 +77,15 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <p className="site-footer__label">Offices</p>
+            <p className="site-footer__label">Where We Work</p>
             <ul className="site-footer__offices">
-              {site.offices.map((office) => (
-                <li key={office.country}>
-                  <strong>
-                    <MapPin size={13} aria-hidden="true" />
-                    {office.country}
-                  </strong>
-                  <span>{office.address}</span>
-                  {office.phone ? <a href={`tel:${office.phone.replace(/\s/g, "")}`}>{office.phone}</a> : null}
-                </li>
-              ))}
+              <li>
+                <strong>
+                  <Globe size={13} aria-hidden="true" />
+                  {site.workModel.title}
+                </strong>
+                <span>{site.workModel.text}</span>
+              </li>
             </ul>
           </div>
         </div>

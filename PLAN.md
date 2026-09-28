@@ -77,7 +77,7 @@ Project scaffold, tokens, font loading (`font-display: swap`), type scale, conta
 ### Phase 2 — Global shell
 - Trust bar with compliance badges
 - Header: logo, 4 mega-menus (title, intro, featured card, link columns), CTA button, mobile drawer
-- Footer: tool cards + proof points, 5 link columns, newsletter, social, offices, legal bar
+- Footer: tool cards + proof points, 5 link columns, newsletter, social, "Where We Work" (remote and global, no office address), legal bar
 - Floating: chat launcher, WhatsApp button, cookie banner with explicit opt-in
 
 ### Phase 3 — Component library
@@ -209,4 +209,4 @@ Changes from the original plan:
 - Breakpoints 1199 / 991 / 767 / 576 are written as plain media queries with CSS grid. Bootstrap is not installed.
 - The case study block uses tab state with the 0.4s panel fade. Embla is used for the hero slider only.
 
-Content still to supply (search the `content/` folder for `PLACEHOLDER`): client logos, case studies, testimonials, proof numbers, office address and phone, social links, WhatsApp number, site URL, hero and case study photos.
+Content still to supply (search the `content/` folder for `PLACEHOLDER`): client logos, case studies, testimonials, proof numbers, social links, WhatsApp number, site URL, hero and case study photos.

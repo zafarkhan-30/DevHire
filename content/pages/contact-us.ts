@@ -33,9 +33,8 @@ const page: PageDef = {
           ],
         },
         {
-          title: "Offices",
-          // PLACEHOLDER: real office address. Keep in step with site.offices.
-          items: ["Office address goes here"],
+          title: "Where we work",
+          items: ["Fully remote team", "Clients around the world", "Working hours that overlap with yours"],
         },
       ],
       form: {

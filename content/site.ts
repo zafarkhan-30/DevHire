@@ -53,9 +53,11 @@ export const site = {
     { value: "—", label: "Countries Served" },
     { value: "—", label: "Client Retention" },
   ] as { value: string; label: string; stars?: boolean }[],
-  offices: [
-    { country: "India", address: "Office address goes here", phone: "" }, // PLACEHOLDER
-  ] as { country: string; address: string; phone: string }[],
+  // Shown in the footer and on the contact page in place of office addresses.
+  workModel: {
+    title: "Remote And Global",
+    text: "We work remotely with clients around the world, across time zones.",
+  },
 };
 
 // Plain links in the main menu, placed right after the mega menu named in `after`.
