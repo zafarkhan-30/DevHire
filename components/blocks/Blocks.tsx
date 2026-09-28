@@ -10,6 +10,7 @@ import { Icon } from "@/components/ui/Icon";
 import { LogoRow } from "@/components/ui/LogoRow";
 import { ReviewList } from "@/components/ui/ReviewCard";
 import { Calculator } from "./Calculator";
+import { SavingsCalculator } from "./SavingsCalculator";
 import { AccordionView, LinkGridView, PdfGateView, QuizView, TabsView } from "./Interactive";
 import { LeadFormCard } from "./LeadFormCard";
 
@@ -677,6 +678,13 @@ function BlockView({ block }: { block: Block }) {
       return (
         <Shell block={block} name="calculator">
           <Calculator />
+        </Shell>
+      );
+
+    case "savings":
+      return (
+        <Shell block={block} name="savings">
+          <SavingsCalculator {...block} />
         </Shell>
       );
 

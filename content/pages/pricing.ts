@@ -17,9 +17,9 @@ const page: PageDef = {
       align: "center",
       eyebrow: "Pricing",
       title: "Hiring Models Priced The Way [You Hire]",
-      text: "Pay a percentage only when someone joins, a fixed fee per hire, a bundle for your first squad, or a monthly retainer for a recruiter who works as part of your team.",
+      text: "Lower fees than a typical 15% agency charge. Pay a smaller percentage only when someone joins, a fixed fee per hire, a bundle for your first squad, or a monthly retainer for a recruiter who works as part of your team.",
       ctas: [
-        { label: "Compare The Models", href: "#models" },
+        { label: "See How Much You Save", href: "#savings" },
         { label: "Talk To Us About Pricing", href: "/contact-us/", variant: "outline-light" },
       ],
     },
@@ -86,8 +86,19 @@ const page: PageDef = {
       footnote: "Final pricing, taxes and payment terms are confirmed in your agreement.",
     },
     {
-      type: "table",
+      type: "savings",
+      id: "savings",
       tone: "muted",
+      title: "See How Much [You Save]",
+      intro: "Many recruitment agencies charge around 15% of annual CTC. Enter the salary you are offering and compare that with our fees.",
+      agencyPercent: 15,
+      contingency: [8.33, 12.5],
+      flatFee: [40000, 100000],
+      defaultCtc: 1800000,
+      note: "Example salary filled in. Change the agency percentage to match what you pay today. The smallest saving uses the top of our price range. Taxes are extra and final fees are set in your agreement.",
+    },
+    {
+      type: "table",
       title: "The Models [Side By Side]",
       columns: ["Pricing model", "Structure and cost", "Why teams choose it", "Best suited for"],
       rows: [
@@ -119,6 +130,7 @@ const page: PageDef = {
     },
     {
       type: "steps",
+      tone: "muted",
       title: "Which Model [Fits You?]",
       layout: "row",
       items: [

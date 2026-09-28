@@ -204,11 +204,21 @@ export type CalculatorBlock = Section & { type: "calculator" };
 
 export type MarqueeBlock = Section & { type: "marquee" };
 
+// Fee comparison on the pricing page. Percentages are of annual CTC; fees are in rupees per hire.
+export type SavingsBlock = Section & {
+  type: "savings";
+  agencyPercent: number;
+  contingency: [number, number];
+  flatFee: [number, number];
+  defaultCtc: number;
+  note: string;
+};
+
 export type Block =
   | HeroBlock | PainHookBlock | LogosBlock | CardsBlock | SplitBlock | TableBlock | StepsBlock | StatsBlock
   | TabsBlock | QuoteBlock | AccordionBlock | VersionsBlock | TestimonialsBlock | PricingBlock | QuizBlock
   | FormBlock | CtaBlock | InsightsBlock | FaqBlock | TextBlock | LinkGridBlock | PeopleBlock | JobsBlock
-  | CaseMetaBlock | PdfGateBlock | CalculatorBlock | MarqueeBlock;
+  | CaseMetaBlock | PdfGateBlock | CalculatorBlock | MarqueeBlock | SavingsBlock;
 
 export type PageDef = {
   // URL path with leading and trailing slash, e.g. "/service/dedicated-developers/"
