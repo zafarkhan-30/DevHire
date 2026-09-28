@@ -14,7 +14,8 @@ export function SavingsCalculator({ agencyPercent, contingency, flatFee, default
   const uid = useId();
   const [ctc, setCtc] = useState(defaultCtc);
   const [hires, setHires] = useState(1);
-  const [percent, setPercent] = useState(agencyPercent);
+  // Fixed benchmark from the pricing page content; visitors change salary and hires only.
+  const percent = agencyPercent;
 
   const count = Math.max(hires, 1);
   const agency = (ctc * percent) / 100 * count;
@@ -42,8 +43,7 @@ export function SavingsCalculator({ agencyPercent, contingency, flatFee, default
 
   const fields = [
     { key: "ctc", label: "Annual CTC offered", hint: "Per hire, in rupees", value: ctc, set: setCtc },
-    { key: "hires", label: "Number of hires", hint: "Roles at this salary", value: hires, set: setHires },
-    { key: "percent", label: "Agency fee", hint: "Percent of CTC your agency charges", value: percent, set: setPercent },
+    { key: "hires", label: "Number of hires", hint: "Roles at this salary (at least 1)", value: hires, set: setHires },
   ];
 
   return (
@@ -60,7 +60,7 @@ export function SavingsCalculator({ agencyPercent, contingency, flatFee, default
               inputMode="decimal"
               min={0}
               value={field.value || ""}
-              placeholder="0"
+              placeholder={field.key === "hires" ? "1" : "0"}
               aria-describedby={`${uid}-${field.key}-hint`}
               onChange={(event) => field.set(Math.max(0, Number(event.target.value) || 0))}
             />

@@ -95,7 +95,7 @@ const page: PageDef = {
       contingency: [8.33, 12.5],
       flatFee: [40000, 100000],
       defaultCtc: 1800000,
-      note: "Example salary filled in. Change the agency percentage to match what you pay today. The smallest saving uses the top of our price range. Taxes are extra and final fees are set in your agreement.",
+      note: "Example salary filled in. Compared with a typical agency fee of 15% of annual CTC. The smallest saving uses the top of our price range. Taxes are extra and final fees are set in your agreement.",
     },
     {
       type: "table",
