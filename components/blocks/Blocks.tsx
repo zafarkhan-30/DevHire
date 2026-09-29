@@ -195,6 +195,10 @@ function BlockView({ block }: { block: Block }) {
                       {String(index + 1).padStart(2, "0")}
                     </span>
                   ) : null}
+                  {item.image ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img className="card__image" src={item.image} alt="" loading="lazy" decoding="async" width={1280} height={800} />
+                  ) : null}
                   {item.icon ? (
                     <span className="card__icon">
                       <Icon name={item.icon} size={22} />
@@ -689,6 +693,23 @@ function BlockView({ block }: { block: Block }) {
       return (
         <Shell block={block} name="calculator">
           <Calculator />
+        </Shell>
+      );
+
+    case "gallery":
+      return (
+        <Shell block={block} name="gallery">
+          <ul className={`gallery gallery--${Math.min(block.items.length, 2)}`}>
+            {block.items.map((item) => (
+              <li key={item.src}>
+                <figure className="gallery__item">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={item.src} alt={item.alt} loading="lazy" decoding="async" width={1280} height={800} />
+                  {item.caption ? <figcaption>{item.caption}</figcaption> : null}
+                </figure>
+              </li>
+            ))}
+          </ul>
         </Shell>
       );
 

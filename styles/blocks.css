@@ -2230,3 +2230,56 @@
 .calc--savings .calc__inputs {
   grid-template-columns: minmax(0, 1fr);
 }
+
+/* Card image and screenshot gallery (project pages) */
+.card__image {
+  display: block;
+  width: calc(100% + 48px);
+  max-width: none;
+  height: auto;
+  margin: -24px -24px 4px;
+  border-bottom: 1px solid var(--border_light);
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: left top;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.gallery--1 {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.gallery__item {
+  margin: 0;
+  border: 1px solid var(--border_light);
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.gallery__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gallery__item figcaption {
+  padding: 14px 18px;
+  border-top: 1px solid var(--border_light);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--body_color);
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+}

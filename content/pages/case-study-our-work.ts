@@ -1,6 +1,7 @@
 import type { PageDef } from "@/content/types";
+import { projectCard, projects } from "@/content/work";
 
-// PLACEHOLDER: SyntaxHires has not supplied case studies yet. Every card, logo and quote on this page is a template.
+// Projects come from content/work.
 const page: PageDef = {
   path: "/case-study/our-work/",
   meta: {
@@ -18,50 +19,20 @@ const page: PageDef = {
       title: "Work We Have [Delivered]",
       text: "Each case study sets out where the client started, what the team changed and what happened next. We publish only what the client has approved.",
       ctas: [
-        { label: "Case Studies", href: "#featured" },
+        { label: "See Featured Work", href: "#featured" },
         { label: "Talk To An Engineer", href: "/contact-us/", variant: "outline" },
       ],
     },
     {
-      type: "text",
+      type: "cards",
       id: "featured",
       tone: "muted",
-      title: "Case Studies [Coming Soon]",
-      align: "center",
-      paragraphs: [
-        "We publish a case study only once the client has approved every word and figure in it. They will appear here as they are approved.",
-        "In the meantime, we are happy to talk you through similar work on a call.",
-      ],
-      ctas: [{ label: "Ask About Similar Work", href: "/contact-us/" }],
-    },
-    {
-      // PLACEHOLDER: two real, client-approved case studies with headline, summary and one measured result each.
-      type: "cards",
-      draft: true, // hidden until real content replaces the template
-      tone: "muted",
       title: "Featured [Work]",
+      intro: "What we built, the technology behind it and what the finished product looks like.",
       align: "center",
       columns: 2,
-      items: [
-        {
-          tag: "Industry",
-          title: "Case study headline",
-          // PLACEHOLDER: the headline metric for case study 1.
-          metric: "—",
-          text: "Two or three sentences on where the client started, what was getting in the way and what the SyntaxHires team changed.",
-          href: "/case-study/case-study-1/",
-          linkLabel: "Read The Case Study",
-        },
-        {
-          tag: "Industry",
-          title: "Case study headline",
-          // PLACEHOLDER: the headline metric for case study 2.
-          metric: "—",
-          text: "Two or three sentences on where the client started, what was getting in the way and what the SyntaxHires team changed.",
-          href: "/case-study/case-study-2/",
-          linkLabel: "Read The Case Study",
-        },
-      ],
+      items: projects.map(projectCard),
+      footnote: "More projects are added as clients approve them for publication.",
     },
     {
       // Logos come from trustedBy.logos in content/home.ts. Do not add badges unless SyntaxHires holds them.

@@ -1,4 +1,5 @@
 import type { PageDef } from "@/content/types";
+import { projectPath, projects } from "@/content/work";
 
 // One linkGrid block per group, so that no group renders as a tab.
 const page: PageDef = {
@@ -169,6 +170,8 @@ const page: PageDef = {
             { label: "Developer Cost Estimate", href: "/resources/developer-cost-estimate/" },
             { label: "Legacy Risk Assessment", href: "/resources/legacy-risk-assessment/" },
             { label: "Our Work", href: "/case-study/our-work/" },
+            { label: "Case Studies", href: "/case-study/" },
+            ...projects.map((project) => ({ label: project.name, href: projectPath(project) })),
             { label: "Insights", href: "/insights/" },
             { label: "FAQs", href: "/faq/" },
             { label: "Sitemap", href: "/sitemap/" },

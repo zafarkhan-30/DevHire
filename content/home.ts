@@ -1,3 +1,5 @@
+import { projectPath, projects } from "@/content/work";
+
 // Home page content. Copy is original to SyntaxHires.
 // Items marked PLACEHOLDER need real, verifiable data before launch.
 
@@ -247,53 +249,25 @@ export const technologies = {
   ],
 };
 
+// Real projects from content/work. Add a project there and it appears here.
 export const caseStudies = {
-  eyebrow: "Case Studies",
-  title: "How An Engagement [Runs]",
-  intro: "Two sample engagements showing how a SyntaxHires team is shaped, how it works and what you get at the end.",
-  // SAMPLE CONTENT: these are illustrative engagements, not client stories. They carry no client
-  // names, results or quotes. Replace each with a real, client-approved case study when available.
-  items: [
-    {
-      tab: "SaaS Product Team",
-      tag: "Sample engagement",
-      title: "Adding a dedicated React and Node.js squad to a growing SaaS product",
-      summary:
-        "A product company has more roadmap than engineers. A three-person SyntaxHires squad joins their sprints, works in their repository and takes ownership of the reporting and billing screens, so the in-house team can focus on the core platform.",
-      metrics: [
-        { icon: "users", value: "3", label: "Engineers in the squad" },
-        { icon: "code", value: "React · Node", label: "Stack" },
-        { icon: "clock", value: "Monthly", label: "Contract terms" },
-      ],
-      note: {
-        label: "What you get",
-        text: "Interviewed engineers, a shared backlog, pull requests reviewed by your team and a written handover if anyone ever changes.",
-      },
-      link: { label: "See how dedicated teams work", href: "/service/dedicated-developers/" },
-      chip: "Dedicated Team",
-      image: "/images/hero/hero-2.webp",
-    },
-    {
-      tab: "Legacy Platform Upgrade",
-      tag: "Sample engagement",
-      title: "Moving an ageing .NET billing system to the cloud one module at a time",
-      summary:
-        "A company depends on a billing platform that few people can still change safely. A SyntaxHires team maps the system, moves one module at a time behind a stable interface and runs old and new side by side before each cut-over.",
-      metrics: [
-        { icon: "users", value: "4", label: "Engineers in the team" },
-        { icon: "cloud", value: ".NET → Cloud", label: "Migration path" },
-        { icon: "refresh", value: "Per module", label: "Rollback plan" },
-      ],
-      note: {
-        label: "What you get",
-        text: "A system map, a phased plan you can read, tested rollback at every step and documentation written as the work happens.",
-      },
-      link: { label: "See the modernisation approach", href: "/service/legacy-system-modernization/" },
-      chip: "Legacy Modernisation",
-      image: "/images/hero/hero-3.webp",
-    },
-  ],
-  all: { label: "View All Case Studies", href: "/case-study/our-work/" },
+  eyebrow: "Our Work",
+  title: "Projects We Have [Built]",
+  intro: "A look at recent work: what we built, the technology behind it and what the finished product looks like.",
+  items: projects.map((project) => ({
+    tab: project.tab,
+    tag: project.kind,
+    title: project.title.replace(/[[\]]/g, ""),
+    summary: project.summary,
+    metrics: project.metrics,
+    note: project.note,
+    link: { label: "View the project", href: projectPath(project) },
+    live: project.live,
+    chip: project.industry,
+    image: project.cover,
+    imageAlt: project.screens[0]?.alt ?? project.name,
+  })),
+  all: { label: "View All Work", href: "/case-study/our-work/" },
 };
 
 export const guides = {

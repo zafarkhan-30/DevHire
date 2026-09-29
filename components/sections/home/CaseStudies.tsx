@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import { Accent } from "@/components/ui/Accent";
 import { caseStudies } from "@/content/home";
 import { Icon } from "@/components/ui/Icon";
@@ -59,15 +59,22 @@ export function CaseStudies() {
               <p className="cases__note-label">{item.note.label}</p>
               <p>{item.note.text}</p>
             </div>
-            <Link href={item.link.href} className="link-arrow">
-              {item.link.label}
-              <ArrowRight size={14} aria-hidden="true" />
-            </Link>
+            <div className="cases__links">
+              <Link href={item.link.href} className="link-arrow">
+                {item.link.label}
+                <ArrowRight size={14} aria-hidden="true" />
+              </Link>
+              {item.live ? (
+                <a href={item.live.href} className="link-arrow" target="_blank" rel="noopener noreferrer">
+                  {item.live.label}
+                  <ExternalLink size={14} aria-hidden="true" />
+                </a>
+              ) : null}
+            </div>
           </div>
-          <div
-            className="cases__media"
-            style={item.image ? { backgroundImage: `url(${item.image})` } : undefined}
-          >
+          <div className="cases__media cases__media--shot">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img className="cases__shot" src={item.image} alt={item.imageAlt} loading="lazy" decoding="async" width={1280} height={800} />
             <span className="cases__chip">{item.chip}</span>
           </div>
         </article>

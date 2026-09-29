@@ -2219,3 +2219,34 @@
     font-size: 34px;
   }
 }
+
+/* Case study media as a product screenshot, anchored top-left and running off the right and bottom edges */
+.cases__media--shot {
+  overflow: hidden;
+}
+
+.cases__shot {
+  position: absolute;
+  top: 56px;
+  left: 40px;
+  width: calc(100% - 40px);
+  height: calc(100% - 56px);
+  border-radius: 12px 0 0 0;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  object-fit: cover;
+  object-position: left top;
+}
+
+.cases__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+}
+
+@media (max-width: 767px) {
+  .cases__shot {
+    top: 56px;
+    left: 20px;
+    width: calc(100% - 20px);
+  }
+}

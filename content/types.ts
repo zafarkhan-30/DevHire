@@ -61,6 +61,8 @@ export type PainHookBlock = { type: "painHook"; label: string; text: string };
 export type LogosBlock = Section & { type: "logos"; caption?: string; badges?: string[] };
 
 export type CardItem = {
+  // Screenshot or photo shown across the top of the card.
+  image?: string;
   icon?: IconKey;
   tag?: string;
   title: string;
@@ -204,6 +206,9 @@ export type CalculatorBlock = Section & { type: "calculator" };
 
 export type MarqueeBlock = Section & { type: "marquee" };
 
+// Screenshots in a grid, each with a caption. Images are 16:10.
+export type GalleryBlock = Section & { type: "gallery"; items: { src: string; alt: string; caption?: string }[] };
+
 // Fee comparison on the pricing page. Percentages are of annual CTC; fees are in rupees per hire.
 export type SavingsBlock = Section & {
   type: "savings";
@@ -219,7 +224,7 @@ export type Block = (
   | HeroBlock | PainHookBlock | LogosBlock | CardsBlock | SplitBlock | TableBlock | StepsBlock | StatsBlock
   | TabsBlock | QuoteBlock | AccordionBlock | VersionsBlock | TestimonialsBlock | PricingBlock | QuizBlock
   | FormBlock | CtaBlock | InsightsBlock | FaqBlock | TextBlock | LinkGridBlock | PeopleBlock | JobsBlock
-  | CaseMetaBlock | PdfGateBlock | CalculatorBlock | MarqueeBlock | SavingsBlock
+  | CaseMetaBlock | PdfGateBlock | CalculatorBlock | MarqueeBlock | SavingsBlock | GalleryBlock
 ) & { draft?: boolean };
 
 export type PageDef = {
@@ -269,4 +274,29 @@ export type ServiceData = {
   // Links to existing /hire/ or /technologies/ pages. Left out when the service has no matching pages.
   stack?: { label: string; href: string; note?: string }[];
   faqs: { q: string; a: string }[]; // 4 to 6
+};
+
+// One file per delivered project in content/work/. lib/buildProjectPage.ts turns it into a case study page,
+// and the home page and Our Work page list them. Facts only: what was built and how. No results, figures
+// or client quotes unless the client has approved them.
+export type ProjectData = {
+  slug: string; // URL segment under /case-study/
+  name: string; // "FinVest CRM"
+  tab: string; // short label for the home page tabs
+  kind: string; // "Web application", "Company website"
+  industry: string;
+  title: string; // headline used on cards and the page hero; [brackets] mark the accent words
+  summary: string;
+  meta: { title: string; description: string };
+  cover: string; // screenshot shown on the home page and on cards
+  facts: { label: string; value: string }[]; // up to 5, shown under the hero
+  metrics: { icon: IconKey; value: string; label: string }[]; // 3, shown on the home page
+  note: { label: string; text: string };
+  overview: { paragraphs: string[]; aside: { title: string; items: string[] } };
+  built: CardItem[]; // what was built, 4 to 8
+  stack: CardItem[]; // technology and what it was used for
+  screens: { src: string; alt: string; caption: string }[];
+  services: { label: string; href: string }[]; // SyntaxHires services this project used
+  // Public address of the finished product. Leave out until it is live on its final domain.
+  live?: { label: string; href: string };
 };
