@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowRight, ExternalLink } from "lucide-react";
+import { ArrowRight, ExternalLink, Maximize2 } from "lucide-react";
 import { Accent } from "@/components/ui/Accent";
 import { caseStudies } from "@/content/home";
 import { Icon } from "@/components/ui/Icon";
@@ -73,8 +73,20 @@ export function CaseStudies() {
             </div>
           </div>
           <div className="cases__media cases__media--shot">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="cases__shot" src={item.image} alt={item.imageAlt} loading="lazy" decoding="async" width={1280} height={800} />
+            <button
+              type="button"
+              className="cases__shot zoomable"
+              data-zoom={item.image}
+              data-zoom-alt={item.imageAlt}
+              data-zoom-caption={item.title}
+              aria-label={`Enlarge image: ${item.imageAlt}`}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={item.image} alt={item.imageAlt} loading="lazy" decoding="async" width={1280} height={800} />
+              <span className="zoomable__hint" aria-hidden="true">
+                <Maximize2 size={16} />
+              </span>
+            </button>
             <span className="cases__chip">{item.chip}</span>
           </div>
         </article>

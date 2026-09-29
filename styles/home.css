@@ -2220,12 +2220,13 @@
   }
 }
 
-/* Case study media as a product screenshot, anchored top-left and running off the right and bottom edges */
+/* Case study media as a product screenshot, anchored top-left and running off the right and bottom edges.
+   .zoomable is repeated in the selectors so these rules win over the generic zoom button in blocks.css. */
 .cases__media--shot {
   overflow: hidden;
 }
 
-.cases__shot {
+.cases__shot.zoomable {
   position: absolute;
   top: 56px;
   left: 40px;
@@ -2233,6 +2234,12 @@
   height: calc(100% - 56px);
   border-radius: 12px 0 0 0;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.cases__shot img {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: left top;
 }
@@ -2244,7 +2251,7 @@
 }
 
 @media (max-width: 767px) {
-  .cases__shot {
+  .cases__shot.zoomable {
     top: 56px;
     left: 20px;
     width: calc(100% - 20px);

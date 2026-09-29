@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { ArrowRight, Check, ChevronRight, CircleCheck, Minus, Quote, X } from "lucide-react";
+import { ArrowRight, Check, ChevronRight, CircleCheck, Minus, Quote, X, Maximize2 } from "lucide-react";
 import type { Block, Cta, HeroBlock, Pad, Stat, Tone } from "@/content/types";
 import { testimonials } from "@/content/home";
 import { reviews } from "@/content/reviews";
@@ -703,8 +703,20 @@ function BlockView({ block }: { block: Block }) {
             {block.items.map((item) => (
               <li key={item.src}>
                 <figure className="gallery__item">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={item.src} alt={item.alt} loading="lazy" decoding="async" width={1280} height={800} />
+                  <button
+                    type="button"
+                    className="zoomable"
+                    data-zoom={item.src}
+                    data-zoom-alt={item.alt}
+                    data-zoom-caption={item.caption ?? ""}
+                    aria-label={`Enlarge image: ${item.alt}`}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={item.src} alt={item.alt} loading="lazy" decoding="async" width={1280} height={800} />
+                    <span className="zoomable__hint" aria-hidden="true">
+                      <Maximize2 size={16} />
+                    </span>
+                  </button>
                   {item.caption ? <figcaption>{item.caption}</figcaption> : null}
                 </figure>
               </li>

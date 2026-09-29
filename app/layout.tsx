@@ -5,6 +5,7 @@ import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { Lightbox } from "@/components/layout/Lightbox";
 import { Motion } from "@/components/layout/Motion";
 import { organization, website } from "@/lib/jsonld";
 import { site } from "@/content/site";
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <JsonLd data={[organization(), website()]} />
         <Motion />
+        <Lightbox />
         <WhatsAppButton />
         <CookieBanner />
       </body>
