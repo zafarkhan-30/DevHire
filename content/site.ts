@@ -37,7 +37,7 @@ export const site = {
   whatsappMessage: "Hi SyntecHire, I would like to talk about a software project.",
   // PLACEHOLDER: real profile URLs. Links left as "#" are hidden, and the "Follow Us" column with them.
   social: [
-    { label: "LinkedIn", href: "#", icon: "linkedin" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/company/synctechire/", icon: "linkedin" },
     { label: "Instagram", href: "#", icon: "instagram" },
     { label: "YouTube", href: "#", icon: "youtube" },
   ],
