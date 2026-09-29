@@ -10,7 +10,7 @@ export type Post = {
   date: string; // ISO date
   readMinutes: number;
   tone: "amber" | "violet" | "teal" | "blue";
-  // Card and banner image, 1200 x 600 (2:1), in public/images/insights/. No text or logos in the image.
+  // Card and banner image, 1600 x 800 (2:1), in public/images/insights/. No text or logos in the image.
   image?: string;
   // Must match the H2 headings in the article, in order. Drives the contents list.
   sections: string[];

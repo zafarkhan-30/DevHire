@@ -12,3 +12,5 @@ reference/build/
 
 # Full-size hero source art (about 7MB each); the site uses the compressed copies in public/images/hero/
 public/images/Hero-0*.png
+# Original AI artwork for articles; the site uses the cropped .webp copies
+public/images/insights/*.png
