@@ -250,3 +250,23 @@ export type TechData = {
   whyUs: TitledText[]; // 4 or 5, about how SyntaxHires works, no numbers
   faqs: { q: string; a: string }[]; // 5 or 6
 };
+
+// One file per development service in content/services/. lib/buildServicePage.ts turns it into a PageDef.
+// Copy describes how SyntaxHires works. No client names, figures or results unless they are verified.
+export type ServiceData = {
+  slug: string; // URL segment under /service/, e.g. "web-application-development"
+  name: string; // "Web Application Development"
+  group: "build" | "operate"; // where it is listed in menus and on /services/
+  icon: IconKey;
+  summary: string; // one sentence, used on cards that link to this page
+  meta: { title: string; description: string };
+  hero: { title: string; text: string; bullets: string[] }; // 3 bullets
+  intro: { title: string; paragraphs: string[]; aside: { title: string; items: string[] } };
+  build: { title: string; intro?: string; items: CardItem[] }; // 4 to 6
+  audience: CardItem[]; // 3
+  approach: { title: string; items: { title: string; text: string }[] }; // 4 or 5 steps
+  deliverables: CardItem[]; // 4
+  // Links to existing /hire/ or /technologies/ pages. Left out when the service has no matching pages.
+  stack?: { label: string; href: string; note?: string }[];
+  faqs: { q: string; a: string }[]; // 4 to 6
+};
