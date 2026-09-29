@@ -253,6 +253,30 @@ export function Header() {
                 </Link>
               ) : null}
 
+              {menu.work?.items.length ? (
+                <div className="mega__work">
+                  <div className="mega__work-head">
+                    <p className="mega__heading">{menu.work.heading}</p>
+                    <Link href={menu.work.all.href} className="link-arrow" onClick={close}>
+                      {menu.work.all.label}
+                      <ArrowRight size={14} aria-hidden="true" />
+                    </Link>
+                  </div>
+                  <ul>
+                    {menu.work.items.map((item) => (
+                      <li key={item.href}>
+                        <Link href={item.href} className="mega__project" onClick={close}>
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={item.image} alt="" loading="lazy" decoding="async" width={1280} height={800} />
+                          <span className="mega__project-tag">{item.tag}</span>
+                          <span className="mega__project-title">{item.title}</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+
               {menu.topPicks?.length ? (
                 <div className="mega__picks">
                   <p className="mega__heading">Our Top Picks</p>
@@ -310,6 +334,20 @@ export function Header() {
                       {menu.button.label}
                       <ArrowRight size={14} aria-hidden="true" />
                     </Link>
+                  ) : null}
+                  {menu.work?.items.length ? (
+                    <div>
+                      <p className="mega__heading">{menu.work.heading}</p>
+                      <ul>
+                        {[...menu.work.items, { title: menu.work.all.label, href: menu.work.all.href }].map((item) => (
+                          <li key={item.href}>
+                            <Link href={item.href} onClick={close}>
+                              {item.title}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   ) : null}
                 </div>
               ) : null}

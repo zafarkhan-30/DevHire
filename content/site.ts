@@ -1,3 +1,5 @@
+import { projectPath, projects } from "@/content/work";
+
 // Single source of truth for brand, navigation, footer and global proof numbers.
 // Values marked PLACEHOLDER must be replaced with verified SyntaxHires data before launch.
 
@@ -18,6 +20,8 @@ export type MegaMenu = {
   columns: { heading: string; links: MenuLink[]; button?: NavLink }[];
   button?: NavLink;
   topPicks?: { tag: string; tone: "navy" | "violet" | "green"; title: string; href: string }[];
+  // Row of project cards with screenshots, shown under the columns.
+  work?: { heading: string; items: { tag: string; title: string; href: string; image: string }[]; all: NavLink };
 };
 
 export const site = {
@@ -112,6 +116,12 @@ export const megaMenus: MegaMenu[] = [
       },
     ],
     button: { label: "All Services", href: "/services/" },
+    // Projects come from content/work; the first four are shown.
+    work: {
+      heading: "Our Work",
+      items: projects.slice(0, 4).map((project) => ({ tag: project.industry, title: project.name, href: projectPath(project), image: project.cover })),
+      all: { label: "View All Work", href: "/case-study/our-work/" },
+    },
   },
   {
     id: "pricing",

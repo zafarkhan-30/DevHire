@@ -141,6 +141,10 @@
   position: absolute;
   inset-inline: 0;
   top: 100%;
+  /* On short screens the panel scrolls instead of running past the bottom of the window. */
+  max-height: calc(100dvh - var(--header-height) - var(--trustbar-height));
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background: var(--white);
   color: var(--body_color);
   box-shadow: 0 24px 48px rgba(11, 10, 10, 0.18);
@@ -308,7 +312,76 @@
 }
 
 .mega__button--all {
-  margin-top: 40px;
+  margin-top: 32px;
+}
+
+/* Project cards with screenshots, under the link columns */
+.mega__work {
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid #dcdfe4;
+}
+
+.mega__work-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.mega__work-head .mega__heading {
+  margin-bottom: 0;
+}
+
+.mega__work ul {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.mega__project {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--border_light);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.mega__project:hover {
+  border-color: rgba(var(--primary-rgb), 0.4);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-3px);
+}
+
+.mega__project img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-bottom: 1px solid var(--border_light);
+  object-fit: cover;
+  object-position: left top;
+}
+
+.mega__project-tag {
+  padding: 10px 14px 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.mega__project-title {
+  padding: 2px 14px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--secondary);
 }
 
 .mega__picks {
@@ -1296,5 +1369,50 @@
     left: 12px;
     bottom: 80px;
     width: auto;
+  }
+}
+
+/* Short laptop screens: tighten the mega menu so the project cards fit without scrolling */
+@media (min-width: 1200px) and (max-height: 820px) {
+  .mega__intro {
+    padding-block: 28px;
+  }
+
+  .mega__body {
+    padding-block: 28px 24px;
+  }
+
+  .mega__heading {
+    margin-bottom: 18px;
+  }
+
+  .mega__column ul {
+    gap: 9px;
+  }
+
+  .mega__button--all {
+    margin-top: 20px;
+    padding-block: 10px;
+  }
+
+  .mega__work {
+    margin-top: 20px;
+    padding-top: 18px;
+  }
+
+  .mega__work-head {
+    margin-bottom: 12px;
+  }
+
+  .mega__project img {
+    aspect-ratio: 2 / 1;
+  }
+
+  .mega__project-tag {
+    padding-top: 8px;
+  }
+
+  .mega__project-title {
+    padding-bottom: 10px;
   }
 }
