@@ -1,5 +1,6 @@
 import { servicePath, services } from "@/content/services";
 import type { CardItem, PageDef } from "@/content/types";
+import { projectCard, projects } from "@/content/work";
 
 const card = (group: "build" | "operate"): CardItem[] =>
   services
@@ -24,7 +25,7 @@ const page: PageDef = {
       text: "We build products for you, or add engineers to the team you already have. Either way, you own the code.",
       ctas: [
         { label: "Discuss Your Project", href: "#enquiry" },
-        { label: "See How We Build", href: "/how-we-build/", variant: "outline-light" },
+        { label: "See Our Work", href: "#work", variant: "outline-light" },
       ],
     },
     {
@@ -35,6 +36,27 @@ const page: PageDef = {
       align: "center",
       columns: 4,
       items: card("build"),
+    },
+    {
+      type: "cards",
+      id: "work",
+      tone: "navy",
+      eyebrow: "Our Work",
+      title: "Projects We Have [Built]",
+      intro: "Recent work from our team: what we built and what the finished product looks like.",
+      align: "center",
+      columns: 2,
+      items: projects.map(projectCard),
+    },
+    {
+      type: "cta",
+      variant: "strip",
+      title: "Want To See How A Project Runs?",
+      text: "Six stages, from discovery to support after launch, each with a clear output.",
+      ctas: [
+        { label: "How We Build", href: "/how-we-build/" },
+        { label: "View All Work", href: "/case-study/our-work/", variant: "outline" },
+      ],
     },
     {
       type: "cards",
