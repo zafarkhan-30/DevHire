@@ -1009,12 +1009,12 @@
   font-size: 14px;
 }
 
+/* Tabs wrap onto a second line when there are more projects than fit, so none is hidden off-screen. */
 .cases__tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 36px;
-  overflow-x: auto;
-  scrollbar-width: none;
 }
 
 .cases__tab {
