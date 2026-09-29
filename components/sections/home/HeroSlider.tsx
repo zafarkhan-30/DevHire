@@ -46,7 +46,7 @@ export function HeroSlider() {
     <section
       className={`hero${paused ? " is-paused" : ""}`}
       aria-roledescription="carousel"
-      aria-label="SyntaxHires services"
+      aria-label="SyntecHire services"
       style={{ "--slide-ms": `${SLIDE_MS}ms` } as CSSProperties}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}

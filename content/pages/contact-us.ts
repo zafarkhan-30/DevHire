@@ -1,12 +1,12 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
+// PLACEHOLDER markers flag values SyntecHire must confirm before launch.
 const page: PageDef = {
   path: "/contact-us/",
   meta: {
     title: "Contact Us",
     description:
-      "Tell SyntaxHires what you need: developers for your team, an offshore team or help with a legacy system. We reply within two working days.",
+      "Tell SyntecHire what you need: developers for your team, an offshore team or help with a legacy system. We reply within two working days.",
   },
   blocks: [
     {

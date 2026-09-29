@@ -9,7 +9,7 @@ const service: ServiceData = {
   meta: {
     title: "QA And Software Testing Services",
     description:
-      "QA and software testing by SyntaxHires: manual testing, automated regression tests, API, performance and device testing, with clear written reports.",
+      "QA and software testing by SyntecHire: manual testing, automated regression tests, API, performance and device testing, with clear written reports.",
   },
   hero: {
     title: "Testing That Finds Problems [Before Your Users Do]",

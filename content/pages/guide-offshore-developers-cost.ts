@@ -1,8 +1,8 @@
 import { rateSpan, rateText, rates } from "@/content/rates";
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
-// No market rates are stated on this page. SyntaxHires rates come from content/rates.ts; unset rates are left out.
+// PLACEHOLDER markers flag values SyntecHire must confirm before launch.
+// No market rates are stated on this page. SyntecHire rates come from content/rates.ts; unset rates are left out.
 const page: PageDef = {
   path: "/hire/dedicated-developers/offshore-developers-cost/",
   meta: {
@@ -42,8 +42,8 @@ const page: PageDef = {
       tone: "dark",
       title: "Cost Components And Their [Drivers]",
       align: "center",
-      intro: "The final column shows what each component costs with SyntaxHires. Components paid in your own time are marked as such.",
-      columns: ["Cost component", "What drives it", "How to control it", "SyntaxHires figure"],
+      intro: "The final column shows what each component costs with SyntecHire. Components paid in your own time are marked as such.",
+      columns: ["Cost component", "What drives it", "How to control it", "SyntecHire figure"],
       highlight: 3,
       rows: [
         ["Developer rate", "Seniority, stack, location and demand for the skill", "Hire the level the work needs", rateSpan() ? `${rateSpan()} per month` : "Quoted in writing"],
@@ -55,7 +55,7 @@ const page: PageDef = {
         ["Replacement", "Search, interviews, handover and lost context", "Keep decisions and setup documented in your own systems", "Quoted in writing"],
         ["Rework", "Unclear requirements and late review", "Small changes reviewed often", "Your time"],
       ],
-      footnote: "SyntaxHires replaces a developer if the fit is wrong. You interview the replacement before they start.",
+      footnote: "SyntecHire replaces a developer if the fit is wrong. You interview the replacement before they start.",
     },
     {
       type: "cards",
@@ -104,7 +104,7 @@ const page: PageDef = {
     {
       type: "stats",
       tone: "dark",
-      title: "SyntaxHires [Rate Card]",
+      title: "SyntecHire [Rate Card]",
       align: "center",
       items: [
         // Hidden until rates are set in content/rates.ts
@@ -181,7 +181,7 @@ const page: PageDef = {
           a: "It differs between teams. Management time and turnover are the two that are most often left out of a budget. Both depend heavily on how well requirements and decisions are documented.",
         },
         {
-          q: "How does SyntaxHires handle replacement?",
+          q: "How does SyntecHire handle replacement?",
           a: "If the fit is wrong, we replace the developer. You interview the replacement before they start. Engagements run month to month with no exit fee.",
         },
         {

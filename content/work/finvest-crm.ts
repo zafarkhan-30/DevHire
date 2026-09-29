@@ -14,7 +14,7 @@ const project: ProjectData = {
   meta: {
     title: "FinVest CRM: FinTech Web Application",
     description:
-      "How SyntaxHires built FinVest CRM, a web application for mutual fund advisors: client records, fund research, portfolio analytics, reports and an in-app assistant.",
+      "How SyntecHire built FinVest CRM, a web application for mutual fund advisors: client records, fund research, portfolio analytics, reports and an in-app assistant.",
   },
   cover: "/images/work/finvest-dashboard.webp",
   facts: [

@@ -12,7 +12,7 @@ type Inputs = {
   recruitmentCost: number;
   freelancerHourly: number;
   hoursPerMonth: number;
-  syntaxhiresRate: number;
+  syntechireRate: number;
 };
 
 const inputs: { key: keyof Inputs; label: string; hint: string; step?: number }[] = [
@@ -23,7 +23,7 @@ const inputs: { key: keyof Inputs; label: string; hint: string; step?: number }[
   { key: "recruitmentCost", label: "Recruitment cost", hint: "One-off, per hire" },
   { key: "freelancerHourly", label: "Freelancer rate", hint: "Per hour" },
   { key: "hoursPerMonth", label: "Productive hours", hint: "Per developer, per month" },
-  { key: "syntaxhiresRate", label: "SyntaxHires rate", hint: "Per developer, per month, from your quote" },
+  { key: "syntechireRate", label: "SyntecHire rate", hint: "Per developer, per month, from your quote" },
 ];
 
 const format = (value: number) =>
@@ -33,22 +33,22 @@ export function Calculator() {
   const uid = useId();
   const [values, setValues] = useState<Inputs>({
     ...calculator.defaults,
-    syntaxhiresRate: calculator.syntaxhiresMonthlyRate ?? 0,
+    syntechireRate: calculator.syntechireMonthlyRate ?? 0,
   });
 
-  const { teamSize, months, salary, overheadPercent, recruitmentCost, freelancerHourly, hoursPerMonth, syntaxhiresRate } = values;
+  const { teamSize, months, salary, overheadPercent, recruitmentCost, freelancerHourly, hoursPerMonth, syntechireRate } = values;
   const span = Math.max(months, 1);
 
   // Recruitment is a one-off cost, spread across the engagement so the monthly figures compare fairly.
   const inHouse = salary > 0 ? teamSize * (salary * (1 + overheadPercent / 100) + recruitmentCost / span) : 0;
   const freelance = teamSize * freelancerHourly * hoursPerMonth;
-  const dedicated = teamSize * syntaxhiresRate;
+  const dedicated = teamSize * syntechireRate;
   const hours = teamSize * hoursPerMonth;
 
   const models = [
     { name: "In-house hire", monthly: inHouse },
     { name: "Freelancers", monthly: freelance },
-    { name: "SyntaxHires dedicated", monthly: dedicated, highlight: true, missing: dedicated <= 0 },
+    { name: "SyntecHire dedicated", monthly: dedicated, highlight: true, missing: dedicated <= 0 },
   ];
 
   return (
@@ -107,8 +107,8 @@ export function Calculator() {
 
         {inHouse > 0 && dedicated > 0 ? (
           <p className="calc__saving">
-            Annual difference, in-house vs SyntaxHires: <strong>{format(Math.abs(inHouse - dedicated) * 12)}</strong>
-            {inHouse >= dedicated ? " lower with SyntaxHires" : " higher with SyntaxHires"}
+            Annual difference, in-house vs SyntecHire: <strong>{format(Math.abs(inHouse - dedicated) * 12)}</strong>
+            {inHouse >= dedicated ? " lower with SyntecHire" : " higher with SyntecHire"}
           </p>
         ) : null}
         <p className="calc__note">{calculator.disclaimer}</p>

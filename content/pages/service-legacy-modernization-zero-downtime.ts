@@ -1,6 +1,6 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
+// PLACEHOLDER markers flag values SyntecHire must confirm before launch.
 const page: PageDef = {
   path: "/service/legacy-modernization-zero-downtime/",
   meta: {
@@ -288,7 +288,7 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: operational track record. Replace each "—" with a verified SyntaxHires figure, or remove the block.
+      // PLACEHOLDER: operational track record. Replace each "—" with a verified SyntecHire figure, or remove the block.
       type: "stats",
       tone: "dark",
       title: "Operational Track Record",

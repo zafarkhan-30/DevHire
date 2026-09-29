@@ -94,7 +94,7 @@ export type TableBlock = Section & {
   type: "table";
   columns: string[];
   rows: string[][];
-  // Zero-based index of the column to emphasise (usually the SyntaxHires column).
+  // Zero-based index of the column to emphasise (usually the SyntecHire column).
   highlight?: number;
   footnote?: string;
 };
@@ -252,12 +252,12 @@ export type TechData = {
   versions: { version: string; year: string; tag: string; text: string }[]; // 4 to 6, factual history
   chooseWhen: TitledText[]; // 4
   chooseNot: TitledText[]; // 3 or 4
-  whyUs: TitledText[]; // 4 or 5, about how SyntaxHires works, no numbers
+  whyUs: TitledText[]; // 4 or 5, about how SyntecHire works, no numbers
   faqs: { q: string; a: string }[]; // 5 or 6
 };
 
 // One file per development service in content/services/. lib/buildServicePage.ts turns it into a PageDef.
-// Copy describes how SyntaxHires works. No client names, figures or results unless they are verified.
+// Copy describes how SyntecHire works. No client names, figures or results unless they are verified.
 export type ServiceData = {
   slug: string; // URL segment under /service/, e.g. "web-application-development"
   name: string; // "Web Application Development"
@@ -296,7 +296,7 @@ export type ProjectData = {
   built: CardItem[]; // what was built, 4 to 8
   stack: CardItem[]; // technology and what it was used for
   screens: { src: string; alt: string; caption: string }[];
-  services: { label: string; href: string }[]; // SyntaxHires services this project used
+  services: { label: string; href: string }[]; // SyntecHire services this project used
   // Public address of the finished product. Leave out until it is live on its final domain.
   live?: { label: string; href: string };
 };

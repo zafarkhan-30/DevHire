@@ -163,7 +163,7 @@ const page: PageDef = {
         },
         {
           q: "Who makes architecture decisions in a blended team?",
-          a: "You do. SyntaxHires engineers work in your repository and tools and follow the direction your team sets.",
+          a: "You do. SyntecHire engineers work in your repository and tools and follow the direction your team sets.",
         },
         {
           q: "Who owns the modernised code?",

@@ -1,6 +1,6 @@
 import { projectPath, projects } from "@/content/work";
 
-// Home page content. Copy is original to SyntaxHires.
+// Home page content. Copy is original to SyntecHire.
 // Items marked PLACEHOLDER need real, verifiable data before launch.
 
 export const hero = {
@@ -59,7 +59,7 @@ export const hero = {
 
 export const trustedBy = {
   // Words wrapped in [] render in the accent color.
-  title: "Teams That Build With [SyntaxHires] Engineers Across [Industries] And Time Zones",
+  title: "Teams That Build With [SyntecHire] Engineers Across [Industries] And Time Zones",
   caption: "From first-product startups to established engineering organisations. References on request.",
   // Real clients only, with their permission. Files live in /public/images/Partners; use a copy with the empty border trimmed off so every logo lines up at the same height.
   logos: [
@@ -92,7 +92,7 @@ export const compare = {
     ],
   },
   ours: {
-    heading: "SyntaxHires",
+    heading: "SyntecHire",
     sub: "How we work",
     rows: [
       { title: "Nothing to pay upfront.", text: "No deposit and no minimum term. Interview the developer first, then decide." },
@@ -104,7 +104,7 @@ export const compare = {
     ],
   },
   callout:
-    "Good developers exist on every platform. The difference is the incentive. When a vendor bills by the hour, more hours are good for the vendor whether or not you get value. SyntaxHires is set up so that we do well only when your sprint ships.",
+    "Good developers exist on every platform. The difference is the incentive. When a vendor bills by the hour, more hours are good for the vendor whether or not you get value. SyntecHire is set up so that we do well only when your sprint ships.",
 };
 
 export const midCta = {
@@ -115,9 +115,9 @@ export const midCta = {
 };
 
 export const reasons = {
-  title: "Why Companies Build With [SyntaxHires]",
+  title: "Why Companies Build With [SyntecHire]",
   intro:
-    "Companies use SyntaxHires to get a product built, add remote developers or modernise an ageing system. Written terms. No exit fees.",
+    "Companies use SyntecHire to get a product built, add remote developers or modernise an ageing system. Written terms. No exit fees.",
   cards: [
     {
       icon: "zap",

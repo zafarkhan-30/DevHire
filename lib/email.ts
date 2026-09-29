@@ -1,11 +1,11 @@
-// HTML email templates for form submissions: the lead alert sent to SyntaxHires and the
+// HTML email templates for form submissions: the lead alert sent to SyntecHire and the
 // confirmation sent to the visitor. Table layout with inline styles, 600px wide, so they render
 // in Gmail, Outlook and phone mail apps. The wordmark is text, so no image has to load.
 import { site } from "@/content/site";
 import { EMAIL_LOGO_BASE64, EMAIL_LOGO_CID } from "@/lib/email-logo";
 
 // Inline logo attachment; pass with every email that uses layout().
-export const logoAttachment = { filename: "syntaxhires-logo.png", content: EMAIL_LOGO_BASE64, content_id: EMAIL_LOGO_CID };
+export const logoAttachment = { filename: "syntechire-logo.png", content: EMAIL_LOGO_BASE64, content_id: EMAIL_LOGO_CID };
 
 export type Lead = Record<string, string>;
 
@@ -88,7 +88,7 @@ function layout({ preheader, eyebrow, title, body, footer }: { preheader: string
 <tr><td style="background:${NAVY};border-radius:14px 14px 0 0;padding:22px 32px">
 <table role="presentation" cellpadding="0" cellspacing="0"><tr>
 <td style="padding-right:12px;vertical-align:middle"><img src="cid:${EMAIL_LOGO_CID}" width="40" height="40" alt="" style="display:block;border:0;border-radius:9px"></td>
-<td style="vertical-align:middle;font-family:${FONT};font-size:24px;font-weight:800;color:#ffffff;letter-spacing:-0.3px">Syntax<span style="color:${ORANGE}">Hires</span></td>
+<td style="vertical-align:middle;font-family:${FONT};font-size:24px;font-weight:800;color:#ffffff;letter-spacing:-0.3px">Syntec<span style="color:${ORANGE}">Hire</span></td>
 </tr></table>
 </td></tr>
 <tr><td style="background:#ffffff;padding:32px;border-radius:0 0 14px 14px">
@@ -105,7 +105,7 @@ ${body}
 const p = (html: string) => `<p style="margin:0 0 16px;font-family:${FONT};font-size:15px;line-height:1.65;color:${INK}">${html}</p>`;
 const h2 = (text: string) => `<h2 style="margin:28px 0 12px;font-family:${FONT};font-size:16px;color:${NAVY}">${escapeHtml(text)}</h2>`;
 
-// Sent to SyntaxHires for every submission.
+// Sent to SyntecHire for every submission.
 export function leadAlert(lead: Lead, { confirmed = false, receivedAt = new Date() } = {}) {
   const form = formName(lead.type);
   const who = lead.name || lead.email;

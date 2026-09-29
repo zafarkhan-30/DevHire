@@ -1,7 +1,7 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
-// SyntaxHires claims no Microsoft partner status or certification on this page. Add one only if SyntaxHires holds it.
+// PLACEHOLDER markers flag values SyntecHire must confirm before launch.
+// SyntecHire claims no Microsoft partner status or certification on this page. Add one only if SyntecHire holds it.
 const page: PageDef = {
   path: "/hire/microsoft-developers/",
   meta: {
@@ -25,7 +25,7 @@ const page: PageDef = {
       note: "You interview the developer before any contract.",
     },
     {
-      // PLACEHOLDER: five verified SyntaxHires figures for Microsoft stack work. Replace every value and confirm each label.
+      // PLACEHOLDER: five verified SyntecHire figures for Microsoft stack work. Replace every value and confirm each label.
       type: "stats",
       tone: "muted",
       pad: "xs",
@@ -105,7 +105,7 @@ const page: PageDef = {
           list: ["SharePoint Framework web parts", "Microsoft Graph", "Content migration", "Permissions and information architecture"],
         },
       ],
-      footnote: "Product names belong to Microsoft. SyntaxHires is an independent staffing company.",
+      footnote: "Product names belong to Microsoft. SyntecHire is an independent staffing company.",
     },
     {
       type: "split",
@@ -215,7 +215,7 @@ const page: PageDef = {
       footnote: "Developer engagements run month to month with no exit fee. If the fit is wrong, we replace the developer.",
     },
     {
-      // PLACEHOLDER: replace with real developer profiles once SyntaxHires supplies them and each developer has approved publication.
+      // PLACEHOLDER: replace with real developer profiles once SyntecHire supplies them and each developer has approved publication.
       type: "cards",
       draft: true, // hidden until real content replaces the template
       tone: "muted",
@@ -270,7 +270,7 @@ const page: PageDef = {
       type: "faq",
       items: [
         {
-          q: "Is SyntaxHires a Microsoft partner?",
+          q: "Is SyntecHire a Microsoft partner?",
           a: "This page makes no claim of partner status or certification. We are a staffing company that places developers who work with Microsoft technologies. Ask us about an individual developer's credentials when you review their profile.",
         },
         {

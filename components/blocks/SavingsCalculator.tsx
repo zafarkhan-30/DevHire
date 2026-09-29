@@ -8,7 +8,7 @@ type Props = Pick<SavingsBlock, "agencyPercent" | "contingency" | "flatFee" | "d
 const rupees = (value: number) => `₹${new Intl.NumberFormat("en-IN", { maximumFractionDigits: 0 }).format(Math.max(0, value))}`;
 const range = (low: number, high: number) => (Math.round(low) === Math.round(high) ? rupees(low) : `${rupees(low)} – ${rupees(high)}`);
 
-// Compares SyntaxHires recruitment fees with a percentage agency fee on the salary the visitor enters.
+// Compares SyntecHire recruitment fees with a percentage agency fee on the salary the visitor enters.
 // Savings are shown as a range: the smallest saving uses the top of our price range, so the figure is never overstated.
 export function SavingsCalculator({ agencyPercent, contingency, flatFee, defaultCtc, note }: Props) {
   const uid = useId();
@@ -27,12 +27,12 @@ export function SavingsCalculator({ agencyPercent, contingency, flatFee, default
   const rows = [
     { name: `Typical agency fee (${percent}% of CTC)`, fee: rupees(agency), save: "Baseline" as string | null },
     {
-      name: `SyntaxHires contingency (${contingency[0]}% – ${contingency[1]}%)`,
+      name: `SyntecHire contingency (${contingency[0]}% – ${contingency[1]}%)`,
       fee: range(contLow, contHigh),
       save: agency > contHigh ? range(agency - contHigh, agency - contLow) : null,
     },
     {
-      name: "SyntaxHires flat fee",
+      name: "SyntecHire flat fee",
       fee: range(flatLow, flatHigh),
       save: agency > flatHigh ? range(agency - flatHigh, agency - flatLow) : null,
       highlight: true,

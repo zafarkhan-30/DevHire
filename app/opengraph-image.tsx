@@ -29,8 +29,8 @@ export default function OpengraphImage() {
             <path d="M29 33 L37 41 L52 22" fill="none" stroke="#FF4103" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <div style={{ display: "flex", fontSize: 92, fontWeight: 800, letterSpacing: -2 }}>
-            <span>Syntax</span>
-            <span style={{ color: "#ff4103", marginLeft: -14 }}>Hires</span>
+            <span>Syntec</span>
+            <span style={{ color: "#ff4103", marginLeft: -14 }}>Hire</span>
           </div>
         </div>
         <div style={{ marginTop: 44, fontSize: 46, fontWeight: 700, lineHeight: 1.2, maxWidth: 900 }}>

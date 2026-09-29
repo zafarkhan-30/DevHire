@@ -9,7 +9,7 @@ const service: ServiceData = {
   meta: {
     title: "MVP Development",
     description:
-      "MVP development for founders. SyntaxHires helps you cut the scope to what matters, builds a first version and leaves you with code you can grow.",
+      "MVP development for founders. SyntecHire helps you cut the scope to what matters, builds a first version and leaves you with code you can grow.",
   },
   hero: {
     title: "Launch A First Version That [Tests Your Idea]",

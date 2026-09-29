@@ -12,7 +12,7 @@ const page: PageDef = {
   meta: {
     title: "Software Development Services",
     description:
-      "SyntaxHires designs, builds and supports software: web and mobile apps, MVPs, AI and automation, cloud, testing and support, plus engineers for your own team.",
+      "SyntecHire designs, builds and supports software: web and mobile apps, MVPs, AI and automation, cloud, testing and support, plus engineers for your own team.",
   },
   blocks: [
     {

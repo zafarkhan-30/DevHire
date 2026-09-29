@@ -9,7 +9,7 @@ const service: ServiceData = {
   meta: {
     title: "Mobile App Development",
     description:
-      "Android and iOS app development by SyntaxHires. Native or cross-platform, with the backend, testing on real devices and app store release included.",
+      "Android and iOS app development by SyntecHire. Native or cross-platform, with the backend, testing on real devices and app store release included.",
   },
   hero: {
     title: "Mobile Apps For [Android And iOS]",

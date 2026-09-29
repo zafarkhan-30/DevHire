@@ -1,7 +1,7 @@
-// PLACEHOLDER: SyntaxHires must confirm its contracting entity, governing law, insurance and employment structure before launch. Nothing on this page may state them until confirmed.
+// PLACEHOLDER: SyntecHire must confirm its contracting entity, governing law, insurance and employment structure before launch. Nothing on this page may state them until confirmed.
 import type { PageDef } from "@/content/types";
 
-// Nothing on this page is legal advice. Keep all copy general until SyntaxHires' counsel has approved specifics.
+// Nothing on this page is legal advice. Keep all copy general until SyntecHire's counsel has approved specifics.
 const page: PageDef = {
   path: "/hire/us-ready-remote-engineering/",
   meta: {
@@ -202,7 +202,7 @@ const page: PageDef = {
           a: "The contracting party, governing law and dispute resolution process are set out in the agreement. We share the draft early so your counsel can review these points first.",
         },
         {
-          q: "What insurance does SyntaxHires carry?",
+          q: "What insurance does SyntecHire carry?",
           a: "Insurance and liability terms are set out in the agreement. Ask us for the current details as part of your vendor review and we will provide them in writing.",
         },
         {

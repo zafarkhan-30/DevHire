@@ -9,7 +9,7 @@ const service: ServiceData = {
   meta: {
     title: "Cloud And DevOps Services",
     description:
-      "Cloud and DevOps services by SyntaxHires: cloud setup, automated build and release pipelines, monitoring, cost review and migrations, all documented.",
+      "Cloud and DevOps services by SyntecHire: cloud setup, automated build and release pipelines, monitoring, cost review and migrations, all documented.",
   },
   hero: {
     title: "Cloud And Release Pipelines You Can [Rely On]",

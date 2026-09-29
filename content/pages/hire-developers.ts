@@ -1,12 +1,12 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
+// PLACEHOLDER markers flag values SyntecHire must confirm before launch.
 const page: PageDef = {
   path: "/hire-developers/",
   meta: {
     title: "Hire Developers",
     description:
-      "Tell SyntaxHires the stack, the role and the timeline. We reply within two working days with a shortlist plan. You interview before any contract.",
+      "Tell SyntecHire the stack, the role and the timeline. We reply within two working days with a shortlist plan. You interview before any contract.",
   },
   blocks: [
     {
@@ -45,7 +45,7 @@ const page: PageDef = {
       // Logos come from trustedBy.logos in content/home.ts (real clients, with permission).
       type: "logos",
       tone: "muted",
-      title: "Teams That Build With [SyntaxHires]",
+      title: "Teams That Build With [SyntecHire]",
       caption: "References on request.",
     },
     {

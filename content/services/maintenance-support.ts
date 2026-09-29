@@ -9,7 +9,7 @@ const service: ServiceData = {
   meta: {
     title: "Software Maintenance And Support",
     description:
-      "Software maintenance and support by SyntaxHires: bug fixes, security updates, monitoring and small improvements, on terms agreed in writing.",
+      "Software maintenance and support by SyntecHire: bug fixes, security updates, monitoring and small improvements, on terms agreed in writing.",
   },
   hero: {
     title: "Keep Your Software [Healthy After Launch]",

@@ -1,13 +1,13 @@
 import type { PageDef } from "@/content/types";
 
-// Prices and model structure supplied by SyntaxHires. The internal "agency cash flow and risk" view is
+// Prices and model structure supplied by SyntecHire. The internal "agency cash flow and risk" view is
 // intentionally not shown to buyers. Change figures here; final terms are always set out in the agreement.
 const page: PageDef = {
   path: "/pricing/",
   meta: {
     title: "Pricing",
     description:
-      "Four ways to hire with SyntaxHires: contingency, flat fee per hire, a three-hire bundle or a dedicated recruiter on retainer. Clear prices in rupees.",
+      "Four ways to hire with SyntecHire: contingency, flat fee per hire, a three-hire bundle or a dedicated recruiter on retainer. Clear prices in rupees.",
   },
   blocks: [
     {
@@ -173,7 +173,7 @@ const page: PageDef = {
         },
         {
           q: "How is Recruitment As A Service different from hiring developers through you?",
-          a: "With RaaS you get a recruiter who finds and hires people onto your own payroll. With our dedicated developer and staff augmentation services, you get engineers who work on your product through SyntaxHires.",
+          a: "With RaaS you get a recruiter who finds and hires people onto your own payroll. With our dedicated developer and staff augmentation services, you get engineers who work on your product through SyntecHire.",
         },
       ],
     },

@@ -1,4 +1,4 @@
-# SyntaxHires — Build Plan
+# SyntecHire — Build Plan
 
 Reference: `HireDeveloper.dev — Site Teardown.pdf` (48 pages, crawled 27 Sep 2026).
 Target: a site with the same design system, layout, components, and page structure as the reference.
@@ -11,7 +11,7 @@ Target: a site with the same design system, layout, components, and page structu
 | Font | Plus Jakarta Sans 200–800, self-hosted woff2 (open-source, SIL OFL) |
 | Layout, section order, component behaviour, motion timings | Replicate exactly |
 | Page inventory and URL structure | Replicate (79 marketing pages + blog) |
-| Brand name, logo, marketing copy, blog articles | Ours — written for SyntaxHires, same length and structure so the layout holds |
+| Brand name, logo, marketing copy, blog articles | Ours — written for SyntecHire, same length and structure so the layout holds |
 | Client logos, testimonials, named people, stats, certification badges, office addresses | Ours — only claims we can back up |
 | Photos and illustrations | Ours, or licensed stock with the same crop and treatment |
 
@@ -160,7 +160,7 @@ tests/visual/           Playwright specs
 
 | Question | Decision |
 |---|---|
-| Brand | SyntaxHires is a separate brand. All copy, logos, testimonials, stats and images are SyntaxHires' own. |
+| Brand | SyntecHire is a separate brand. All copy, logos, testimonials, stats and images are SyntecHire's own. |
 | Stack | Next.js |
 | CRM | Not decided. Forms post to `/api/lead`, which validates and logs. Add the CRM call in `deliver()` in `app/api/lead/route.ts`. |
 | Blog post count at launch | Open |
@@ -213,6 +213,7 @@ Changes from the original plan:
 - Rates live in `content/rates.ts` only. Share image, JSON-LD (Organization, WebSite, BreadcrumbList, FAQPage, Article) and canonical URLs added. The site audit fails titles over 60 characters.
 - Footer hides social links that are still "#". `agentRules: false` stops next dev writing AGENTS.md and CLAUDE.md.
 
+- Brand renamed to SyntecHire (2026-09-30), at the user's request. It was DevHire, then SyntaxHires. The wordmark is "Syntec" in white and "Hire" in orange; the bracket-and-check mark is unchanged. Identifiers follow the name (`syntechire-consent` cookie key, package name). The project folder and GitHub repository keep the name DevHire.
 - Repositioned as a software development company (2026-09-29), at the user's request. Hiring, staff augmentation and recruitment stay as services.
   - Eight development service pages, one data file each in `content/services/`, built by `lib/buildServicePage.ts`: web application, mobile app, MVP, AI and automation, UI/UX design, cloud and DevOps, QA and testing, maintenance and support. To add one, copy a file, edit it and add it to `content/services/index.ts`.
   - New pages: `/services/`, `/how-we-build/`, `/engagement-models/`. No project prices are shown; every engagement is quoted in writing. `/pricing/` is labelled recruitment pricing.

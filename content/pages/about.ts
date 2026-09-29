@@ -1,12 +1,12 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
+// PLACEHOLDER markers flag values SyntecHire must confirm before launch.
 const page: PageDef = {
   path: "/about/",
   meta: {
     title: "About Us",
     description:
-      "SyntaxHires places remote developers who are ready to contribute inside your team. One developer per client, month-to-month terms and code you own.",
+      "SyntecHire places remote developers who are ready to contribute inside your team. One developer per client, month-to-month terms and code you own.",
   },
   blocks: [
     {
@@ -14,7 +14,7 @@ const page: PageDef = {
       tone: "navy",
       size: "lg",
       align: "center",
-      eyebrow: "About SyntaxHires",
+      eyebrow: "About SyntecHire",
       title: "Remote Developers Chosen For [Readiness], Not Only For Skills",
       text: "We place developers who can join a working team, read an unfamiliar codebase and contribute without being carried. You interview them first. You decide.",
       ctas: [
@@ -25,7 +25,7 @@ const page: PageDef = {
     {
       type: "cards",
       title: "Who We Are [Best For]",
-      intro: "SyntaxHires suits teams that already know what they want to build and need capable people to build it.",
+      intro: "SyntecHire suits teams that already know what they want to build and need capable people to build it.",
       align: "center",
       columns: 4,
       items: [
@@ -36,13 +36,13 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: founders should replace these four steps with the real SyntaxHires story.
+      // PLACEHOLDER: founders should replace these four steps with the real SyntecHire story.
       type: "steps",
       draft: true, // hidden until real content replaces the template
       tone: "muted",
       layout: "list",
       title: "Our [Story]",
-      intro: "Why a company like SyntaxHires needs to exist, told through what we see across the staffing industry.",
+      intro: "Why a company like SyntecHire needs to exist, told through what we see across the staffing industry.",
       align: "left",
       items: [
         {
@@ -64,15 +64,15 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: real names, roles, bios and photos of the SyntaxHires founders.
+      // PLACEHOLDER: real names, roles, bios and photos of the SyntecHire founders.
       type: "people",
       draft: true, // hidden until founder details are added
       title: "[Leadership]",
       intro: "The people accountable for every engagement.",
       align: "center",
       items: [
-        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at SyntaxHires." },
-        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at SyntaxHires." },
+        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at SyntecHire." },
+        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at SyntecHire." },
       ],
     },
     {
@@ -94,7 +94,7 @@ const page: PageDef = {
           ],
         },
         {
-          title: "SyntaxHires",
+          title: "SyntecHire",
           mood: "good",
           items: [
             "Match on the kind of system you run",
@@ -122,7 +122,7 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: verified SyntaxHires track record numbers. Keep in step with site.stats.
+      // PLACEHOLDER: verified SyntecHire track record numbers. Keep in step with site.stats.
       type: "stats",
       tone: "dark",
       title: "Track Record",
@@ -150,7 +150,7 @@ const page: PageDef = {
     {
       type: "cards",
       tone: "muted",
-      title: "Why [SyntaxHires]",
+      title: "Why [SyntecHire]",
       align: "center",
       columns: 3,
       numbered: true,
@@ -165,7 +165,7 @@ const page: PageDef = {
     {
       // Logos come from trustedBy.logos in content/home.ts (real clients, with permission).
       type: "logos",
-      title: "Teams That Build With [SyntaxHires]",
+      title: "Teams That Build With [SyntecHire]",
       caption: "References on request.",
     },
     {

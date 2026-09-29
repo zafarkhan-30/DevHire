@@ -6,7 +6,7 @@ const page: PageDef = {
   meta: {
     title: "Engagement Models",
     description:
-      "Three ways to work with SyntaxHires on a software project: fixed scope, time and material, or a dedicated team. When each fits and how changes are handled.",
+      "Three ways to work with SyntecHire on a software project: fixed scope, time and material, or a dedicated team. When each fits and how changes are handled.",
   },
   blocks: [
     {
@@ -64,7 +64,7 @@ const page: PageDef = {
         ["What is agreed upfront", "Features, timeline and price", "Team, rate and sprint length", "Team and monthly fee"],
         ["How changes are handled", "Written change request, approved by you", "Planned into the next sprint", "You reprioritise at any time"],
         ["How you are billed", "Against milestones", "For time used, with a report", "Monthly per team member"],
-        ["Who directs daily work", "SyntaxHires", "SyntaxHires, with your priorities", "You, with a lead if wanted"],
+        ["Who directs daily work", "SyntecHire", "SyntecHire, with your priorities", "You, with a lead if wanted"],
         ["Risk of cost overrun", "Low for you, if scope holds", "Managed sprint by sprint", "Fixed monthly cost"],
       ],
     },

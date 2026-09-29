@@ -36,7 +36,7 @@ async function sendEmail(key: string, email: { from: string; to: string[]; reply
 
 // Emails each lead through Resend (resend.com). Settings live in .env.local (see .env.example):
 // RESEND_API_KEY, LEAD_TO_EMAIL (one address or several, comma separated) and optionally LEAD_FROM_EMAIL.
-// Two emails go out: a confirmation to the visitor (best effort) and the lead alert to SyntaxHires.
+// Two emails go out: a confirmation to the visitor (best effort) and the lead alert to SyntecHire.
 // Only the lead alert decides success. Without a key or inbox the lead is only logged.
 async function deliver(lead: Lead): Promise<boolean> {
   const key = process.env.RESEND_API_KEY;

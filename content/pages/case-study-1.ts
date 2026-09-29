@@ -8,7 +8,7 @@ const page: PageDef = {
     title: "Case Study 1",
     // PLACEHOLDER: one sentence naming the industry, the problem and the result.
     description:
-      "Case study template. It will describe where the client started, what the SyntaxHires team changed and the measured result, once the client has approved it.",
+      "Case study template. It will describe where the client started, what the SyntecHire team changed and the measured result, once the client has approved it.",
   },
   blocks: [
     {
@@ -33,7 +33,7 @@ const page: PageDef = {
         { label: "Industry", value: "—" },
         // PLACEHOLDER: the client's country or region, if approved for publication.
         { label: "Location", value: "—" },
-        // PLACEHOLDER: number and roles of SyntaxHires engineers.
+        // PLACEHOLDER: number and roles of SyntecHire engineers.
         { label: "Team size", value: "—" },
         // PLACEHOLDER: length of the engagement.
         { label: "Duration", value: "—" },
@@ -74,7 +74,7 @@ const page: PageDef = {
       align: "left",
       paragraphs: [
         "This section describes what the team did, in the order they did it. Name the key technical decisions and give the reason for each.",
-        "Explain how the SyntaxHires engineers worked with the client's team: who set priorities, how work was reviewed and how progress was reported. Mention anything that did not go to plan and how it was handled.",
+        "Explain how the SyntecHire engineers worked with the client's team: who set priorities, how work was reviewed and how progress was reported. Mention anything that did not go to plan and how it was handled.",
       ],
       list: ["Team shape and roles", "Key technical decisions and why", "How the work was sequenced", "What changed along the way"],
     },

@@ -171,7 +171,7 @@ const page: PageDef = {
           a: "Beyond application development: automated deployment, container or service orchestration, monitoring, distributed tracing and API design. Someone has to own that platform.",
         },
         {
-          q: "Can SyntaxHires engineers work on either architecture?",
+          q: "Can SyntecHire engineers work on either architecture?",
           a: "Yes. You interview each developer before any contract, so you can test for the experience your architecture needs. They work in your repository and tools.",
         },
       ],

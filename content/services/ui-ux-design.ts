@@ -9,7 +9,7 @@ const service: ServiceData = {
   meta: {
     title: "UI/UX Design Services",
     description:
-      "UI/UX design by SyntaxHires: user journeys, wireframes, clickable prototypes and design systems, prepared so developers can build from them directly.",
+      "UI/UX design by SyntecHire: user journeys, wireframes, clickable prototypes and design systems, prepared so developers can build from them directly.",
   },
   hero: {
     title: "Product Design That Is [Ready To Build]",

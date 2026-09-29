@@ -14,7 +14,7 @@ const project: ProjectData = {
   meta: {
     title: "Aimsure: Enterprise Website Build",
     description:
-      "How SyntaxHires built the Aimsure website: 21 pages for an enterprise IT asset recovery company, a seven-step quote request, structured data and a dark theme.",
+      "How SyntecHire built the Aimsure website: 21 pages for an enterprise IT asset recovery company, a seven-step quote request, structured data and a dark theme.",
   },
   cover: "/images/work/aimsure-home.webp",
   facts: [

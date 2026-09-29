@@ -1,7 +1,7 @@
 import { hasRates, rateText, rates } from "@/content/rates";
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
+// PLACEHOLDER markers flag values SyntecHire must confirm before launch.
 const page: PageDef = {
   path: "/hire/dedicated-developers/",
   meta: {
@@ -142,7 +142,7 @@ const page: PageDef = {
         { tag: "Access", title: "Accounts and environment", text: "NDA signed. Repository, tracker and chat access granted. The developer sets up a working local environment and notes any gaps in the setup guide." },
         { tag: "Context", title: "Walkthrough with your team", text: "Your lead explains the architecture, the release process and the current priorities. The developer asks questions and writes down what they learn." },
         { tag: "First task", title: "A small, real change", text: "The developer picks up a ticket small enough to finish, opens a pull request and goes through your normal review." },
-        { tag: "Review", title: "First-week check-in", text: "You, the developer and SyntaxHires discuss what went well and what needs to change. You decide whether to continue." },
+        { tag: "Review", title: "First-week check-in", text: "You, the developer and SyntecHire discuss what went well and what needs to change. You decide whether to continue." },
       ],
       footnote: "This describes activities, not a guaranteed result.",
     },
@@ -151,7 +151,7 @@ const page: PageDef = {
       title: "Roles And [Responsibilities]",
       align: "center",
       intro: "Who does what, stated before work starts.",
-      columns: ["Area", "You", "SyntaxHires"],
+      columns: ["Area", "You", "SyntecHire"],
       highlight: 2,
       rows: [
         ["Hiring decision", "Interview and choose the developer", "Source, screen and present candidates"],

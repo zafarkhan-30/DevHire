@@ -7,7 +7,7 @@ const page: PageDef = {
   meta: {
     title: "Our Work",
     description:
-      "Work delivered by SyntaxHires engineers, by industry. Each case study sets out where the client started, what the team changed and what the result was.",
+      "Work delivered by SyntecHire engineers, by industry. Each case study sets out where the client started, what the team changed and what the result was.",
   },
   blocks: [
     {
@@ -35,7 +35,7 @@ const page: PageDef = {
       footnote: "More projects are added as clients approve them for publication.",
     },
     {
-      // Logos come from trustedBy.logos in content/home.ts. Do not add badges unless SyntaxHires holds them.
+      // Logos come from trustedBy.logos in content/home.ts. Do not add badges unless SyntecHire holds them.
       type: "logos",
       title: "Teams We Have [Worked With]",
       align: "center",

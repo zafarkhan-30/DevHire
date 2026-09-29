@@ -1,4 +1,4 @@
-// PLACEHOLDER: SyntaxHires must confirm the trial offer and its terms before this page goes live.
+// PLACEHOLDER: SyntecHire must confirm the trial offer and its terms before this page goes live.
 import type { PageDef } from "@/content/types";
 
 const page: PageDef = {
@@ -6,7 +6,7 @@ const page: PageDef = {
   meta: {
     title: "Risk-Free Developer Trial",
     description:
-      "Work with a SyntaxHires developer on real tasks in your own repository before you commit. Pay only if you are satisfied. Terms are set out in the agreement.",
+      "Work with a SyntecHire developer on real tasks in your own repository before you commit. Pay only if you are satisfied. Terms are set out in the agreement.",
   },
   blocks: [
     {
@@ -154,7 +154,7 @@ const page: PageDef = {
         { q: "Can I interview the developer before the trial?", a: "Yes. You interview every candidate and choose the person you want to work with." },
         { q: "Who owns the code written during the trial?", a: "You do. All code written for you belongs to you, and the work happens in your repository." },
         { q: "What happens if I decide to stop?", a: "You tell us and the engagement ends. There is no exit fee." },
-        { q: "What if I like SyntaxHires but the developer is not the right fit?", a: "Tell us what is not working. We will propose a replacement for you to interview." },
+        { q: "What if I like SyntecHire but the developer is not the right fit?", a: "Tell us what is not working. We will propose a replacement for you to interview." },
       ],
     },
   ],

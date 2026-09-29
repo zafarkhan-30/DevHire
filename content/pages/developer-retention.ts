@@ -1,12 +1,12 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values SyntaxHires must confirm before launch.
+// PLACEHOLDER markers flag values SyntecHire must confirm before launch.
 const page: PageDef = {
   path: "/developer-retention/",
   meta: {
     title: "Developer Retention",
     description:
-      "Why developer continuity matters to delivery, what churn costs a client and how SyntaxHires keeps the same developer on your codebase.",
+      "Why developer continuity matters to delivery, what churn costs a client and how SyntecHire keeps the same developer on your codebase.",
   },
   blocks: [
     {
@@ -49,7 +49,7 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: measured SyntaxHires retention data.
+      // PLACEHOLDER: measured SyntecHire retention data.
       type: "stats",
       tone: "dark",
       title: "Retention Data",

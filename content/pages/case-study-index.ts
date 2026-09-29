@@ -7,7 +7,7 @@ const page: PageDef = {
   meta: {
     title: "Case Studies",
     description:
-      "Case studies from SyntaxHires engagements. Each one sets out the client's starting point, the work the team did and the result, as approved by the client.",
+      "Case studies from SyntecHire engagements. Each one sets out the client's starting point, the work the team did and the result, as approved by the client.",
   },
   blocks: [
     {

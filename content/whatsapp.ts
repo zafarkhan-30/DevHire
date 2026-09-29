@@ -14,10 +14,10 @@ export type ScreenStep = {
 };
 
 export const whatsappScreen = {
-  title: "Chat with SyntaxHires",
+  title: "Chat with SyntecHire",
   intro: "Answer a few quick questions so we can reply with the right people. Then continue in WhatsApp.",
-  greeting: "Hi SyntaxHires, I would like to talk about a project.",
-  footer: "Sent from the SyntaxHires website",
+  greeting: "Hi SyntecHire, I would like to talk about a project.",
+  footer: "Sent from the SyntecHire website",
   steps: [
     { id: "name", question: "What is your name?", label: "Name", kind: "text", placeholder: "Your name" },
     { id: "company", question: "Which company are you with?", label: "Company", kind: "text", placeholder: "Company or product", optional: true },

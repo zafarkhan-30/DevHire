@@ -9,7 +9,7 @@ const service: ServiceData = {
   meta: {
     title: "AI And Automation Development",
     description:
-      "AI assistants, language model integrations and workflow automation built by SyntaxHires. Tested against your own data, with human review where it matters.",
+      "AI assistants, language model integrations and workflow automation built by SyntecHire. Tested against your own data, with human review where it matters.",
   },
   hero: {
     title: "AI And Automation That [Does Real Work]",

@@ -9,7 +9,7 @@ const service: ServiceData = {
   meta: {
     title: "Web Application Development",
     description:
-      "Custom web applications built by SyntaxHires: portals, dashboards, internal tools and SaaS products. Clear scope, working software every sprint and code you own.",
+      "Custom web applications built by SyntecHire: portals, dashboards, internal tools and SaaS products. Clear scope, working software every sprint and code you own.",
   },
   hero: {
     title: "Web Applications Built To [Run Your Business]",

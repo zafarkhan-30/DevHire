@@ -15,7 +15,7 @@ const project: ProjectData = {
   meta: {
     title: "EV Truck Operations Platform",
     description:
-      "How SyntaxHires built an operations platform for an electric truck fleet: live trip tracking across eight stages, delay flags, charger telemetry and revenue reports.",
+      "How SyntecHire built an operations platform for an electric truck fleet: live trip tracking across eight stages, delay flags, charger telemetry and revenue reports.",
   },
   cover: "/images/work/ev-logistics-operations.webp",
   facts: [

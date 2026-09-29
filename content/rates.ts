@@ -1,6 +1,6 @@
-// SyntaxHires rate card: monthly rate per engineer, in rupees. The only place rates are set.
+// SyntecHire rate card: monthly rate per engineer, in rupees. The only place rates are set.
 // Use a single number (80000) or a range ([60000, 80000]). Leave null until the rate is confirmed:
-// pages then show "On request" or leave the figure out, and the calculator's SyntaxHires field starts empty.
+// pages then show "On request" or leave the figure out, and the calculator's SyntecHire field starts empty.
 // Read by: the offshore cost guide, the Hire Dedicated Developers page, every /hire/ page's pricing tiers,
 // and the cost estimate calculator (which starts from the mid-level rate).
 

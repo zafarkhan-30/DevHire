@@ -2,7 +2,7 @@ import { ratePrice, rates } from "@/content/rates";
 import type { Block, PageDef, TechData } from "@/content/types";
 
 // Turns one technology data file into the 19-section hire page.
-// Sections that describe SyntaxHires itself are shared; sections about the technology come from the data file.
+// Sections that describe SyntecHire itself are shared; sections about the technology come from the data file.
 export function buildHirePage(tech: TechData): PageDef {
   const path = `/hire/${tech.slug}/`;
   const singular = tech.role.replace(/s$/, "");
@@ -33,7 +33,7 @@ export function buildHirePage(tech: TechData): PageDef {
     {
       type: "logos",
       tone: "muted",
-      title: "Teams That Build With [SyntaxHires]",
+      title: "Teams That Build With [SyntecHire]",
       caption: "References available on request.",
     },
     {
@@ -157,7 +157,7 @@ export function buildHirePage(tech: TechData): PageDef {
       type: "table",
       pad: "xs",
       title: "What Is Included In [The Rate]",
-      columns: ["", "SyntaxHires dedicated developer", "Typical freelancer"],
+      columns: ["", "SyntecHire dedicated developer", "Typical freelancer"],
       highlight: 1,
       rows: [
         ["Screening and onboarding", "Included", "Your time"],

@@ -1,7 +1,7 @@
 import { projectPath, projects } from "@/content/work";
 
 // Single source of truth for brand, navigation, footer and global proof numbers.
-// Values marked PLACEHOLDER must be replaced with verified SyntaxHires data before launch.
+// Values marked PLACEHOLDER must be replaced with verified SyntecHire data before launch.
 
 export type NavLink = { label: string; href: string };
 
@@ -25,23 +25,23 @@ export type MegaMenu = {
 };
 
 export const site = {
-  name: "SyntaxHires",
+  name: "SyntecHire",
   tagline: "Software development and engineering teams.",
-  url: "https://syntaxhires.example", // PLACEHOLDER
+  url: "https://www.syntechire.com",
   description:
-    "SyntaxHires designs, builds and supports web apps, mobile apps and AI products, and places vetted engineers inside your team. You own the code.",
+    "SyntecHire designs, builds and supports web apps, mobile apps and AI products, and places vetted engineers inside your team. You own the code.",
   primaryCta: { label: "Talk To An Engineer", href: "/contact-us/" },
   // WhatsApp chat button (bottom-right on every page). Number in international format, digits only,
   // e.g. "919876543210" for +91 98765 43210. Left empty, the button is hidden.
   whatsapp: "918433833146",
-  whatsappMessage: "Hi SyntaxHires, I would like to talk about a software project.",
+  whatsappMessage: "Hi SyntecHire, I would like to talk about a software project.",
   // PLACEHOLDER: real profile URLs. Links left as "#" are hidden, and the "Follow Us" column with them.
   social: [
     { label: "LinkedIn", href: "#", icon: "linkedin" },
     { label: "Instagram", href: "#", icon: "instagram" },
     { label: "YouTube", href: "#", icon: "youtube" },
   ],
-  // Contract terms shown in the top bar. Add certifications here only once SyntaxHires holds them.
+  // Contract terms shown in the top bar. Add certifications here only once SyntecHire holds them.
   trustBadges: [
     // icon: key from TRUST_ICONS in components/layout/Header.tsx
     { label: "NDA", sub: "Before code access", icon: "nda" },
@@ -49,7 +49,7 @@ export const site = {
     { label: "Terms", sub: "Month to month", icon: "terms" },
     { label: "Exit", sub: "No penalty", icon: "exit" },
   ] as { label: string; sub?: string; icon?: string }[],
-  // SyntaxHires proof numbers, shown in the stats row on the home page.
+  // SyntecHire proof numbers, shown in the stats row on the home page.
   // Use only figures you can back up. A value left as "—" is hidden; the row appears once any value is filled in.
   // `stars` draws five stars above the value (use it for the rating).
   stats: [
@@ -259,7 +259,7 @@ export const megaMenus: MegaMenu[] = [
       {
         heading: "About Us",
         links: [
-          { label: "About SyntaxHires", href: "/about/" },
+          { label: "About SyntecHire", href: "/about/" },
           { label: "Company Insights", href: "/insights/" },
         ],
       },

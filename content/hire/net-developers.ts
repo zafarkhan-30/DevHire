@@ -148,7 +148,7 @@ const data: TechData = {
       a: "Many do. If you depend on particular services, such as Functions or Service Bus, tell us and we shortlist for them.",
     },
     {
-      q: "Does SyntaxHires keep any rights to the code?",
+      q: "Does SyntecHire keep any rights to the code?",
       a: "No. You own all code and IP. An NDA is signed before code access and all work is committed to your repositories.",
     },
     {

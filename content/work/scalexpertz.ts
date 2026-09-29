@@ -14,7 +14,7 @@ const project: ProjectData = {
   meta: {
     title: "ScaleXpertz: Agency Website Build",
     description:
-      "How SyntaxHires built the ScaleXpertz website: an animated five-phase framework, pricing plans with add-ons, a founder call booking form and a careers section.",
+      "How SyntecHire built the ScaleXpertz website: an animated five-phase framework, pricing plans with add-ons, a founder call booking form and a careers section.",
   },
   cover: "/images/work/scalexpertz-home.webp",
   facts: [

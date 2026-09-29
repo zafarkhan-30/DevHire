@@ -13,7 +13,7 @@ export function Logo() {
         <path d="M29 33 L37 41 L52 22" fill="none" stroke="#FF4103" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
       <span className="logo__word">
-        Syntax<span className="logo__accent">Hires</span>
+        Syntec<span className="logo__accent">Hire</span>
       </span>
     </Link>
   );

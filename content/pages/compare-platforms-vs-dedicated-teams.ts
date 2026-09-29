@@ -52,8 +52,8 @@ const page: PageDef = {
         },
         {
           icon: "users",
-          title: "Dedicated team from SyntaxHires",
-          text: "Engineers employed by SyntaxHires who work only on your product. You interview them before any contract. They work in your repository and your tools.",
+          title: "Dedicated team from SyntecHire",
+          text: "Engineers employed by SyntecHire who work only on your product. You interview them before any contract. They work in your repository and your tools.",
         },
       ],
     },
@@ -185,15 +185,15 @@ const page: PageDef = {
         },
         {
           q: "Can I interview the engineers before I commit?",
-          a: "With SyntaxHires, yes. You interview each developer before any contract is signed. With other models, ask the provider whether you can speak to the engineer directly.",
+          a: "With SyntecHire, yes. You interview each developer before any contract is signed. With other models, ask the provider whether you can speak to the engineer directly.",
         },
         {
           q: "Who owns the code?",
-          a: "With SyntaxHires, you own all code and IP, and an NDA is signed before anyone has code access. With other models, ownership depends on the contract with each individual, so check the terms.",
+          a: "With SyntecHire, you own all code and IP, and an NDA is signed before anyone has code access. With other models, ownership depends on the contract with each individual, so check the terms.",
         },
         {
           q: "What happens if I want to stop?",
-          a: "SyntaxHires engagements run month to month with no exit fee. The notice period is stated in the contract. Other models have their own terms, which differ between providers.",
+          a: "SyntecHire engagements run month to month with no exit fee. The notice period is stated in the contract. Other models have their own terms, which differ between providers.",
         },
       ],
     },

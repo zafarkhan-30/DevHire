@@ -5,7 +5,7 @@ const page: PageDef = {
   meta: {
     title: "How We Build Software",
     description:
-      "The SyntaxHires delivery process: discovery, design, build in sprints, testing, launch and support. What happens at each stage and what you receive.",
+      "The SyntecHire delivery process: discovery, design, build in sprints, testing, launch and support. What happens at each stage and what you receive.",
   },
   blocks: [
     {
@@ -62,7 +62,7 @@ const page: PageDef = {
           items: ["Product goals and priorities", "Feedback on designs and demos", "Access to systems and subject experts", "Acceptance of delivered work"],
         },
         {
-          title: "SyntaxHires",
+          title: "SyntecHire",
           mood: "good",
           items: ["Design, development and testing", "Planning and progress reporting", "Code quality and review", "Documentation and handover"],
         },
