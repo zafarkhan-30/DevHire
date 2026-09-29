@@ -4,16 +4,16 @@
 export const hero = {
   slides: [
     {
-      thumb: "Hire Developers",
-      eyebrow: "Hire Developers",
+      thumb: "Software Development",
+      eyebrow: "Custom Software Development",
       // Last word renders in the accent color.
-      title: "Remote Engineers Who Join Your Sprint And Deliver Working",
-      titleAccent: "Software.",
-      text: "Bring in vetted developers on contract who plug into your repo, your rituals and your roadmap, and open their first pull request in the first week.",
-      tagline: "Your backlog. Your process. Our people. One team.",
-      cta: { label: "View Developer Profiles", href: "/technologies/" },
-      micro: "Tell us the stack. Meet the shortlist. Start this month.",
-      chips: ["Works inside your tools", "No bench-time billing", "Scale up or down monthly"],
+      title: "We Design And Build Software That Runs Your",
+      titleAccent: "Business.",
+      text: "Web apps, mobile apps and AI features, taken from idea to production by one accountable team. You see working software every sprint and you own the code.",
+      tagline: "Your idea. Our engineers. Code you own.",
+      cta: { label: "Explore Our Services", href: "/services/" },
+      micro: "Tell us what you want to build. Get a written proposal.",
+      chips: ["Working software every sprint", "Code in your repository", "NDA before you share"],
       image: "/images/hero/hero-1.webp",
       // Pushes the photo toward the right edge and deepens the shade behind the text.
       imageAlign: "right",
@@ -25,7 +25,7 @@ export const hero = {
       title: "Launch Your First Version With One Accountable Product",
       titleAccent: "Team.",
       text: "A small cross-functional squad that takes you from scoped idea to a release your first customers can use.",
-      cta: { label: "Get A Launch Plan", href: "/contact-us/" },
+      cta: { label: "Plan Your MVP", href: "/service/mvp-development/" },
       chips: ["Fixed weekly demos", "Scope you can read", "Code you own"],
       image: "/images/hero/hero-2.webp",
       tone: "violet",
@@ -42,13 +42,13 @@ export const hero = {
       tone: "teal",
     },
     {
-      thumb: "Offshore Team Setup",
-      eyebrow: "Offshore Team Setup",
-      title: "Stand Up A Long-Term Offshore Team Without Opening An",
-      titleAccent: "Office.",
-      text: "We handle hiring, payroll, equipment and compliance. You run the engineering.",
-      cta: { label: "Talk To A Product Engineer", href: "/contact-us/" },
-      chips: ["Hiring handled", "Compliance handled", "You direct the work"],
+      thumb: "Hire Developers",
+      eyebrow: "Hire Developers",
+      title: "Remote Engineers Who Join Your Sprint And Deliver Working",
+      titleAccent: "Software.",
+      text: "Bring in vetted developers on contract who plug into your repo, your rituals and your roadmap. We handle hiring, payroll and equipment. You direct the work.",
+      cta: { label: "View Developer Profiles", href: "/technologies/" },
+      chips: ["Works inside your tools", "No bench-time billing", "Scale up or down monthly"],
       image: "/images/hero/hero-4.webp",
       tone: "blue",
     },
@@ -106,21 +106,21 @@ export const compare = {
 };
 
 export const midCta = {
-  title: "Ready To Add Engineers Who Deliver Production Code?",
-  text: "Tell us the stack and the timeline. We will come back with a shortlist you can interview.",
-  primary: { label: "View Developer Profiles", href: "/technologies/" },
+  title: "Have A Product To Build Or A Team To Grow?",
+  text: "Tell us the goal and the timeline. We will reply with a written proposal, or a shortlist you can interview.",
+  primary: { label: "Explore Our Services", href: "/services/" },
   secondary: { label: "Book A Free Call", href: "/contact-us/" },
 };
 
 export const reasons = {
-  title: "Why Engineering Leaders Work With [Our Developers]",
+  title: "Why Companies Build With [SyntaxHires]",
   intro:
-    "Teams use SyntaxHires to add remote developers, build a dedicated squad or hand over a full build. Month-to-month terms. No exit fees.",
+    "Companies use SyntaxHires to get a product built, add remote developers or modernise an ageing system. Written terms. No exit fees.",
   cards: [
     {
       icon: "zap",
-      title: "Move Faster Than Your Hiring Pipeline",
-      text: "Launch dates, investor milestones and roadmap commitments do not wait for a three-month recruitment cycle.",
+      title: "Get A Product Built Without Hiring A Team First",
+      text: "Launch dates and investor milestones do not wait for you to recruit designers, developers and testers one by one.",
     },
     {
       icon: "users",
@@ -146,7 +146,7 @@ export const paths = {
       title: "Build An MVP",
       sub: "A fundable first release in a quarter",
       text: "For founders who need a build partner to get to launch and to the next round, without waiting to hire a CTO.",
-      href: "/service/dedicated-developers/",
+      href: "/service/mvp-development/",
     },
     {
       icon: "network",
@@ -167,7 +167,7 @@ export const paths = {
       href: "/service/legacy-system-modernization/",
     },
   ],
-  strip: { text: "Planning a permanent offshore development centre?", link: { label: "Explore Setup", href: "/hire/dedicated-developers/" } },
+  strip: { text: "Need a web app, mobile app or AI feature built?", link: { label: "Explore Services", href: "/services/" } },
   cta: {
     title: "Already know your path?",
     button: { label: "Book A 15-Minute Fit Call", href: "/contact-us/" },
@@ -335,12 +335,12 @@ export const testimonials = {
 };
 
 export const lead = {
-  title: "Hire [Developers] Without Getting Locked In",
-  text: "Dedicated teams to build, grow or modernise your product. You own the code and the IP. We take care of contracts and compliance.",
+  title: "Build Your [Product] Without Getting Locked In",
+  text: "Project teams and dedicated developers to build, grow or modernise your product. You own the code and the IP. We take care of contracts and compliance.",
   listTitle: "What you get",
   list: [
-    "Individual developers or a full team",
-    "A shortlist within days",
+    "A project team, or developers for your own team",
+    "A written proposal or a shortlist",
     "Secure, documented delivery",
     "Clear ownership and a clean exit",
   ],
@@ -399,9 +399,25 @@ export const insights = {
 };
 
 export const faq = {
-  title: "Questions [CTOs] Ask Before Hiring Developers",
+  title: "Questions Clients Ask [Before We Start]",
   button: { label: "Have More Questions?", href: "/faq/" },
   items: [
+    {
+      q: "Do you build complete products, or only supply developers?",
+      a: "Both. We take on projects and deliver them with our own team, from design to launch. We also place engineers inside client teams, where you direct the work day to day.",
+    },
+    {
+      q: "How do you price a software project?",
+      a: "After a scoping call we send a written proposal with the scope, timeline and cost. You can choose fixed scope, time and material or a dedicated team. The engagement models page explains when each one fits.",
+    },
+    {
+      q: "What happens if requirements change during a project?",
+      a: "On a time and material engagement, changes are planned into the next sprint. On a fixed-scope engagement, we write up the effect on time and cost, and work on the change starts only after you approve it.",
+    },
+    {
+      q: "What happens after launch?",
+      a: "You can keep the same team on a monthly basis, move to a maintenance and support arrangement, or take the product in-house with a documented handover.",
+    },
     {
       q: "How soon can a developer start?",
       a: "Once we understand your stack and the role, we share a shortlist and you interview the candidates. Start dates depend on the role and seniority. We confirm a date in writing before you commit.",
@@ -448,7 +464,7 @@ export const faq = {
     },
     {
       q: "How do we get started?",
-      a: "Book a fit call or send the form on this page. We reply with a recommended model, a shortlist timeline and a price range.",
+      a: "Book a fit call or send the form on this page. We reply with a recommended model, then a written proposal for a project or a shortlist timeline for a hire.",
     },
   ],
 };

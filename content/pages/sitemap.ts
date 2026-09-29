@@ -27,6 +27,8 @@ const page: PageDef = {
           items: [
             { label: "Home", href: "/" },
             { label: "About Us", href: "/about/" },
+            { label: "How We Build", href: "/how-we-build/" },
+            { label: "Engagement Models", href: "/engagement-models/" },
             { label: "Pricing", href: "/pricing/" },
             { label: "How We Vet", href: "/how-we-vet/" },
             { label: "Developer Retention", href: "/developer-retention/" },
@@ -50,6 +52,15 @@ const page: PageDef = {
         {
           label: "Services",
           items: [
+            { label: "All Services", href: "/services/" },
+            { label: "Web Application Development", href: "/service/web-application-development/" },
+            { label: "Mobile App Development", href: "/service/mobile-app-development/" },
+            { label: "MVP Development", href: "/service/mvp-development/" },
+            { label: "AI And Automation", href: "/service/ai-automation/" },
+            { label: "UI/UX Design", href: "/service/ui-ux-design/" },
+            { label: "Cloud And DevOps", href: "/service/cloud-devops/" },
+            { label: "QA And Testing", href: "/service/qa-testing/" },
+            { label: "Maintenance And Support", href: "/service/maintenance-support/" },
             { label: "Dedicated Developers", href: "/service/dedicated-developers/" },
             { label: "IT Staff Augmentation", href: "/service/it-staff-augmentation-services/" },
             { label: "Legacy System Modernization", href: "/service/legacy-system-modernization/" },

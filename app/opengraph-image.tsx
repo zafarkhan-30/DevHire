@@ -34,10 +34,10 @@ export default function OpengraphImage() {
           </div>
         </div>
         <div style={{ marginTop: 44, fontSize: 46, fontWeight: 700, lineHeight: 1.2, maxWidth: 900 }}>
-          Hire vetted remote developers and dedicated teams
+          Custom software development and dedicated engineering teams
         </div>
         <div style={{ marginTop: 24, fontSize: 28, color: "#c7d2e3" }}>
-          Interview before you commit · Month-to-month · You own the code
+          Web · Mobile · AI · Cloud · You own the code
         </div>
       </div>
     ),

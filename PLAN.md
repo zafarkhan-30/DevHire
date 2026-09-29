@@ -76,7 +76,7 @@ Project scaffold, tokens, font loading (`font-display: swap`), type scale, conta
 
 ### Phase 2 — Global shell
 - Trust bar with compliance badges
-- Header: logo, 5 mega-menus: Services, Pricing, Hire Developers, Resources, Company (title, intro, featured card, link columns), CTA button, mobile drawer
+- Header: logo, 5 mega-menus: Services (Build, Design & Operate, Hire & Modernise), Pricing, Hire Developers, Resources, Company (title, intro, featured card, link columns), CTA button, mobile drawer
 - Footer: tool cards + proof points, 5 link columns, newsletter, social, "Where We Work" (remote and global, no office address), legal bar
 - Floating: chat launcher, WhatsApp button, cookie banner with explicit opt-in
 
@@ -213,4 +213,11 @@ Changes from the original plan:
 - Rates live in `content/rates.ts` only. Share image, JSON-LD (Organization, WebSite, BreadcrumbList, FAQPage, Article) and canonical URLs added. The site audit fails titles over 60 characters.
 - Footer hides social links that are still "#". `agentRules: false` stops next dev writing AGENTS.md and CLAUDE.md.
 
-Content still to supply (search the `content/` folder for `PLACEHOLDER`): site URL, lead inbox and Resend key, rate card (`content/rates.ts`), founders, social links, legal details, offer terms (free trial, paid assessment, AI assistant pricing), Legacy Risk Assessment PDF, US-ready contracting facts, case studies, verified stats, reviews, open roles. To bring back a hidden block, replace its template content and remove `draft: true`.
+- Repositioned as a software development company (2026-09-29), at the user's request. Hiring, staff augmentation and recruitment stay as services.
+  - Eight development service pages, one data file each in `content/services/`, built by `lib/buildServicePage.ts`: web application, mobile app, MVP, AI and automation, UI/UX design, cloud and DevOps, QA and testing, maintenance and support. To add one, copy a file, edit it and add it to `content/services/index.ts`.
+  - New pages: `/services/`, `/how-we-build/`, `/engagement-models/`. No project prices are shown; every engagement is quoted in writing. `/pricing/` is labelled recruitment pricing.
+  - Home hero slide 1, page title, description, share image, Services menu, footer, WhatsApp questions and FAQ lead with software development.
+  - Forms have a `projectType` field. Form kinds starting with `project` send a confirmation email that describes scoping and a written proposal.
+  - No separate portfolio page: `/case-study/our-work/` is the portfolio and already waits for real projects. Per-industry pages are not built until the user names the industries delivered for.
+
+Content still to supply (search the `content/` folder for `PLACEHOLDER`): real projects for Our Work, budget ranges for the enquiry form (optional), site URL, lead inbox and Resend key, rate card (`content/rates.ts`), founders, social links, legal details, offer terms (free trial, paid assessment, AI assistant pricing), Legacy Risk Assessment PDF, US-ready contracting facts, case studies, verified stats, reviews, open roles. To bring back a hidden block, replace its template content and remove `draft: true`.

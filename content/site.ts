@@ -22,15 +22,15 @@ export type MegaMenu = {
 
 export const site = {
   name: "SyntaxHires",
-  tagline: "Engineering teams, on demand.",
+  tagline: "Software development and engineering teams.",
   url: "https://syntaxhires.example", // PLACEHOLDER
   description:
-    "SyntaxHires places vetted remote engineers and dedicated teams inside your sprint. Shortlist in days, no long contracts, no idle-hour billing.",
+    "SyntaxHires designs, builds and supports web apps, mobile apps and AI products, and places vetted engineers inside your team. You own the code.",
   primaryCta: { label: "Talk To An Engineer", href: "/contact-us/" },
   // WhatsApp chat button (bottom-right on every page). Number in international format, digits only,
   // e.g. "919876543210" for +91 98765 43210. Left empty, the button is hidden.
   whatsapp: "918433833146",
-  whatsappMessage: "Hi SyntaxHires, I would like to talk about hiring developers.",
+  whatsappMessage: "Hi SyntaxHires, I would like to talk about a software project.",
   // PLACEHOLDER: real profile URLs. Links left as "#" are hidden, and the "Follow Us" column with them.
   social: [
     { label: "LinkedIn", href: "#", icon: "linkedin" },
@@ -69,8 +69,11 @@ export const megaMenus: MegaMenu[] = [
     id: "services",
     label: "Services",
     title: "Services",
-    intro: "Engineering capacity, delivered the way your team already works.",
-    quickLinks: [{ label: "Dedicated Developers", href: "/service/dedicated-developers/" }],
+    intro: "We design, build and support software, or add engineers to the team you already have.",
+    quickLinks: [
+      { label: "How We Build", href: "/how-we-build/" },
+      { label: "Engagement Models", href: "/engagement-models/" },
+    ],
     featured: {
       title: "Legacy Risk Assessment",
       text: "Score a legacy platform on security, operations, delivery and compliance before you plan a migration.",
@@ -79,23 +82,36 @@ export const megaMenus: MegaMenu[] = [
     },
     columns: [
       {
-        heading: "Delivery Models",
+        heading: "Build",
         links: [
-          { label: "Dedicated Developers", href: "/service/dedicated-developers/" },
-          { label: "IT Staff Augmentation", href: "/service/it-staff-augmentation-services/" },
-          { label: "Offshore Development Center", href: "/hire/dedicated-developers/" },
-        ],
-      },
-      {
-        heading: "Engineering Services",
-        links: [
-          { label: "Legacy Application Modernization", href: "/service/legacy-application-modernization/" },
-          { label: "Legacy System Modernization", href: "/service/legacy-system-modernization/" },
-          { label: "Zero-Downtime Modernization", href: "/service/legacy-modernization-zero-downtime/" },
+          { label: "Web Application Development", href: "/service/web-application-development/" },
+          { label: "Mobile App Development", href: "/service/mobile-app-development/" },
+          { label: "MVP Development", href: "/service/mvp-development/" },
+          { label: "AI And Automation", href: "/service/ai-automation/" },
           { label: "Custom AI Assistant", href: "/solutions/custom-ai-assistant-development/" },
         ],
       },
+      {
+        heading: "Design & Operate",
+        links: [
+          { label: "UI/UX Design", href: "/service/ui-ux-design/" },
+          { label: "Cloud And DevOps", href: "/service/cloud-devops/" },
+          { label: "QA And Testing", href: "/service/qa-testing/" },
+          { label: "Maintenance And Support", href: "/service/maintenance-support/" },
+        ],
+      },
+      {
+        heading: "Hire & Modernise",
+        links: [
+          { label: "Dedicated Developers", href: "/service/dedicated-developers/" },
+          { label: "IT Staff Augmentation", href: "/service/it-staff-augmentation-services/" },
+          { label: "Legacy System Modernization", href: "/service/legacy-system-modernization/" },
+          { label: "Legacy Application Modernization", href: "/service/legacy-application-modernization/" },
+          { label: "Zero-Downtime Modernization", href: "/service/legacy-modernization-zero-downtime/" },
+        ],
+      },
     ],
+    button: { label: "All Services", href: "/services/" },
   },
   {
     id: "pricing",
@@ -223,7 +239,7 @@ export const megaMenus: MegaMenu[] = [
     id: "company",
     label: "Company",
     title: "Company",
-    intro: "Built for founders and CTOs who need engineering they can rely on.",
+    intro: "A software development company for founders and CTOs who need engineering they can rely on.",
     quickLinks: [
       { label: "About Us", href: "/about/" },
       { label: "How We Vet", href: "/how-we-vet/" },
@@ -240,6 +256,8 @@ export const megaMenus: MegaMenu[] = [
       {
         heading: "Trust & Process",
         links: [
+          { label: "How We Build", href: "/how-we-build/" },
+          { label: "Engagement Models", href: "/engagement-models/" },
           { label: "How We Vet Developers", href: "/how-we-vet/" },
           { label: "Developer Cost Estimate", href: "/resources/developer-cost-estimate/" },
         ],
@@ -270,7 +288,7 @@ export const footer = {
   ],
   // PLACEHOLDER: replace with verified proof points.
   proofPoints: [
-    "Engineers matched to your stack, not a generic bench",
+    "One team from design to launch",
     "Meet the developer before any contract",
     "Month-to-month engagement",
     "You own all code and IP",
@@ -287,7 +305,8 @@ export const footer = {
     {
       heading: "For Buyers",
       links: [
-        { label: "How We Work", href: "/how-we-vet/" },
+        { label: "How We Build", href: "/how-we-build/" },
+        { label: "Engagement Models", href: "/engagement-models/" },
         { label: "Pricing", href: "/pricing/" },
         { label: "Quality & Vetting", href: "/how-we-vet/" },
         { label: "Developer Retention", href: "/developer-retention/" },
@@ -296,11 +315,13 @@ export const footer = {
     {
       heading: "Services & Solutions",
       links: [
+        { label: "Web Application Development", href: "/service/web-application-development/" },
+        { label: "Mobile App Development", href: "/service/mobile-app-development/" },
+        { label: "MVP Development", href: "/service/mvp-development/" },
+        { label: "AI And Automation", href: "/service/ai-automation/" },
         { label: "Dedicated Developers", href: "/service/dedicated-developers/" },
-        { label: "IT Staff Augmentation", href: "/service/it-staff-augmentation-services/" },
-        { label: "Legacy Modernization", href: "/service/legacy-system-modernization/" },
-        { label: "Offshore Development Cost", href: "/hire/dedicated-developers/offshore-developers-cost/" },
       ],
+      footerLink: { label: "View All Services", href: "/services/" },
     },
     {
       heading: "Hire Developers",
