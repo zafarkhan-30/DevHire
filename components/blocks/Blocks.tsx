@@ -4,7 +4,7 @@ import { ArrowRight, Check, ChevronRight, CircleCheck, Minus, Quote, X, Maximize
 import type { Block, Cta, HeroBlock, Pad, Stat, Tone } from "@/content/types";
 import { testimonials } from "@/content/home";
 import { reviews } from "@/content/reviews";
-import { latestPosts } from "@/lib/blog";
+import { latestPosts, postImageStyle } from "@/lib/blog";
 import { Accent } from "@/components/ui/Accent";
 import { Icon } from "@/components/ui/Icon";
 import { LogoRow } from "@/components/ui/LogoRow";
@@ -525,7 +525,7 @@ function BlockView({ block }: { block: Block }) {
               {posts.map((post) => (
                 <li key={post.slug}>
                   <Link href={`/insights/${post.slug}/`} className="insights__card">
-                    <span className={`insights__thumb hero__slide--${post.tone}`} aria-hidden="true">
+                    <span className={`insights__thumb hero__slide--${post.tone}`} style={postImageStyle(post, true)} aria-hidden="true">
                       <span>{post.title}</span>
                     </span>
                     <span className="insights__body">

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { allPosts, formatDate } from "@/lib/blog";
+import { allPosts, formatDate, postImageStyle } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Insights",
@@ -25,7 +25,7 @@ export default function InsightsPage() {
           {featured ? (
             <div className="blogtop__grid">
               <Link href={`/insights/${featured.slug}/`} className="blogtop__feature">
-                <span className={`blogtop__image hero__slide--${featured.tone}`} aria-hidden="true" />
+                <span className={`blogtop__image hero__slide--${featured.tone}`} style={postImageStyle(featured)} aria-hidden="true" />
                 <span className="insights__category">{featured.category}</span>
                 <span className="blogtop__headline">{featured.title}</span>
                 <span className="blogtop__excerpt">{featured.excerpt}</span>
@@ -38,7 +38,7 @@ export default function InsightsPage() {
                 {side.map((post) => (
                   <li key={post.slug}>
                     <Link href={`/insights/${post.slug}/`}>
-                      <span className={`blogtop__thumb hero__slide--${post.tone}`} aria-hidden="true" />
+                      <span className={`blogtop__thumb hero__slide--${post.tone}`} style={postImageStyle(post)} aria-hidden="true" />
                       <span>
                         <span className="insights__category">{post.category}</span>
                         <span className="blogtop__side-title">{post.title}</span>
@@ -64,7 +64,7 @@ export default function InsightsPage() {
             {posts.map((post) => (
               <li key={post.slug}>
                 <Link href={`/insights/${post.slug}/`} className="insights__card">
-                  <span className={`insights__thumb hero__slide--${post.tone}`} aria-hidden="true">
+                  <span className={`insights__thumb hero__slide--${post.tone}`} style={postImageStyle(post, true)} aria-hidden="true">
                     <span>{post.title}</span>
                   </span>
                   <span className="insights__body">

@@ -10,6 +10,7 @@ export type Post = {
   date: string; // ISO date
   readMinutes: number;
   tone: "amber" | "violet" | "teal" | "blue";
+  // Card and banner image, 1200 x 600 (2:1), in public/images/insights/. No text or logos in the image.
   image?: string;
   // Must match the H2 headings in the article, in order. Drives the contents list.
   sections: string[];
@@ -28,6 +29,7 @@ export const posts: Post[] = [
     date: "2026-09-22",
     readMinutes: 4,
     tone: "amber",
+    image: "/images/insights/brief-a-remote-developer-for-week-one.webp",
     sections: ["Sort out access before day one", "Give context, not a tour", "Pick a first task that can ship", "Agree how you will talk", "Review the week together"],
     faqs: [
       { q: "How long should onboarding take?", a: "It depends on the size of the system. A useful goal is one small change merged in the first week, with deeper context built over the following weeks." },
@@ -44,6 +46,7 @@ export const posts: Post[] = [
     date: "2026-09-15",
     readMinutes: 5,
     tone: "blue",
+    image: "/images/insights/staff-augmentation-or-dedicated-team.webp",
     sections: ["The two models in one paragraph each", "Question one: who decides what gets built today", "Question two: how much management time do you have", "Question three: how long will the work run", "Question four: what happens when it ends", "Reading your answers"],
     faqs: [
       { q: "Can we switch models later?", a: "Yes. Teams often start with one or two augmented engineers and move to a dedicated team as the scope grows." },
@@ -60,6 +63,7 @@ export const posts: Post[] = [
     date: "2026-09-08",
     readMinutes: 5,
     tone: "teal",
+    image: "/images/insights/signs-your-legacy-platform-is-a-business-risk.webp",
     sections: ["Releases are getting rarer", "The same incidents keep coming back", "Only a few people can change it", "Vendors have stopped supporting parts of it", "What to do with what you find"],
     faqs: [
       { q: "Does an old system always need replacing?", a: "No. Age alone is not the problem. A stable system that is understood, supported and rarely changed can be left alone." },
