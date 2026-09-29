@@ -26,6 +26,7 @@ const LABELS: Record<string, string> = {
   phone: "Phone",
   company: "Company",
   goal: "Goal",
+  projectType: "Project type",
   teamSize: "Team size",
   timeline: "Timeline",
   message: "Message",
@@ -158,11 +159,19 @@ ${liveSite() ? button("Read the latest insights", `${site.url}/insights/`) : ""}
   const subject = `We've received your details – ${site.name}`;
   // Document requests (PDF forms) get the short version without the hiring steps.
   const download = /pdf|framework/i.test(lead.type ?? "");
-  const steps = [
-    ["We read your request", "We review what you sent and who would suit the work."],
-    ["We arrange a call", "A short call to understand your stack, the role and your timeline."],
-    ["You interview a shortlist", "You meet the developers and choose. Nothing is signed before you decide."],
-  ];
+  // Project enquiries (form kinds starting with "project") are scoped and quoted; hiring requests get a shortlist.
+  const project = /^project/i.test(lead.type ?? "");
+  const steps = project
+    ? [
+        ["We read your brief", "We review what you want to build and note the questions we need answered."],
+        ["We arrange a scoping call", "A short call to agree the goals, the must-have features and your timeline."],
+        ["You receive a written proposal", "Scope, approach, timeline and cost in writing. Nothing is signed before you decide."],
+      ]
+    : [
+        ["We read your request", "We review what you sent and who would suit the work."],
+        ["We arrange a call", "A short call to understand your stack, the role and your timeline."],
+        ["You interview a shortlist", "You meet the developers and choose. Nothing is signed before you decide."],
+      ];
 
   const html = layout({
     preheader: "Thanks for getting in touch. We'll reply within two working days.",

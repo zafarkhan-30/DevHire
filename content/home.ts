@@ -348,7 +348,19 @@ export const lead = {
   form: {
     title: "Get a Recommendation",
     intro: "Share a few details and we will suggest a sensible next step.",
-    goals: ["Hire one or more developers", "Build a dedicated team", "Build an MVP", "Modernise a legacy system", "Not sure yet"],
+    goals: ["Build a product or app", "Build an MVP", "Hire one or more developers", "Build a dedicated team", "Modernise a legacy system", "Not sure yet"],
+    // Options for the "projectType" field on project enquiry forms.
+    projectTypes: [
+      "Web application",
+      "Mobile app",
+      "MVP for a new product",
+      "AI or automation",
+      "UI/UX design",
+      "Cloud or DevOps",
+      "QA and testing",
+      "Maintenance and support",
+      "Not sure yet",
+    ],
     teamSizes: ["1–2", "3–5", "6–10", "10+"],
     timelines: ["Immediately", "Within a month", "1–3 months", "Just exploring"],
     submit: "Get Your Engineering Fit Report",

@@ -9,6 +9,7 @@ type Status = "idle" | "sending" | "done" | "error";
 
 const options: Partial<Record<FieldKey, readonly string[]>> = {
   goal: lead.form.goals,
+  projectType: lead.form.projectTypes,
   teamSize: lead.form.teamSizes,
   timeline: lead.form.timelines,
 };
@@ -19,6 +20,7 @@ const fields: Record<FieldKey, { label: string; type: string; required?: boolean
   phone: { label: "Phone", type: "tel", placeholder: "Include country code", autoComplete: "tel" },
   company: { label: "Company Name", type: "text", placeholder: "Company or product name", autoComplete: "organization" },
   goal: { label: "What are you looking to do?", type: "select", placeholder: "Select an option" },
+  projectType: { label: "What do you want to build?", type: "select", placeholder: "Select a project type" },
   teamSize: { label: "Team Size Needed", type: "select", placeholder: "Select team size" },
   timeline: { label: "Timeline", type: "select", placeholder: "Select timeline" },
   message: { label: "Anything we should know?", type: "textarea", placeholder: "Stack, constraints or concerns" },

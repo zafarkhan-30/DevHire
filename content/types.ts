@@ -16,7 +16,7 @@ export type IconKey =
   | "building" | "heart" | "graduation" | "plane" | "truck" | "home" | "credit" | "eye" | "refresh"
   | "git" | "message" | "calendar" | "award" | "compass" | "settings" | "alert";
 
-export type FieldKey = "name" | "email" | "phone" | "company" | "goal" | "teamSize" | "timeline" | "message";
+export type FieldKey = "name" | "email" | "phone" | "company" | "goal" | "projectType" | "teamSize" | "timeline" | "message";
 
 export type FormSpec = {
   title: string;
