@@ -1,10 +1,14 @@
-// Delivered projects, newest first. Add a file, then add it here.
+// Delivered projects. The first one leads the home page section and every listing. Add a file, then add it here.
 // The home page, the Our Work page and /case-study/ list them; each gets its own page under /case-study/.
 import type { ProjectData } from "@/content/types";
 import aimsureItAssetRecovery from "./aimsure-it-asset-recovery";
+import evTruckOperationsPlatform from "./ev-truck-operations-platform";
 import finvestCrm from "./finvest-crm";
 
-export const projects: ProjectData[] = [finvestCrm, aimsureItAssetRecovery];
+export const projects: ProjectData[] = [evTruckOperationsPlatform, finvestCrm, aimsureItAssetRecovery];
+
+// Listing grids use three columns once there are three or more projects.
+export const projectColumns: 2 | 3 = projects.length >= 3 ? 3 : 2;
 
 export const projectPath = (project: ProjectData) => `/case-study/${project.slug}/`;
 

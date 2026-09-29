@@ -1,5 +1,5 @@
 import type { PageDef } from "@/content/types";
-import { projectCard, projects } from "@/content/work";
+import { projectCard, projectColumns, projects } from "@/content/work";
 
 // Projects come from content/work.
 const page: PageDef = {
@@ -25,7 +25,7 @@ const page: PageDef = {
       title: "Recent [Projects]",
       intro: "What we built, the technology behind it and what the finished product looks like.",
       align: "center",
-      columns: 2,
+      columns: projectColumns,
       items: projects.map(projectCard),
       footnote: "More projects are added as clients approve them for publication.",
     },

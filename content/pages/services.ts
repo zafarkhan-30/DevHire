@@ -1,6 +1,6 @@
 import { servicePath, services } from "@/content/services";
 import type { CardItem, PageDef } from "@/content/types";
-import { projectCard, projects } from "@/content/work";
+import { projectCard, projectColumns, projects } from "@/content/work";
 
 const card = (group: "build" | "operate"): CardItem[] =>
   services
@@ -45,7 +45,7 @@ const page: PageDef = {
       title: "Projects We Have [Built]",
       intro: "Recent work from our team: what we built and what the finished product looks like.",
       align: "center",
-      columns: 2,
+      columns: projectColumns,
       items: projects.map(projectCard),
     },
     {
