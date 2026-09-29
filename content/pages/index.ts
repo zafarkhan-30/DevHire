@@ -13,6 +13,7 @@ import compareRehostVsRefactorVsRebuild from "./compare-rehost-vs-refactor-vs-re
 import comparisonGuides from "./comparison-guides";
 import contactUs from "./contact-us";
 import developerRetention from "./developer-retention";
+import engagementModels from "./engagement-models";
 import faq from "./faq";
 import guideDedicatedTeamVsStaffAugmentation from "./guide-dedicated-team-vs-staff-augmentation";
 import guideDedicatedVsFreelancers from "./guide-dedicated-vs-freelancers";
@@ -24,6 +25,7 @@ import hireDevelopers from "./hire-developers";
 import hireMicrosoftDevelopers from "./hire-microsoft-developers";
 import hireUsReadyRemoteEngineering from "./hire-us-ready-remote-engineering";
 import howWeVet from "./how-we-vet";
+import howWeBuild from "./how-we-build";
 import industries from "./industries";
 import leadership from "./leadership";
 import pricing from "./pricing";
@@ -34,6 +36,7 @@ import serviceItStaffAugmentation from "./service-it-staff-augmentation";
 import serviceLegacyApplicationModernization from "./service-legacy-application-modernization";
 import serviceLegacyModernizationZeroDowntime from "./service-legacy-modernization-zero-downtime";
 import serviceLegacySystemModernization from "./service-legacy-system-modernization";
+import services from "./services";
 import sitemap from "./sitemap";
 import solutionCustomAiAssistant from "./solution-custom-ai-assistant";
 import technologies from "./technologies";
@@ -52,6 +55,7 @@ export const pages: PageDef[] = [
   comparisonGuides,
   contactUs,
   developerRetention,
+  engagementModels,
   faq,
   guideDedicatedTeamVsStaffAugmentation,
   guideDedicatedVsFreelancers,
@@ -63,6 +67,7 @@ export const pages: PageDef[] = [
   hireMicrosoftDevelopers,
   hireUsReadyRemoteEngineering,
   howWeVet,
+  howWeBuild,
   industries,
   leadership,
   pricing,
@@ -73,6 +78,7 @@ export const pages: PageDef[] = [
   serviceLegacyApplicationModernization,
   serviceLegacyModernizationZeroDowntime,
   serviceLegacySystemModernization,
+  services,
   sitemap,
   solutionCustomAiAssistant,
   technologies,

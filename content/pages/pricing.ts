@@ -15,13 +15,14 @@ const page: PageDef = {
       tone: "dark",
       size: "md",
       align: "center",
-      eyebrow: "Pricing",
+      eyebrow: "Recruitment Pricing",
       title: "Hiring Models Priced The Way [You Hire]",
       text: "Lower fees than a typical 15% agency charge. Pay a smaller percentage only when someone joins, a fixed fee per hire, a bundle for your first squad, or a monthly retainer for a recruiter who works as part of your team.",
       ctas: [
         { label: "See How Much You Save", href: "#savings" },
         { label: "Talk To Us About Pricing", href: "/contact-us/", variant: "outline-light" },
       ],
+      note: "These prices are for recruitment. For a software project, see the engagement models page and ask for a written quote.",
     },
     {
       type: "pricing",
@@ -96,6 +97,13 @@ const page: PageDef = {
       flatFee: [40000, 100000],
       defaultCtc: 1800000,
       note: "Example salary filled in. Compared with a typical agency fee of 15% of annual CTC. The smallest saving uses the top of our price range. Taxes are extra and final fees are set in your agreement.",
+    },
+    {
+      type: "cta",
+      variant: "strip",
+      title: "Planning A Software Project?",
+      text: "Project work is quoted in writing. See how fixed scope, time and material and dedicated teams compare.",
+      ctas: [{ label: "Engagement Models", href: "/engagement-models/" }],
     },
     {
       type: "table",
