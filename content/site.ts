@@ -38,7 +38,7 @@ export const site = {
   // Google Ads tag. Loads only after a visitor chooses "Accept All" in the cookie banner (components/layout/GoogleAds.tsx).
   // `leadLabel` is the conversion label from Google Ads (Goals > Conversions > the lead action > Tag setup, the part
   // after the slash in send_to). Left empty, the tag loads but no lead conversion is sent.
-  googleAds: { id: "AW-18484279098", leadLabel: "" }, // PLACEHOLDER: leadLabel
+  googleAds: { id: "AW-18484279098", leadLabel: "BOX7CIvozosdELru_u1E" },
   // PLACEHOLDER: real profile URLs. Links left as "#" are hidden, and the "Follow Us" column with them.
   social: [
     { label: "LinkedIn", href: "https://www.linkedin.com/company/synctechire/", icon: "linkedin" },
