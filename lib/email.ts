@@ -106,7 +106,8 @@ const p = (html: string) => `<p style="margin:0 0 16px;font-family:${FONT};font-
 const h2 = (text: string) => `<h2 style="margin:28px 0 12px;font-family:${FONT};font-size:16px;color:${NAVY}">${escapeHtml(text)}</h2>`;
 
 // Sent to SyntecHire for every submission.
-export function leadAlert(lead: Lead, { confirmed = false, receivedAt = new Date() } = {}) {
+// crm: true when the lead reached Zoho CRM, false when Zoho refused it, null when the CRM is not connected.
+export function leadAlert(lead: Lead, { confirmed = false, crm = null as boolean | null, receivedAt = new Date() } = {}) {
   const form = formName(lead.type);
   const who = lead.name || lead.email;
   const newsletter = lead.type === "newsletter";
@@ -124,7 +125,7 @@ export function leadAlert(lead: Lead, { confirmed = false, receivedAt = new Date
     preheader: `${form} · ${who}${lead.company ? ` · ${lead.company}` : ""}`,
     eyebrow: newsletter ? "Newsletter" : "New lead",
     title: newsletter ? "New newsletter subscriber" : `${form} enquiry`,
-    body: `${p(`Received ${escapeHtml(when)} IST${lead.page ? ` from <strong>${escapeHtml(lead.page)}</strong>` : ""}. ${confirmed ? "The visitor has been sent a confirmation email." : "No confirmation email reached the visitor, so reply to them directly."}`)}
+    body: `${p(`Received ${escapeHtml(when)} IST${lead.page ? ` from <strong>${escapeHtml(lead.page)}</strong>` : ""}. ${confirmed ? "The visitor has been sent a confirmation email." : "No confirmation email reached the visitor, so reply to them directly."}${crm === true ? " Saved to Zoho CRM." : crm === false ? " <strong>Not saved to Zoho CRM</strong>: add this lead by hand." : ""}`)}
 ${fieldTable(lead)}
 <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:24px"><tr>${actions.map((a) => `<td style="padding-right:10px">${a}</td>`).join("")}</tr></table>`,
     footer: `Sent by the ${site.name} website contact forms. Reply goes straight to the visitor.`,

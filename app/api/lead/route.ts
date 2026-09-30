@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { site } from "@/content/site";
 import { leadAlert, logoAttachment, visitorConfirmation, type Lead } from "@/lib/email";
+import { sendToZoho, zohoConfigured } from "@/lib/zoho";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MAX_FIELD = 2000;
@@ -53,7 +54,11 @@ async function deliver(lead: Lead): Promise<boolean> {
   const confirmation = visitorConfirmation(lead);
   const confirmed = await sendEmail(key, { from, to: [lead.email], replyTo: team[0], ...confirmation });
 
-  const alert = leadAlert(lead, { confirmed });
+  // Enquiries also go to Zoho CRM when it is configured (lib/zoho.ts). Newsletter signups stay out of the CRM.
+  // The CRM call never blocks the visitor: if it fails, the email alert still goes out and says so.
+  const crm = lead.type !== "newsletter" && zohoConfigured() ? await sendToZoho(lead) : null;
+
+  const alert = leadAlert(lead, { confirmed, crm });
   return sendEmail(key, { from, to: team, replyTo: lead.email, ...alert });
 }
 
