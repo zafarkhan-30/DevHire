@@ -1,4 +1,4 @@
-import { CircleCheck } from "lucide-react";
+import { CircleCheck } from "@/components/ui/SpriteIcons";
 import { timeline } from "@/content/home";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 

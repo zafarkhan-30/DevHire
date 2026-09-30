@@ -87,6 +87,14 @@ export function HeroSlider() {
         if (event.key === "ArrowLeft") goTo(active - 1);
       }}
     >
+      {/* Slide one's photo is the largest thing on first paint. Preloading it (same size split as styles/home.css)
+          lets the browser fetch it straight from the HTML instead of waiting for the styles. */}
+      {hero.slides[0].image ? (
+        <>
+          <link rel="preload" as="image" href={hero.slides[0].image.replace(/\.webp$/, "-1280.webp")} media="(max-width: 1199px)" fetchPriority="high" />
+          <link rel="preload" as="image" href={hero.slides[0].image} media="(min-width: 1200px)" fetchPriority="high" />
+        </>
+      ) : null}
       <div className="hero__stage" aria-live={paused ? "polite" : "off"}>
         {hero.slides.map((slide, index) => {
           const Title = index === 0 ? "h1" : "h2";
@@ -140,7 +148,6 @@ export function HeroSlider() {
                 type="button"
                 role="tab"
                 aria-selected={current}
-                aria-label={`Slide ${index + 1}: ${slide.thumb}`}
                 className={`hero__card hero__slide--${slide.tone}${current ? " is-active" : ""}`}
                 style={photo(slide.image, loadAll)}
                 onClick={() => goTo(index)}

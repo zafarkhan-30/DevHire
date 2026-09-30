@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown } from "@/components/ui/SpriteIcons";
 import { faq } from "@/content/home";
 import { Accent } from "@/components/ui/Accent";
 

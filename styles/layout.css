@@ -1029,7 +1029,7 @@
 }
 
 .cookie a {
-  color: var(--primary);
+  color: var(--primary-strong);
   font-weight: 600;
   text-decoration: underline;
 }

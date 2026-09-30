@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { ArrowRight, Check, ChevronRight, CircleCheck, Minus, Quote, X, Maximize2 } from "lucide-react";
+import { ChevronRight, Minus, Quote, X, Maximize2 } from "lucide-react";
+import { ArrowRight, Check, CircleCheck } from "@/components/ui/SpriteIcons";
 import type { Block, Cta, HeroBlock, Pad, Stat, Tone } from "@/content/types";
 import { testimonials } from "@/content/home";
 import { reviews } from "@/content/reviews";

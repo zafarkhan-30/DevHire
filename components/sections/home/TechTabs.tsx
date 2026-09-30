@@ -35,18 +35,20 @@ export function TechTabs() {
           </div>
 
           {/* key restarts the fade animation on each tab change */}
-          <ul key={current.id} id="tech-panel" role="tabpanel" aria-labelledby={`tech-tab-${current.id}`} className="tech__panel">
-            {current.items.map((item) => (
-              <li key={item.label}>
-                <Link href={item.href} className="tech__card">
-                  <span className="tech__monogram" aria-hidden="true">
-                    {item.label.replace(/^\./, "").charAt(0)}
-                  </span>
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div key={current.id} id="tech-panel" role="tabpanel" aria-labelledby={`tech-tab-${current.id}`}>
+            <ul className="tech__panel">
+              {current.items.map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href} className="tech__card">
+                    <span className="tech__monogram" aria-hidden="true">
+                      {item.label.replace(/^\./, "").charAt(0)}
+                    </span>
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>

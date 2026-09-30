@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, Check, Globe } from "lucide-react";
+import { Globe } from "lucide-react";
+import { ArrowRight, Check } from "@/components/ui/SpriteIcons";
 import { footer, site } from "@/content/site";
 import { Icon, SocialIcon } from "@/components/ui/Icon";
 import { NewsletterForm } from "./NewsletterForm";

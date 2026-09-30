@@ -1,13 +1,15 @@
 :root {
   --primary: #ff4103;
-  --primary_hover: #e03a02;
+  --primary_hover: #c43102;
+  /* Deeper brand orange for white text on orange and small orange text on white (WCAG AA 4.5:1). */
+  --primary-strong: #d93802;
   --primary-rgb: 255, 65, 3;
   --secondary: #153762;
   --secondary-rgb: 21, 55, 98;
   --dark: #0b0a0a;
   --white: #ffffff;
   --bg-light: #f8f9fa;
-  --body_color: #777777;
+  --body_color: #737373;
   --gray_color_light: #a4a7ab;
   --border_light: #e6e9ee;
   --success: #10b981;
@@ -16,6 +18,7 @@
   --blue_color: #3b82f6;
 
   --font-family: var(--font-jakarta), "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-family-italic: var(--font-jakarta-italic), var(--font-family);
 
   --section-padding: 4rem;
   --container-max: 1340px;

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
+import { ArrowRight } from "@/components/ui/SpriteIcons";
 import { midCta } from "@/content/home";
 
 export function MidCta() {

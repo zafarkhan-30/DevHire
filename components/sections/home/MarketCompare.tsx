@@ -1,4 +1,5 @@
-import { CircleCheck, MessageSquareText } from "lucide-react";
+import { MessageSquareText } from "lucide-react";
+import { CircleCheck } from "@/components/ui/SpriteIcons";
 import { compare } from "@/content/home";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 

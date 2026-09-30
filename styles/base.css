@@ -257,7 +257,7 @@ button {
 }
 
 .btn--primary {
-  background: var(--primary);
+  background: var(--primary-strong);
   color: var(--white);
   box-shadow: 0 6px 18px rgba(var(--primary-rgb), 0.3);
 }

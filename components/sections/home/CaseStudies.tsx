@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowRight, ExternalLink, Maximize2 } from "lucide-react";
+import { ExternalLink, Maximize2 } from "lucide-react";
+import { ArrowRight } from "@/components/ui/SpriteIcons";
 import { Accent } from "@/components/ui/Accent";
 import { caseStudies } from "@/content/home";
 import { Icon } from "@/components/ui/Icon";
@@ -41,7 +42,7 @@ export function CaseStudies() {
         </div>
 
         {/* key restarts the fade animation on each tab change */}
-        <article key={active} className="cases__card" role="tabpanel">
+        <div key={active} className="cases__card" role="tabpanel">
           <div className="cases__body">
             <span className="pill pill--blue">{item.tag}</span>
             <h3 className="cases__title">{item.title}</h3>
@@ -89,7 +90,7 @@ export function CaseStudies() {
             </button>
             <span className="cases__chip">{item.chip}</span>
           </div>
-        </article>
+        </div>
 
         <div className="cases__all">
           <Link href={caseStudies.all.href} className="btn btn--outline-light">

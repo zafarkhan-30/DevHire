@@ -61,16 +61,17 @@ export const trustedBy = {
   // Words wrapped in [] render in the accent color.
   title: "Teams That Build With [SyntecHire] Engineers Across [Industries] And Time Zones",
   caption: "From first-product startups to established engineering organisations. References on request.",
-  // Real clients only, with their permission. Files live in /public/images/Partners; use a copy with the empty border trimmed off so every logo lines up at the same height.
+  // Real clients only, with their permission. Files live in /public/images/Partners; use a copy with the empty border trimmed off so every logo lines up at the same height,
+  // saved as WebP at 56px high (enough for the 40px display height) with its width and height listed.
   logos: [
-    { name: "Infosys", src: "/images/Partners/trimmed/infosys.png" },
-    { name: "Tata Consultancy Services", src: "/images/Partners/trimmed/tcs-tata-consultancy-services.png" },
-    { name: "Capital One", src: "/images/Partners/trimmed/capital-one.png" },
-    { name: "Swiggy", src: "/images/Partners/trimmed/swiggy-logo.png" },
-    { name: "Freed", src: "/images/Partners/trimmed/freed-logo.png" },
-    { name: "Park+", src: "/images/Partners/trimmed/park-car-app.png" },
-    { name: "CView Survey", src: "/images/Partners/trimmed/cview-survey-logo.png" },
-  ] as { name: string; src: string }[],
+    { name: "Infosys", src: "/images/Partners/trimmed/infosys.webp", width: 154, height: 56 },
+    { name: "Tata Consultancy Services", src: "/images/Partners/trimmed/tcs-tata-consultancy-services.webp", width: 199, height: 56 },
+    { name: "Capital One", src: "/images/Partners/trimmed/capital-one.webp", width: 161, height: 56 },
+    { name: "Swiggy", src: "/images/Partners/trimmed/swiggy-logo.webp", width: 184, height: 56 },
+    { name: "Freed", src: "/images/Partners/trimmed/freed-logo.webp", width: 178, height: 56 },
+    { name: "Park+", src: "/images/Partners/trimmed/park-car-app.webp", width: 145, height: 56 },
+    { name: "CView Survey", src: "/images/Partners/trimmed/cview-survey-logo.webp", width: 357, height: 56 },
+  ] as { name: string; src: string; width?: number; height?: number }[],
   placeholderCount: 10,
 };
 

@@ -20,7 +20,7 @@ export function LogoRow() {
       {trustedBy.logos.map((logo) => (
         <li key={logo.name} className="trusted__logo">
           {/* eslint-disable-next-line @next/next/no-img-element -- small static logos */}
-          <img src={logo.src} alt={logo.name} loading="lazy" decoding="async" />
+          <img src={logo.src} alt={logo.name} width={logo.width} height={logo.height} loading="lazy" decoding="async" />
         </li>
       ))}
     </ul>

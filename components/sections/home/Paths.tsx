@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight } from "@/components/ui/SpriteIcons";
 import { paths } from "@/content/home";
 import { Icon } from "@/components/ui/Icon";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -21,7 +21,7 @@ export function Paths() {
               <p className="paths__sub">{card.sub}</p>
               <p className="paths__text">{card.text}</p>
               <Link href={card.href} className={`link-arrow${card.tone === "blue" ? " paths__link--blue" : ""}`}>
-                Learn more
+                Learn more<span className="sr-only"> about {card.title}</span>
                 <ArrowRight size={14} aria-hidden="true" />
               </Link>
             </li>

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check } from "@/components/ui/SpriteIcons";
 import { lead } from "@/content/home";
 import { Accent } from "@/components/ui/Accent";
 

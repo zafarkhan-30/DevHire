@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown } from "@/components/ui/SpriteIcons";
 import type { AccordionBlock, LinkGridBlock, PdfGateBlock, QuizBlock, TabsBlock } from "@/content/types";
 import { Icon } from "@/components/ui/Icon";
 

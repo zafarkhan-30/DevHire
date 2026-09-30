@@ -2,29 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import {
-  Apple,
-  ArrowRight,
-  Atom,
-  ChevronDown,
-  Cloud,
-  Code,
-  Coffee,
-  Database,
-  Hexagon,
-  LayoutTemplate,
-  Menu,
-  Server,
-  ShieldCheck,
-  FileLock2,
-  KeyRound,
-  CalendarClock,
-  DoorOpen,
-  Smartphone,
-  Users,
-  X,
-  type LucideIcon,
-} from "lucide-react";
+import { Apple, Atom, Cloud, Code, Coffee, Database, Hexagon, LayoutTemplate, Menu, Server, ShieldCheck, FileLock2, KeyRound, CalendarClock, DoorOpen, Smartphone, Users, X, type LucideIcon } from "lucide-react";
+import { ArrowRight, ChevronDown } from "@/components/ui/SpriteIcons";
 import { megaMenus, navLinks, site } from "@/content/site";
 import { Fragment } from "react";
 import { Logo } from "./Logo";

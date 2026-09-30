@@ -262,6 +262,7 @@
 
 .phero__note {
   font-size: 13px;
+  font-family: var(--font-family-italic);
   font-style: italic;
 }
 
@@ -492,6 +493,7 @@
 
 .quotecard blockquote {
   flex: 1;
+  font-family: var(--font-family-italic);
   font-style: italic;
 }
 
