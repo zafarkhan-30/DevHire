@@ -121,8 +121,8 @@ export const reasons = {
   cards: [
     {
       icon: "zap",
-      title: "Get A Product Built Without Hiring A Team First",
-      text: "Launch dates and investor milestones do not wait for you to recruit designers, developers and testers one by one.",
+      title: "Get A Full Product Team, Managed By Us",
+      text: "Designers, developers and testers who already work together. We run the team and own the delivery. You own the code.",
     },
     {
       icon: "users",
