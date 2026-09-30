@@ -104,7 +104,7 @@ export const compare = {
     ],
   },
   callout:
-    "Good developers exist on every platform. The difference is the incentive. When a vendor bills by the hour, more hours are good for the vendor whether or not you get value. SyntecHire is set up so that we do well only when your sprint ships.",
+    "Good developers exist on every platform. The difference is the incentive. When a vendor bills by the hour, more hours are good for the vendor whether or not you get value. SyntecHire works month to month with no exit fee, so we keep your business only while the work keeps shipping.",
 };
 
 export const midCta = {
