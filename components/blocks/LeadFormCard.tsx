@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState, type FormEvent } from "react";
+import { trackLead } from "@/lib/ads";
 import { ArrowRight } from "@/components/ui/SpriteIcons";
 import type { FieldKey, FormSpec } from "@/content/types";
 import { lead } from "@/content/home";
@@ -44,6 +45,7 @@ export function LeadFormCard({ spec }: { spec: FormSpec }) {
       if (!response.ok) throw new Error("Request failed");
       element.reset();
       setStatus("done");
+      trackLead();
     } catch {
       setStatus("error");
     }

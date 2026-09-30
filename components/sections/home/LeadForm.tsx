@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
+import { trackLead } from "@/lib/ads";
 import { ArrowRight, Check } from "@/components/ui/SpriteIcons";
 import { lead } from "@/content/home";
 import { Accent } from "@/components/ui/Accent";
@@ -26,6 +27,7 @@ export function LeadForm() {
       if (!response.ok) throw new Error("Request failed");
       element.reset();
       setStatus("done");
+      trackLead();
     } catch {
       setStatus("error");
     }

@@ -16,7 +16,7 @@ export function readConsent(): Consent | null {
   }
 }
 
-// Analytics and chat scripts must only load after consent === "accepted".
+// Analytics, advertising and chat scripts must only load after consent === "accepted" (see GoogleAds.tsx).
 export function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
@@ -39,7 +39,7 @@ export function CookieBanner() {
   return (
     <div className="cookie" role="dialog" aria-label="Cookie preferences">
       <p>
-        We use cookies for analytics and chat only if you agree. See our{" "}
+        We use advertising cookies to measure our ads only if you agree. See our{" "}
         <Link href="/cookies-policy/">cookie policy</Link>.
       </p>
       <div className="cookie__actions">

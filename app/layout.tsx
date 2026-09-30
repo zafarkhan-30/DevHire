@@ -5,6 +5,7 @@ import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { Lightbox } from "@/components/layout/Lightbox";
 import { Motion } from "@/components/layout/Motion";
 import { Footer } from "@/components/layout/Footer";
+import { GoogleAds } from "@/components/layout/GoogleAds";
 import { Header } from "@/components/layout/Header";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { IconSprite } from "@/components/ui/SpriteIcons";
@@ -69,6 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Lightbox />
         <WhatsAppButton />
         <CookieBanner />
+        <GoogleAds />
       </body>
     </html>
   );
