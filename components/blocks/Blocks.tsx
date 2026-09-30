@@ -197,7 +197,7 @@ function BlockView({ block }: { block: Block }) {
                   ) : null}
                   {item.image ? (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img className="card__image" src={item.image} alt="" loading="lazy" decoding="async" width={1280} height={800} />
+                    <img className="card__image" src={item.image} alt={`${item.title.replace(/[[\]]/g, "")} screenshot`} loading="lazy" decoding="async" width={1280} height={800} />
                   ) : null}
                   {item.icon ? (
                     <span className="card__icon">

@@ -8,9 +8,11 @@ import { hero } from "@/content/home";
 // Time each slide stays on screen before the next one fades in.
 const SLIDE_MS = 6000;
 
-// Photo layered over the slide's tone gradient, which shows through if the file is missing.
-function photo(image: string): CSSProperties | undefined {
-  return image ? { backgroundImage: `url(${image}), var(--tone)` } : undefined;
+// Photo layered over the slide's tone gradient, which shows through if the file is missing or not loaded yet.
+// Each photo has a 1280px copy next to it (hero-1.webp -> hero-1-1280.webp); styles/home.css picks the size.
+function photo(image: string, load: boolean): CSSProperties | undefined {
+  if (!image || !load) return undefined;
+  return { "--photo": `url(${image})`, "--photo-sm": `url(${image.replace(/\.webp$/, "-1280.webp")})` } as CSSProperties;
 }
 
 export function HeroSlider() {
@@ -22,6 +24,10 @@ export function HeroSlider() {
   const [focused, setFocused] = useState(false);
   const [reducedMotion, setReducedMotion] = useState(false);
   const touchX = useRef<number | null>(null);
+  // First paint shows slide one straight away (no entrance animation, no other photos) so it counts as loaded
+  // quickly; the other photos load once the page has finished loading.
+  const [started, setStarted] = useState(false);
+  const [loadAll, setLoadAll] = useState(false);
 
   const paused = stopped || hovered || focused || reducedMotion;
 
@@ -33,7 +39,20 @@ export function HeroSlider() {
     return () => query.removeEventListener("change", update);
   }, []);
 
-  const goTo = useCallback((index: number) => setActive(((index % count) + count) % count), [count]);
+  useEffect(() => {
+    const load = () => setLoadAll(true);
+    if (document.readyState === "complete") load();
+    else window.addEventListener("load", load, { once: true });
+    return () => window.removeEventListener("load", load);
+  }, []);
+
+  const goTo = useCallback(
+    (index: number) => {
+      setStarted(true);
+      setActive(((index % count) + count) % count);
+    },
+    [count],
+  );
 
   // Restarting the timer on every change keeps each slide on screen for the full interval.
   useEffect(() => {
@@ -44,7 +63,7 @@ export function HeroSlider() {
 
   return (
     <section
-      className={`hero${paused ? " is-paused" : ""}`}
+      className={`hero${paused ? " is-paused" : ""}${started ? "" : " is-first"}`}
       aria-roledescription="carousel"
       aria-label="SyntecHire services"
       style={{ "--slide-ms": `${SLIDE_MS}ms` } as CSSProperties}
@@ -76,7 +95,7 @@ export function HeroSlider() {
             <div
               key={slide.thumb}
               className={`hero__slide hero__slide--${slide.tone}${"imageAlign" in slide && slide.imageAlign === "right" ? " hero__slide--right" : ""}${current ? " is-active" : ""}`}
-              style={photo(slide.image)}
+              style={photo(slide.image, index === 0 || loadAll)}
               role="group"
               aria-roledescription="slide"
               aria-label={`${index + 1} of ${count}: ${slide.thumb}`}
@@ -123,7 +142,7 @@ export function HeroSlider() {
                 aria-selected={current}
                 aria-label={`Slide ${index + 1}: ${slide.thumb}`}
                 className={`hero__card hero__slide--${slide.tone}${current ? " is-active" : ""}`}
-                style={photo(slide.image)}
+                style={photo(slide.image, loadAll)}
                 onClick={() => goTo(index)}
               >
                 <span className="hero__card-number">{String(index + 1).padStart(2, "0")}</span>

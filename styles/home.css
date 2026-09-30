@@ -56,7 +56,17 @@
 .hero__slide--violet,
 .hero__slide--teal,
 .hero__slide--blue {
-  background-image: var(--tone);
+  background-image: var(--photo-sm, linear-gradient(transparent, transparent)), var(--tone);
+}
+
+/* Full-size photo on large screens; phones, tablets and the small slide cards use the 1280px copy. */
+@media (min-width: 1200px) {
+  .hero__slide.hero__slide--amber,
+  .hero__slide.hero__slide--violet,
+  .hero__slide.hero__slide--teal,
+  .hero__slide.hero__slide--blue {
+    background-image: var(--photo, linear-gradient(transparent, transparent)), var(--tone);
+  }
 }
 
 .hero__slide::before {
@@ -106,6 +116,13 @@
 
 .hero__slide.is-active .hero__content > * {
   animation: heroRise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+/* The first slide on page load is shown as is; the entrance only plays when slides change. */
+.hero.is-first .hero__content > * {
+  opacity: 1;
+  transform: none;
+  animation: none;
 }
 
 .hero__slide.is-active .hero__content > :nth-child(1) { animation-delay: 0.25s; }
