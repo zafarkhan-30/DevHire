@@ -245,8 +245,12 @@ export function Header() {
                     {menu.work.items.map((item) => (
                       <li key={item.href}>
                         <Link href={item.href} className="mega__project" onClick={close}>
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img src={item.image} alt={`${item.title} project screenshot`} loading="lazy" decoding="async" width={1280} height={800} />
+                          {item.image ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img src={item.image} alt={`${item.title} project screenshot`} loading="lazy" decoding="async" width={1280} height={800} />
+                          ) : (
+                            <span className="mega__project-blank" aria-hidden="true" />
+                          )}
                           <span className="mega__project-tag">{item.tag}</span>
                           <span className="mega__project-title">{item.title}</span>
                         </Link>

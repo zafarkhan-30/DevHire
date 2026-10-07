@@ -21,7 +21,7 @@ export type MegaMenu = {
   button?: NavLink;
   topPicks?: { tag: string; tone: "navy" | "violet" | "green"; title: string; href: string }[];
   // Row of project cards with screenshots, shown under the columns.
-  work?: { heading: string; items: { tag: string; title: string; href: string; image: string }[]; all: NavLink };
+  work?: { heading: string; items: { tag: string; title: string; href: string; image?: string }[]; all: NavLink };
 };
 
 export const site = {
@@ -123,7 +123,7 @@ export const megaMenus: MegaMenu[] = [
     // Projects come from content/work; the first four are shown.
     work: {
       heading: "Our Work",
-      items: projects.slice(0, 4).map((project) => ({ tag: project.industry, title: project.name, href: projectPath(project), image: project.cover })),
+      items: projects.slice(0, 4).map((project) => ({ tag: project.industry, title: project.name, href: projectPath(project), image: project.cover || undefined })),
       all: { label: "View All Work", href: "/case-study/our-work/" },
     },
   },

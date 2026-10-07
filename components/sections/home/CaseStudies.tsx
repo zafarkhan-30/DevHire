@@ -73,7 +73,8 @@ export function CaseStudies() {
               ) : null}
             </div>
           </div>
-          <div className="cases__media cases__media--shot">
+          <div className={`cases__media${item.image ? " cases__media--shot" : ""}`}>
+            {item.image ? (
             <button
               type="button"
               className="cases__shot zoomable"
@@ -88,6 +89,7 @@ export function CaseStudies() {
                 <Maximize2 size={16} />
               </span>
             </button>
+            ) : null}
             <span className="cases__chip">{item.chip}</span>
           </div>
         </div>

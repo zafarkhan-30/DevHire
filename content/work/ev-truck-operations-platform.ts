@@ -17,7 +17,8 @@ const project: ProjectData = {
     description:
       "How SyntecHire built an operations platform for an electric truck fleet: live trip tracking across eight stages, delay flags, charger telemetry and revenue reports.",
   },
-  cover: "/images/work/ev-logistics-operations.webp",
+  // PLACEHOLDER: new screenshots are coming. Add them to public/images/work/ (masked, 1280px wide), set cover and fill screens.
+  cover: "",
   facts: [
     { label: "Industry", value: "Logistics and EV" },
     { label: "Type", value: "Web application" },
@@ -60,12 +61,7 @@ const project: ProjectData = {
     { icon: "server", title: "Logistics Service", text: "Trips, stages, flags and reports served through a separate API." },
     { icon: "zap", title: "Charger Integration", text: "Live data from the charger management system for depots, chargers and sessions." },
   ],
-  screens: [
-    { src: "/images/work/ev-logistics-operations.webp", alt: "Live operations board showing trips grouped by stage, with delay flags and charge level on each trip card", caption: "Live trip board: trips grouped by stage, with delay flags." },
-    { src: "/images/work/ev-logistics-infrastructure.webp", alt: "Depot infrastructure tree showing a depot, six charger dispensers, their connectors and connected trucks", caption: "Infrastructure tree: depot, dispensers, connectors and connected trucks." },
-    { src: "/images/work/ev-logistics-charging.webp", alt: "Live charging monitoring with depot cards, a network map and a table of live charging sessions", caption: "Live charging: depot network, corridor map and live sessions." },
-    { src: "/images/work/ev-logistics-depot.webp", alt: "Depot detail dialog listing six charger units with power draw and connector status", caption: "Depot detail: every charger unit and connector status." },
-  ],
+  screens: [],
   services: [
     { label: "Web Application Development", href: "/service/web-application-development/" },
     { label: "UI/UX Design", href: "/service/ui-ux-design/" },

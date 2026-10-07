@@ -2474,3 +2474,8 @@
     gap: 20px;
   }
 }
+
+/* Card image area while a project waits for its screenshots */
+.card__image--blank {
+  background: var(--gradient-navy);
+}

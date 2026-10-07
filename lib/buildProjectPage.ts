@@ -20,7 +20,7 @@ export function buildProjectPage(project: ProjectData): PageDef {
     },
     { type: "caseMeta", items: project.facts },
     { type: "text", title: "The [Project]", align: "left", ...project.overview },
-    { type: "gallery", tone: "muted", title: "The [Product]", align: "center", items: project.screens },
+    ...(project.screens.length ? [{ type: "gallery" as const, tone: "muted" as const, title: "The [Product]", align: "center" as const, items: project.screens }] : []),
     { type: "cards", title: "What We [Built]", align: "center", columns: project.built.length % 3 === 0 ? 3 : 4, items: project.built },
     { type: "cards", tone: "muted", title: "Technology [Used]", align: "center", columns: project.stack.length === 3 ? 3 : 4, items: project.stack },
     {

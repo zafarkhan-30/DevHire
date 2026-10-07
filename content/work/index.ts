@@ -15,7 +15,8 @@ export const projectPath = (project: ProjectData) => `/case-study/${project.slug
 
 // Card for a project, used on listing pages.
 export const projectCard = (project: ProjectData) => ({
-  image: project.cover,
+  image: project.cover || undefined,
+  imageBlank: !project.cover,
   tag: project.kind,
   title: project.title.replace(/[[\]]/g, ""),
   text: project.summary,

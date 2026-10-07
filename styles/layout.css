@@ -1416,3 +1416,12 @@
     padding-bottom: 10px;
   }
 }
+
+/* Menu project card without a screenshot yet: same height, brand gradient instead */
+.mega__project-blank {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-bottom: 1px solid var(--border_light);
+  background: var(--gradient-navy);
+}

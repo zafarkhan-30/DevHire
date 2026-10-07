@@ -63,6 +63,8 @@ export type LogosBlock = Section & { type: "logos"; caption?: string; badges?: s
 export type CardItem = {
   // Screenshot or photo shown across the top of the card.
   image?: string;
+  // Keeps the image area, as a brand gradient, when there is no image yet (so a row of cards stays level).
+  imageBlank?: boolean;
   icon?: IconKey;
   tag?: string;
   title: string;
@@ -288,14 +290,14 @@ export type ProjectData = {
   title: string; // headline used on cards and the page hero; [brackets] mark the accent words
   summary: string;
   meta: { title: string; description: string };
-  cover: string; // screenshot shown on the home page and on cards
+  cover: string; // screenshot shown on the home page and on cards; "" while a project waits for images
   facts: { label: string; value: string }[]; // up to 5, shown under the hero
   metrics: { icon: IconKey; value: string; label: string }[]; // 3, shown on the home page
   note: { label: string; text: string };
   overview: { paragraphs: string[]; aside: { title: string; items: string[] } };
   built: CardItem[]; // what was built, 4 to 8
   stack: CardItem[]; // technology and what it was used for
-  screens: { src: string; alt: string; caption: string }[];
+  screens: { src: string; alt: string; caption: string }[]; // may be empty while a project waits for images
   services: { label: string; href: string }[]; // SyntecHire services this project used
   // Public address of the finished product. Leave out until it is live on its final domain.
   live?: { label: string; href: string };
