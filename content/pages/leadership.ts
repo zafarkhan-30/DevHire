@@ -1,36 +1,65 @@
 import type { PageDef } from "@/content/types";
 
-// PLACEHOLDER markers flag values SyntecHire must confirm before launch.
 const page: PageDef = {
   path: "/leadership/",
   meta: {
-    title: "Leadership",
-    noindex: true, // remove once the team section is back
+    title: "Leadership | Meet The SyntecHire Team",
     description:
-      "Meet the people who lead SyntecHire and the working standards they hold every engagement to.",
+      "Meet the people who lead SyntecHire — directors, project managers and technical leads who hold every engagement to the standards our clients expect.",
   },
   blocks: [
     {
       type: "hero",
-      tone: "light",
+      tone: "navy",
+      size: "lg",
       align: "center",
       eyebrow: "Leadership",
       title: "The People [Accountable] For Your Engagement",
       text: "SyntecHire is led by people who stay close to the work. When something needs a decision, you can reach the person who makes it.",
       ctas: [
         { label: "Talk To Our Team", href: "/contact-us/" },
-        { label: "About SyntecHire", href: "/about/", variant: "outline" },
+        { label: "About SyntecHire", href: "/about/", variant: "outline-light" },
       ],
     },
     {
-      // PLACEHOLDER: real names, roles, bios and photos of the SyntecHire directors.
       type: "people",
-      draft: true, // hidden until founder details are added
       title: "Our [Directors]",
+      intro: "The founders who set the direction, hold the standards and stay accountable for every engagement.",
       align: "center",
       items: [
-        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at SyntecHire." },
-        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at SyntecHire." },
+        {
+          name: "Abhishek Maurya",
+          role: "Director — Finance & IT Strategy",
+          bio: "Brings deep expertise across financial operations and information technology. Oversees strategic planning, commercial partnerships and the governance framework that keeps every engagement transparent and accountable.",
+          image: "/images/team/director-1.jpg",
+        },
+        {
+          name: "Abu Sufiyan Khan",
+          role: "Director",
+          bio: "Drives business development and operational excellence across the company. Ensures that client expectations are met with precision, from proposal through delivery, and that SyntecHire scales without compromising quality.",
+          image: "/images/team/director-2.jpg",
+        },
+      ],
+    },
+    {
+      type: "people",
+      tone: "muted",
+      title: "Engineering [Leadership]",
+      intro: "The people who run the day-to-day delivery and make sure every sprint ships working software.",
+      align: "center",
+      items: [
+        {
+          name: "Jafar Khan",
+          role: "Project Manager",
+          bio: "Manages end-to-end delivery across projects with a strong IT background. Coordinates timelines, client communication and cross-functional teams to ensure every project is planned, tracked and delivered on schedule.",
+          image: "/images/team/project-manager.jpg",
+        },
+        {
+          name: "Saud Shaikh",
+          role: "Tech Lead",
+          bio: "Leads the engineering team with hands-on technical expertise. Owns architecture decisions, code quality standards and mentors developers to deliver robust, maintainable solutions that our clients can rely on.",
+          image: "/images/team/tech-lead.jpg",
+        },
       ],
     },
     {

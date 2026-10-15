@@ -620,7 +620,7 @@ function BlockView({ block }: { block: Block }) {
     case "people":
       return (
         <Shell block={block} name="people">
-          <ul className={`cardgrid cardgrid--${Math.min(Math.max(block.items.length, 2), 3)}`}>
+          <ul className={`cardgrid cardgrid--${Math.min(Math.max(block.items.length, 2), 4)}`}>
             {block.items.map((person, index) => (
               <li key={person.name + index}>
                 <div className="card person">

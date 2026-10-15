@@ -543,25 +543,36 @@
 .person {
   align-items: center;
   text-align: center;
+  padding-top: 32px;
 }
 
 .person__photo {
   display: grid;
   place-items: center;
-  width: 96px;
-  height: 96px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   background: var(--gradient-navy) center / cover;
   font-size: 24px;
   font-weight: 800;
   color: var(--white);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  border: 3px solid var(--primary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+}
+
+.person:hover .person__photo {
+  transform: scale(1.06);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
 }
 
 .person__role {
-  margin-top: -8px;
-  font-size: 13px;
+  margin-top: -4px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--primary);
+  letter-spacing: 0.01em;
 }
 
 /* Split panels */

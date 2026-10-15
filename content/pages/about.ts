@@ -64,15 +64,35 @@ const page: PageDef = {
       ],
     },
     {
-      // PLACEHOLDER: real names, roles, bios and photos of the SyntecHire founders.
       type: "people",
-      draft: true, // hidden until founder details are added
       title: "[Leadership]",
       intro: "The people accountable for every engagement.",
       align: "center",
       items: [
-        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at SyntecHire." },
-        { name: "Founder Name", role: "Role", bio: "Short biography goes here. Two or three sentences on background and what this person is responsible for at SyntecHire." },
+        {
+          name: "Abhishek Maurya",
+          role: "Director — Finance & IT Strategy",
+          bio: "Brings deep expertise across financial operations and information technology, shaping the strategic direction of every engagement.",
+          image: "/images/team/director-1.jpg",
+        },
+        {
+          name: "Abu Sufiyan Khan",
+          role: "Director",
+          bio: "Drives business growth and operational excellence, ensuring client expectations are met from proposal through delivery.",
+          image: "/images/team/director-2.jpg",
+        },
+        {
+          name: "Jafar Khan",
+          role: "Project Manager",
+          bio: "Manages end-to-end delivery with a strong IT background, keeping every project planned, tracked and on schedule.",
+          image: "/images/team/project-manager.jpg",
+        },
+        {
+          name: "Saud Shaikh",
+          role: "Tech Lead",
+          bio: "Leads the engineering team with hands-on technical expertise, owning architecture decisions and code quality standards.",
+          image: "/images/team/tech-lead.jpg",
+        },
       ],
     },
     {

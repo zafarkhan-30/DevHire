@@ -303,6 +303,38 @@ export const timeline = {
   checks: ["No drawn-out procurement.", "No lock-in.", "No hidden costs."],
 };
 
+export const team = {
+  title: "Meet The People Behind [SyntecHire]",
+  intro: "A founder-led company where the people making decisions stay close to the work. You always know who is accountable.",
+  members: [
+    {
+      name: "Abhishek Maurya",
+      role: "Director — Finance & IT Strategy",
+      bio: "Deep expertise across financial operations and information technology, shaping every engagement with strategic clarity.",
+      image: "/images/team/director-1.jpg",
+    },
+    {
+      name: "Abu Sufiyan Khan",
+      role: "Director",
+      bio: "Drives business growth and operational excellence, ensuring client expectations are met from proposal through delivery.",
+      image: "/images/team/director-2.jpg",
+    },
+    {
+      name: "Jafar Khan",
+      role: "Project Manager",
+      bio: "Manages end-to-end project delivery with a strong IT background, keeping every sprint planned, tracked and on time.",
+      image: "/images/team/project-manager.jpg",
+    },
+    {
+      name: "Saud Shaikh",
+      role: "Tech Lead",
+      bio: "Leads the engineering team with hands-on technical expertise, owning architecture decisions and code quality standards.",
+      image: "/images/team/tech-lead.jpg",
+    },
+  ],
+  cta: { label: "Meet Our Full Team", href: "/leadership/" },
+};
+
 export const testimonials = {
   eyebrow: "Client Stories",
   title: "Real Work, [Real People]",
