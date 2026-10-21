@@ -30,6 +30,7 @@ const LABELS: Record<string, string> = {
   teamSize: "Team size",
   timeline: "Timeline",
   message: "Message",
+  ebook: "E-book",
   type: "Form",
   source: "Source",
   page: "Page",
@@ -151,7 +152,7 @@ export function visitorConfirmation(lead: Lead) {
       body: `${p(hello)}
 ${p(`You're on the list for ${escapeHtml(site.name)} engineering leadership notes: one email a month on hiring remote developers, running distributed teams and modernising legacy systems.`)}
 ${p("No spam, and you can unsubscribe from any email with one click.")}
-${liveSite() ? button("Read the latest insights", `${site.url}/insights/`) : ""}`,
+${liveSite() ? button("Read the latest articles", `${site.url}/blog/`) : ""}`,
       footer: `You're receiving this because ${escapeHtml(lead.email)} was entered in the newsletter form on the ${escapeHtml(site.name)} website. If that wasn't you, ignore this email.`,
     });
     return { subject, html, text: `${first ? `Hi ${first},` : "Hello,"}\n\nThanks for subscribing to ${site.name} engineering notes. One email a month.\n\n${site.name}` };

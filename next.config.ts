@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
     return [
       // Old-style pages folded into their current equivalents.
       { source: "/job-post", destination: "/career/", permanent: true },
+      // The blog used to live at /insights/.
+      { source: "/insights", destination: "/blog/", permanent: true },
+      { source: "/insights/:path*", destination: "/blog/:path*", permanent: true },
       { source: "/about-us", destination: "/about/", permanent: true },
     ];
   },

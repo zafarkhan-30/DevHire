@@ -1,0 +1,353 @@
+[
+  {
+    "slug": "software-project-scoping-playbook",
+    "title": "The Software Project Scoping Playbook",
+    "subtitle": "A step-by-step method for turning an idea into a scope you can price, plan and defend.",
+    "category": "Project Management",
+    "tone": "violet",
+    "description": "Most software overruns start with a scope that was too vague to price. This playbook shows founders and product owners how to define outcomes, separate must-haves from nice-to-haves, expose unknowns and agree a first release that is small enough to finish.",
+    "audience": [
+      "Founders and product owners preparing a first brief",
+      "CTOs comparing quotes from several suppliers",
+      "Delivery managers who inherit unclear requirements"
+    ],
+    "learn": [
+      "Write a brief around outcomes instead of feature lists",
+      "Sort scope into launch, soon after and later",
+      "List unknowns and give each an owner and a date",
+      "Estimate in ranges tied to stated assumptions",
+      "Plan a first release that tests the estimate",
+      "Agree a simple rule for handling change"
+    ],
+    "chapters": [
+      {
+        "title": "Why scopes fail before work starts",
+        "summary": "The common causes of overruns and what a good scope has to do.",
+        "paragraphs": [
+          "Most estimates fail before a line of code is written. The number is built on a description that was too vague to price, so the real cost arrives later as change requests and arguments.",
+          "A good scope does three jobs. It says what outcome the project must deliver. It says what is in and out of the first release. And it shows where the uncertainty is, so nobody is surprised by it later."
+        ],
+        "bullets": [
+          "Vague outcomes lead to feature creep",
+          "Hidden unknowns lead to missed dates",
+          "Unstated assumptions lead to disputes"
+        ]
+      },
+      {
+        "title": "Start from the outcome",
+        "summary": "How to describe success so the team can propose the smallest solution.",
+        "paragraphs": [
+          "Write down what should be different when the project is done. Orders are processed without manual re-entry. Customers can book without calling. Reports that took two days take ten minutes.",
+          "A feature list describes a solution someone has already chosen. An outcome lets the team challenge it and find something simpler. Add one or two measures so you can tell whether the outcome was reached."
+        ],
+        "bullets": [
+          "State the outcome in one sentence",
+          "Name who benefits and how you will measure it",
+          "List constraints: budget, date, systems that cannot change"
+        ]
+      },
+      {
+        "title": "Separate must-have from nice-to-have",
+        "summary": "A three-bucket method for protecting the first release.",
+        "paragraphs": [
+          "Sort every requirement into three groups: needed for launch, needed soon after launch, and wanted eventually. Be strict with the first group. If everything is essential, nothing can be traded when time or budget tightens.",
+          "Ask of each item: what happens if this is missing on launch day? If the answer is that users can still complete the main task, it belongs in the second or third group."
+        ],
+        "bullets": [
+          "Launch: without it the product cannot be used",
+          "Soon after: valuable, but a workaround exists",
+          "Later: ideas worth keeping on a list"
+        ]
+      },
+      {
+        "title": "Expose the unknowns",
+        "summary": "Find the risky parts early and turn them into small, dated questions.",
+        "paragraphs": [
+          "Every project has unknowns: an integration nobody has tested, data of unknown quality, a rule only one person understands. Write each one down with an owner and a date by which it will be answered.",
+          "Where an unknown is large, run a short spike, a day or two of focused investigation, before committing to a figure. It is far cheaper to learn at the start than in the final month."
+        ],
+        "bullets": [
+          "Integrations with third parties",
+          "Data migration and data quality",
+          "Performance and security requirements",
+          "Decisions that depend on other teams"
+        ]
+      },
+      {
+        "title": "Estimate in ranges",
+        "summary": "Why a range with assumptions is more honest and easier to manage than one number.",
+        "paragraphs": [
+          "A single figure suggests precision that does not exist. Give a range for each piece of work and note the assumption behind it, for example that the payment provider's sandbox behaves as documented.",
+          "When an assumption proves wrong, the range moves for a reason everyone can see. The conversation becomes about facts instead of blame."
+        ],
+        "bullets": [
+          "Estimate each part, then combine",
+          "Write the assumption beside every estimate",
+          "Revisit the range after each milestone"
+        ]
+      },
+      {
+        "title": "Plan a small first release",
+        "summary": "Use an early milestone to test both the product and the estimate.",
+        "paragraphs": [
+          "Choose a first milestone that can be finished in a few weeks and shown to real users. It tests the estimate against actual delivery speed and gives you feedback while changes are still cheap.",
+          "Release early, learn, and let the remaining scope be shaped by what you see."
+        ],
+        "bullets": [
+          "Aim for weeks, not months",
+          "Put it in front of real users",
+          "Use what you learn to update the plan"
+        ]
+      },
+      {
+        "title": "Agree how change is handled",
+        "summary": "A simple rule that keeps conversations calm when requirements move.",
+        "paragraphs": [
+          "Changes will come, and many will be good ones. Decide in advance who can request a change, who sizes it and who approves the cost or the trade-off.",
+          "A simple rule works well: anything added either removes something of similar size or moves the date. It keeps the scope honest without making the team say no."
+        ],
+        "bullets": [
+          "One person owns priorities",
+          "Every change is sized before it is accepted",
+          "Trade-offs are written down"
+        ]
+      }
+    ],
+    "pages": 6
+  },
+  {
+    "slug": "legacy-modernisation-roadmap",
+    "title": "The Legacy Modernisation Roadmap",
+    "subtitle": "How to assess an ageing system, choose a strategy and move forward without breaking the business.",
+    "category": "Modernisation",
+    "tone": "teal",
+    "description": "A practical roadmap for technology leaders who depend on a legacy application. It covers how to assess risk, choose between rehosting, refactoring and rebuilding, put a safety net in place, move data safely and measure whether the programme is working.",
+    "audience": [
+      "CTOs and heads of engineering responsible for ageing systems",
+      "Operations leaders who rely on software they cannot easily change",
+      "Teams planning a migration or replatforming project"
+    ],
+    "learn": [
+      "Measure the real cost and risk of the current system",
+      "Choose between rehost, replatform, refactor, rearchitect and rebuild",
+      "Build tests, monitoring and release routines before changing core code",
+      "Replace a system gradually instead of with a risky big-bang rewrite",
+      "Move data with checks at every stage",
+      "Track progress with a handful of outcome measures"
+    ],
+    "chapters": [
+      {
+        "title": "Is it really a problem?",
+        "summary": "Questions that separate a working old system from a risky one.",
+        "paragraphs": [
+          "Age alone is not a reason to modernise. A stable system that is understood, supported and rarely changed can be left alone. The signs of real risk show up in how the system behaves when you try to change it.",
+          "Measure before you decide. Four numbers tell most of the story."
+        ],
+        "bullets": [
+          "Lead time from request to release",
+          "Frequency of incidents after releases",
+          "Number of people who can change the core code safely",
+          "Components out of vendor support or missing patches"
+        ]
+      },
+      {
+        "title": "Map what you have",
+        "summary": "Build a shared picture of components, data and integrations.",
+        "paragraphs": [
+          "List the applications, databases, scheduled jobs and every integration, including the unofficial ones such as spreadsheets and file drops. Talk to the people who run the system daily. They know the workarounds that never reached the documentation.",
+          "Record what you find in a short document. It prevents surprises and gives new engineers a starting point."
+        ],
+        "bullets": [
+          "Components and owners",
+          "Data stores and their sizes",
+          "Overnight and monthly jobs",
+          "Third-party dependencies"
+        ]
+      },
+      {
+        "title": "Choose a strategy for each part",
+        "summary": "Five options, from moving the system to rebuilding it.",
+        "paragraphs": [
+          "Modernisation is a spectrum. Rehosting moves the application as it is. Replatforming makes small changes to use managed services. Refactoring improves the structure of the code. Rearchitecting changes how the system is divided. Rebuilding replaces it.",
+          "Treat the system as a set of parts and pick a strategy for each. Keep what is stable, move what is costly to host, improve what changes often and replace what cannot be repaired."
+        ],
+        "bullets": [
+          "Start with a part that is painful and well bounded",
+          "Prefer reversible steps",
+          "Avoid doing everything at once"
+        ]
+      },
+      {
+        "title": "Build the safety net",
+        "summary": "Tests, releases, monitoring and rollback before touching the core.",
+        "paragraphs": [
+          "You are about to change working code, so you need to know when something breaks. Put automated tests around the behaviour that matters most, even if they are coarse. Make builds and releases repeatable. Add monitoring for errors, slow requests and failed jobs. Make sure you can roll back quickly.",
+          "This work feels like a delay. It is what lets everything after it move faster."
+        ],
+        "bullets": [
+          "Tests that call the system from outside",
+          "One-command build and release",
+          "Alerts that reach a person",
+          "A rehearsed rollback"
+        ]
+      },
+      {
+        "title": "Replace gradually",
+        "summary": "The strangler approach, one capability at a time.",
+        "paragraphs": [
+          "Put a routing layer in front of the old system, then move one capability at a time to a new implementation. Requests for the migrated capability go to the new code and everything else continues to the old system.",
+          "Each step is small, reversible and delivers value by itself. Over months the old system shrinks until it can be switched off. Compare this with a big-bang rewrite, where nothing ships for a year and the old system keeps changing underneath."
+        ],
+        "bullets": [
+          "Pick the first capability carefully",
+          "Release every few weeks",
+          "Keep the old system until the new one has proved itself"
+        ]
+      },
+      {
+        "title": "Move the data",
+        "summary": "Source of truth, replication, checks and a rehearsed cutover.",
+        "paragraphs": [
+          "Data is usually the hardest part. Decide which system is the source of truth at each stage. Keep old and new data stores in step with replication or change capture. Check record counts and key totals before and after every move.",
+          "Rehearse the final cutover on a copy of production data, and write the rollback plan before you start."
+        ],
+        "bullets": [
+          "Define the source of truth per stage",
+          "Compare totals, not only counts",
+          "Rehearse, then rehearse again"
+        ]
+      },
+      {
+        "title": "Measure and keep going",
+        "summary": "Outcome measures that show whether the programme is working.",
+        "paragraphs": [
+          "Return to the numbers you started with. Track lead time for changes, release frequency, incident rate and the time a new engineer needs to make a first change.",
+          "Report progress in business terms: faster releases, fewer incidents, shorter onboarding. Adjust the plan when the numbers do not move, because activity is not the same as progress."
+        ],
+        "bullets": [
+          "Review the measures every month",
+          "Share results with stakeholders",
+          "Fund the next step from what you learned"
+        ]
+      }
+    ],
+    "pages": 6
+  },
+  {
+    "slug": "remote-engineering-team-handbook",
+    "title": "The Remote Engineering Team Handbook",
+    "subtitle": "Hiring, onboarding and managing a distributed team that delivers reliably.",
+    "category": "Engineering",
+    "tone": "blue",
+    "description": "A handbook for founders and engineering leaders building a remote or distributed team. It covers how to hire for judgement and communication, onboard quickly, document decisions, set a working rhythm, give feedback and choose between direct hiring, staff augmentation and a dedicated team.",
+    "audience": [
+      "Founders hiring their first remote engineers",
+      "Engineering managers adding distributed team members",
+      "Leaders choosing between hiring models"
+    ],
+    "learn": [
+      "Define the outcome before you add headcount",
+      "Test for written communication and judgement during hiring",
+      "Run a first week that ends in a merged change",
+      "Keep decisions, agreements and runbooks in writing",
+      "Set a rhythm of check-ins, planning, demos and retrospectives",
+      "Choose the right engagement model for your situation"
+    ],
+    "chapters": [
+      {
+        "title": "Start with the outcome",
+        "summary": "Why the goal comes before the headcount.",
+        "paragraphs": [
+          "Before hiring, write down what the team must deliver in the next two quarters and how you will know it worked. A clear outcome tells you which skills you need and when to stop adding people.",
+          "Keep the first team small. Two to four engineers with one clear lead often deliver more than a larger group still working out how to cooperate."
+        ],
+        "bullets": [
+          "One outcome per quarter",
+          "A named lead",
+          "A review date for team size"
+        ]
+      },
+      {
+        "title": "Hire for judgement and communication",
+        "summary": "What to test beyond technical skill.",
+        "paragraphs": [
+          "Technical skill is the entry ticket. In a remote setting, two other traits decide performance: clear written communication and good judgement when requirements are unclear.",
+          "A short paid exercise based on a real problem shows how someone reads requirements, structures a solution and explains their choices. A conversation about a past project shows how they handle disagreement and mistakes."
+        ],
+        "bullets": [
+          "Paid, time-boxed exercise",
+          "Discussion of a past project",
+          "A written follow-up question"
+        ]
+      },
+      {
+        "title": "Onboard in the first week",
+        "summary": "Access, context and a first task that can ship.",
+        "paragraphs": [
+          "Prepare accounts, repository access and a working development environment before the start date. Give a one-page overview of the product, the architecture and the way of working. Assign a buddy who answers questions the same day.",
+          "Choose a first task that is small, real and can be merged within the first week. Review the week together and note what to improve for the next hire."
+        ],
+        "bullets": [
+          "Access ready on day one",
+          "Context, not a tour of everything",
+          "A first merged change"
+        ]
+      },
+      {
+        "title": "Write things down",
+        "summary": "The documents a distributed team actually needs.",
+        "paragraphs": [
+          "Remote teams run on documents. Keep a small set current: a decision log, working agreements, runbooks for deployments and incidents, and a handbook that answers the questions new people ask.",
+          "Writing is slower than talking for the first hour and faster for every hour after it, because the answer is found by search instead of by interrupting someone."
+        ],
+        "bullets": [
+          "Decision log",
+          "Definition of done",
+          "Runbooks",
+          "Team handbook"
+        ]
+      },
+      {
+        "title": "Set the rhythm",
+        "summary": "A cadence that works across time zones.",
+        "paragraphs": [
+          "Choose a cadence and stick to it: a short daily check-in focused on blockers, a weekly planning session, a demo every one or two weeks and a regular retrospective that changes one thing at a time.",
+          "Agree overlap hours. A few shared hours each day for questions and pairing is usually enough and turns time zones into a manageable detail."
+        ],
+        "bullets": [
+          "Daily check-in",
+          "Weekly planning",
+          "Fortnightly demo",
+          "Regular retrospective"
+        ]
+      },
+      {
+        "title": "Give feedback and build trust",
+        "summary": "Small corrections early, and habits that create trust at a distance.",
+        "paragraphs": [
+          "Distance makes it easy to postpone difficult conversations. Hold regular one-to-ones, give specific feedback on completed work and ask for feedback on your own management.",
+          "Trust is built by transparency about plans and problems, by keeping promises about dates and by responding reliably. Leave space for informal conversation and, where possible, meet in person once or twice a year."
+        ],
+        "bullets": [
+          "Weekly or fortnightly one-to-ones",
+          "Specific, timely feedback",
+          "Occasional in-person time"
+        ]
+      },
+      {
+        "title": "Choose how to source the team",
+        "summary": "Direct hiring, staff augmentation or a dedicated team.",
+        "paragraphs": [
+          "Direct hiring gives full control and takes the longest. Staff augmentation adds engineers to a team you already manage, so it fits when you have managers with spare capacity. A dedicated team suits long-running work where you want accountability for delivery without managing every task.",
+          "Choosing a model is not permanent. Many companies start with one or two augmented engineers and move to a dedicated team when the scope is clear."
+        ],
+        "bullets": [
+          "Direct hire: control, slower",
+          "Augmentation: fast, needs your management time",
+          "Dedicated team: accountable delivery"
+        ]
+      }
+    ],
+    "pages": 6
+  }
+]

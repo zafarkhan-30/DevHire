@@ -377,29 +377,29 @@ export const lead = {
 };
 
 export const insights = {
-  title: "Related [Insights]",
-  all: { label: "View All Articles", href: "/insights/" },
+  title: "Related [Articles]",
+  all: { label: "View All Articles", href: "/blog/" },
   // PLACEHOLDER: replaced by the three latest blog posts once the blog is built.
   posts: [
     {
       category: "Hiring",
       title: "How to brief a remote developer so week one is productive",
       excerpt: "A short checklist covering access, context and a first task that is small enough to finish.",
-      href: "/insights/",
+      href: "/blog/",
       tone: "amber",
     },
     {
       category: "Project Management",
       title: "Staff augmentation or a dedicated team: a decision you can make in ten minutes",
       excerpt: "Four questions about ownership, runway and management time that settle the choice.",
-      href: "/insights/",
+      href: "/blog/",
       tone: "blue",
     },
     {
       category: "Modernisation",
       title: "Signs your legacy platform has become a business risk",
       excerpt: "What to look for in release frequency, incident history and hiring difficulty.",
-      href: "/insights/",
+      href: "/blog/",
       tone: "teal",
     },
   ],

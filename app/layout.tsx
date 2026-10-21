@@ -16,6 +16,7 @@ import "@/styles/base.css";
 import "@/styles/layout.css";
 import "@/styles/home.css";
 import "@/styles/blocks.css";
+import "@/styles/resources.css";
 
 // Variable font, weights 200–800, downloaded at build time and served from our own origin.
 // Only the upright face is preloaded; the italic, used for a few short notes, loads when a page needs it.

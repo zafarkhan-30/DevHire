@@ -64,14 +64,16 @@ export function faqItems(blocks: Block[]) {
 // because Next.js replaces the parent openGraph instead of merging it.
 export const shareImage = { url: "/opengraph-image", width: 1200, height: 630, alt: site.name };
 
-export function article(post: { title: string; excerpt: string; date: string; slug: string }) {
+export function article(post: { title: string; excerpt: string; date: string; updated?: string; author?: string; slug: string }, base = "/blog") {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
-    url: abs(`/insights/${post.slug}/`),
+    dateModified: post.updated ?? post.date,
+    author: { "@type": post.author ? "Person" : "Organization", name: post.author ?? site.name },
+    url: abs(`${base}/${post.slug}/`),
     publisher: { "@type": "Organization", name: site.name, logo: { "@type": "ImageObject", url: abs("/images/logo-mark-512.png") } },
   };
 }

@@ -2490,3 +2490,21 @@
 .card__image--blank {
   background: var(--gradient-navy);
 }
+
+/* Blog category links */
+.chips--links li {
+  padding: 0;
+}
+
+.chips--links a {
+  display: block;
+  padding: 5px 14px;
+  border-radius: inherit;
+  color: inherit;
+}
+
+.chips--links a:hover,
+.chips--links a[aria-current="page"] {
+  background: var(--primary);
+  color: var(--white);
+}

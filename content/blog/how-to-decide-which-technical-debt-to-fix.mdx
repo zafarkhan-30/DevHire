@@ -1,0 +1,29 @@
+Every software project accumulates technical debt, and no team has time to clear all of it. The useful question is not how to remove it but which parts are worth paying down first. A simple framework keeps that decision out of opinion and into evidence.
+
+## What counts as debt
+
+Technical debt is a shortcut or outdated choice that makes future changes slower or riskier. It might be a module nobody dares to touch, missing tests around billing logic or a framework version that no longer gets security patches. Code that is merely untidy but rarely changed is not a priority.
+
+## Look at how often the code changes
+
+Debt hurts in the places you work in most. Review your version history for the files changed most often. A messy area that changes weekly costs time every week. The same mess in a file untouched for two years costs nothing today.
+
+## Weigh the cost of leaving it
+
+For each candidate, ask what it costs now: extra hours per change, bugs it causes, incidents it contributed to, or people it keeps from joining the work. Also ask what it risks: a security gap, a vendor end-of-life date, a failure in a business-critical flow.
+
+## Estimate the cost of fixing it
+
+Be honest about effort, and prefer fixes that can be done in slices. A two-day clean-up that removes weekly pain beats a six-month rewrite with a vague payoff.
+
+## Rank and agree a budget
+
+Put the candidates in a short list ordered by cost of leaving versus cost of fixing. Then agree a steady share of each sprint, many teams use somewhere between ten and twenty per cent, so debt work is routine and not a request that has to be defended every time.
+
+## Fix it while you are there
+
+When a feature touches a poor area, improve that area as part of the work, with tests. This spreads the effort and keeps clean-up tied to real needs.
+
+## Record the decisions
+
+Keep a short register of known debt, what was chosen and why. It stops the same debate repeating and helps new people understand why the code looks the way it does.

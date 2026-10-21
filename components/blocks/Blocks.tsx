@@ -517,9 +517,9 @@ function BlockView({ block }: { block: Block }) {
           <div className="container">
             <div className="insights__head">
               <h2 className="h2">
-                <Accent text={block.title ?? "Related [Insights]"} />
+                <Accent text={block.title ?? "Related [Articles]"} />
               </h2>
-              <Link href="/insights/" className="btn btn--outline">
+              <Link href="/blog/" className="btn btn--outline">
                 View All Articles
                 <ArrowRight size={16} aria-hidden="true" />
               </Link>
@@ -527,7 +527,7 @@ function BlockView({ block }: { block: Block }) {
             <ul className="insights__grid">
               {posts.map((post) => (
                 <li key={post.slug}>
-                  <Link href={`/insights/${post.slug}/`} className="insights__card">
+                  <Link href={`/blog/${post.slug}/`} className="insights__card">
                     <span className={`insights__thumb hero__slide--${post.tone}`} style={postImageStyle(post, true)} aria-hidden="true">
                       <span>{post.title}</span>
                     </span>

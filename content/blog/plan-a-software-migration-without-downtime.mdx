@@ -1,0 +1,29 @@
+Customers do not care that a system is being migrated. They care that it keeps working. Moving to a new platform, database or hosting provider without downtime is realistic, but it comes from planning, not from heroics on the night.
+
+## Map what depends on what
+
+Before moving anything, list the applications, databases, jobs and third parties that talk to the system. Missed dependencies cause most migration surprises: a nightly export, a hard-coded address, a partner that whitelists one IP.
+
+## Move in small pieces
+
+Avoid one big cutover. Split the work into parts that can move independently, such as one service, one customer group or one region. Each small move is easier to test and easier to reverse.
+
+## Run old and new side by side
+
+Keep the existing system live while the new one is built and filled with data. Compare outputs between the two on real traffic before any user depends on the new one. Differences you find now are fixes, not incidents.
+
+## Keep the data in step
+
+Data is the hardest part. Use replication or change capture so the new database follows the old one until the switch. Decide in advance which system is the source of truth at each stage, and check record counts and key totals before and after.
+
+## Switch traffic gradually
+
+Send a small share of requests to the new system first, then increase as results stay healthy. If you can control routing with a load balancer or a feature flag, a problem becomes a quick change back instead of an outage.
+
+## Write the rollback plan first
+
+For every step, state how you would undo it, how long that takes and who decides. A rollback that has been rehearsed is a plan. One that has only been written down is a hope.
+
+## Keep the old system until you are sure
+
+Do not switch off the old environment on cutover day. Keep it available for a defined period, read-only if possible, while you confirm that reports, month-end jobs and edge cases all behave as expected.

@@ -1,0 +1,88 @@
+Most legacy applications are not failing. They run payroll, take orders and keep the business moving. The trouble is that every change takes longer, costs more and carries more risk than it did a few years ago. Modernisation is the work of reversing that trend without breaking what already works.
+
+This guide walks through the full path, from deciding whether to modernise to running the new system in production.
+
+## What modernisation actually means
+
+Modernisation is any planned change that makes an existing system cheaper and safer to change. It is a spectrum, not a single action:
+
+- **Rehost** moves the application to new infrastructure with no code changes.
+- **Replatform** makes small changes so the application can use managed services, such as a hosted database.
+- **Refactor** improves the internal structure of the code while keeping behaviour the same.
+- **Rearchitect** changes how the system is divided, for example breaking a monolith into services.
+- **Rebuild** writes a new system to replace the old one.
+
+The further down the list you go, the more value you can unlock and the more risk you take on. Most successful programmes mix several of these, applied to different parts of the system.
+
+## Decide whether to modernise at all
+
+Age alone is not a reason. Start by asking what the current system costs you today:
+
+- How long does a small change take from request to release?
+- How often do releases cause incidents?
+- How many people can safely change the core code?
+- Are any components out of vendor support or missing security patches?
+- Is the system blocking something the business wants, such as a new channel or integration?
+
+If the answers are acceptable, leave the system alone and invest elsewhere. If two or more are painful, you have a case, and the answers give you the measures to prove progress later.
+
+## Understand what you have
+
+Before choosing a path, build a shared picture of the system. Map the main components, the data stores, the jobs that run overnight and every integration, including the unofficial ones such as spreadsheets and file drops. Interview the people who run the system day to day. They know about workarounds that never made it into documentation.
+
+Record the findings in a short, plain document. It will prevent surprises later and gives new engineers somewhere to start.
+
+## Choose a strategy for each part
+
+Treat the system as a set of parts, not one block. For each part, decide between keeping it, moving it, improving it or replacing it.
+
+- Keep parts that are stable, understood and rarely changed.
+- Move parts whose main problem is hosting cost or reliability.
+- Improve parts that change often but are tangled, adding tests as you go.
+- Replace parts that cannot be repaired or that block the business.
+
+A good first target is a part that is both painful and well bounded, so a small team can finish it in a few months and prove the approach.
+
+## Build a safety net first
+
+Modernisation changes working code, so you need a way to know when something breaks. Before touching the core, put these in place:
+
+- **Automated tests** around the behaviours that matter most, even if they are coarse. Tests that call the system from outside are enough to start.
+- **A repeatable build and release process**, so a release is a routine, not an event.
+- **Monitoring and alerting** that shows errors, slow requests and failed jobs.
+- **A way to roll back** quickly when a release goes wrong.
+
+This work feels like a delay. It is the thing that lets everything after it go faster.
+
+## Replace the system gradually
+
+The most reliable approach is the strangler pattern. Place a routing layer in front of the old system, then move one capability at a time to a new implementation. Requests for the migrated capability go to the new code and everything else continues to the old system.
+
+Each step is small, reversible and delivers value on its own. Over months, the old system shrinks until it can be switched off. Compare this with a big-bang rewrite, where nothing is released for a year or more and the old system keeps changing underneath the new one.
+
+## Handle data with care
+
+Data is usually the hardest part. Plan for it explicitly:
+
+- Decide which system is the source of truth at each stage.
+- Keep old and new data stores in step with replication or change capture.
+- Check record counts and key totals before and after every move.
+- Rehearse the final cutover on a copy of production data.
+
+## Keep the business running
+
+Modernisation should not freeze the product. Agree a split, for example most capacity on new features and a fixed share on modernisation, and protect that share. Communicate progress in business terms: faster releases, fewer incidents, shorter onboarding for new engineers.
+
+## Measure the result
+
+Return to the questions you started with. Track lead time for changes, release frequency, incident rate and the time a new engineer needs to make a first change. If these improve, the programme is working. If they do not, adjust the plan, because activity is not the same as progress.
+
+## Common mistakes
+
+- Starting with a rewrite because the old code is unpleasant.
+- Skipping tests and relying on manual checks.
+- Modernising everything at once instead of the parts that hurt.
+- Treating the programme as a side project with no named owner.
+- Forgetting the people: training, documentation and handover are part of the work.
+
+Modernisation pays off when it is steady, measured and tied to outcomes the business can see. Start small, prove the method on one component and expand from there.

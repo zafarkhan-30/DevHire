@@ -1,30 +1,30 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import { CategoryNav } from "@/components/blog/CategoryNav";
+import { PostGrid } from "@/components/blog/PostGrid";
 import { ArrowRight } from "@/components/ui/SpriteIcons";
-import { allPosts, formatDate, postImageStyle } from "@/lib/blog";
+import { formatDate, postImageStyle } from "@/lib/blog";
+import type { createCollection } from "@/lib/collection";
 
-export const metadata: Metadata = {
-  title: "Insights",
-  alternates: { canonical: "/insights/" },
-  description: "Practical notes on hiring remote developers, running distributed teams and modernising legacy systems.",
-};
+type Collection = ReturnType<typeof createCollection>;
 
-export default function InsightsPage() {
-  const posts = allPosts();
+// Index page for a post collection: featured post, three side posts, category chips and the full grid.
+export function IndexView({ collection, intro }: { collection: Collection; intro?: string }) {
+  const posts = collection.allPosts();
   const [featured, ...rest] = posts;
   const side = rest.slice(0, 3);
-  const categories = [...new Set(posts.map((post) => post.category))];
 
   return (
     <div className="page">
       <section className="blogtop">
         <div className="container">
           <h1 className="blogtop__title">
-            Insights<span className="accent">.</span>
+            {collection.label}
+            <span className="accent">.</span>
           </h1>
+          {intro ? <p className="blogtop__intro">{intro}</p> : null}
           {featured ? (
             <div className="blogtop__grid">
-              <Link href={`/insights/${featured.slug}/`} className="blogtop__feature">
+              <Link href={collection.path(featured)} className="blogtop__feature">
                 <span className={`blogtop__image hero__slide--${featured.tone}`} style={postImageStyle(featured)} aria-hidden="true" />
                 <span className="insights__category">{featured.category}</span>
                 <span className="blogtop__headline">{featured.title}</span>
@@ -37,7 +37,7 @@ export default function InsightsPage() {
               <ul className="blogtop__side">
                 {side.map((post) => (
                   <li key={post.slug}>
-                    <Link href={`/insights/${post.slug}/`}>
+                    <Link href={collection.path(post)}>
                       <span className={`blogtop__thumb hero__slide--${post.tone}`} style={postImageStyle(post)} aria-hidden="true" />
                       <span>
                         <span className="insights__category">{post.category}</span>
@@ -55,30 +55,8 @@ export default function InsightsPage() {
 
       <section className="section section--light blk blk--pad-md">
         <div className="container">
-          <ul className="chips chips--center bloglist__categories" aria-label="Categories">
-            {categories.map((category) => (
-              <li key={category}>{category}</li>
-            ))}
-          </ul>
-          <ul className="insights__grid">
-            {posts.map((post) => (
-              <li key={post.slug}>
-                <Link href={`/insights/${post.slug}/`} className="insights__card">
-                  <span className={`insights__thumb hero__slide--${post.tone}`} style={postImageStyle(post, true)} aria-hidden="true">
-                    <span>{post.title}</span>
-                  </span>
-                  <span className="insights__body">
-                    <span className="insights__category">{post.category}</span>
-                    <span className="insights__title">{post.title}</span>
-                    <span className="insights__excerpt">{post.excerpt}</span>
-                    <span className="insights__arrow">
-                      <ArrowRight size={14} aria-hidden="true" />
-                    </span>
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <CategoryNav collection={collection} />
+          <PostGrid posts={posts} base={collection.base} />
         </div>
       </section>
     </div>

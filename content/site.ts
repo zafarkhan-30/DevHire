@@ -224,7 +224,9 @@ export const megaMenus: MegaMenu[] = [
       {
         heading: "Learning",
         links: [
-          { label: "Insights", href: "/insights/" },
+          { label: "Blog", href: "/blog/" },
+          { label: "Articles", href: "/articles/" },
+          { label: "E-books", href: "/ebooks/" },
           { label: "FAQs", href: "/faq/" },
         ],
       },
@@ -244,6 +246,7 @@ export const megaMenus: MegaMenu[] = [
       },
     ],
     topPicks: [
+      { tag: "E-book", tone: "green", title: "Software Project Scoping Playbook", href: "/ebooks/software-project-scoping-playbook/" },
       { tag: "Guide", tone: "navy", title: "Offshore Developer Cost Guide", href: "/hire/dedicated-developers/offshore-developers-cost/" },
       { tag: "Tool", tone: "violet", title: "Developer Cost Estimate", href: "/resources/developer-cost-estimate/" },
       { tag: "Guide", tone: "green", title: "Dedicated Developers vs Freelancers", href: "/hire/dedicated-developers/dedicated-developers-vs-freelancers/" },
@@ -264,7 +267,7 @@ export const megaMenus: MegaMenu[] = [
         heading: "About Us",
         links: [
           { label: "About SyntecHire", href: "/about/" },
-          { label: "Company Insights", href: "/insights/" },
+          { label: "Company Blog", href: "/blog/" },
         ],
       },
       {
@@ -352,6 +355,9 @@ export const footer = {
       heading: "Resources",
       links: [
         { label: "Our Work", href: "/case-study/our-work/" },
+        { label: "Blog", href: "/blog/" },
+        { label: "Articles", href: "/articles/" },
+        { label: "E-books", href: "/ebooks/" },
         { label: "FAQs", href: "/faq/" },
       ],
     },

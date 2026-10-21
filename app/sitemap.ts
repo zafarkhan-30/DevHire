@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/content/site";
-import { allPosts } from "@/lib/blog";
+import { articles } from "@/lib/articles";
+import { allCategories, allPosts } from "@/lib/blog";
+import { ebooks } from "@/content/ebooks";
 import { allPages } from "@/lib/pages";
 
 // Confirmation pages and pages marked noindex stay out of search results.
@@ -10,12 +12,18 @@ const legal = ["/privacy-policy/", "/terms-and-conditions/", "/cookies-policy/",
 export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [
     "/",
-    "/insights/",
+    "/blog/",
     ...allPages()
       .filter((page) => !page.meta.noindex)
       .map((page) => page.path)
       .filter((path) => !hidden.includes(path)),
-    ...allPosts().map((post) => `/insights/${post.slug}/`),
+    ...allCategories().map((category) => `/blog/category/${category.slug}/`),
+    ...allPosts().map((post) => `/blog/${post.slug}/`),
+    "/articles/",
+    ...articles.allCategories().map((category) => articles.categoryPath(category.slug)),
+    ...articles.allPosts().map((post) => articles.path(post)),
+    "/ebooks/",
+    ...ebooks.map((ebook) => `/ebooks/${ebook.slug}/`),
     ...legal,
   ];
   return paths.map((path) => ({ url: new URL(path, site.url).toString() }));
