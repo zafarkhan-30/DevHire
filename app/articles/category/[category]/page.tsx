@@ -1,29 +1,31 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CategoryView } from "@/components/blog/CategoryView";
-import { articles } from "@/lib/articles";
+import { getArticles } from "@/lib/cms/posts";
 
 type Props = { params: Promise<{ category: string }> };
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
-export function generateStaticParams() {
-  return articles.allCategories().map((category) => ({ category: category.slug }));
+export async function generateStaticParams() {
+  return (await getArticles()).allCategories().map((category) => ({ category: category.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = (await params).category;
-  const category = articles.allCategories().find((c) => c.slug === slug);
+  const collection = await getArticles();
+  const category = collection.allCategories().find((c) => c.slug === slug);
   if (!category) return {};
   return {
     title: `${category.name} Articles`,
     description: `Articles on ${category.name.toLowerCase()} from the SyntecHire team.`,
-    alternates: { canonical: articles.categoryPath(slug) },
+    alternates: { canonical: collection.categoryPath(slug) },
   };
 }
 
 export default async function CategoryPage({ params }: Props) {
   const slug = (await params).category;
-  if (!articles.allCategories().some((c) => c.slug === slug)) notFound();
-  return <CategoryView collection={articles} slug={slug} />;
+  const collection = await getArticles();
+  if (!collection.allCategories().some((c) => c.slug === slug)) notFound();
+  return <CategoryView collection={collection} slug={slug} />;
 }

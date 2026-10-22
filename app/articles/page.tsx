@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { IndexView } from "@/components/blog/IndexView";
-import { articles } from "@/lib/articles";
+import { getArticles } from "@/lib/cms/posts";
 
 export const metadata: Metadata = {
   title: "Articles",
@@ -8,6 +8,6 @@ export const metadata: Metadata = {
   description: "In-depth guides on planning, building and modernising software, written by our engineers and delivery leads.",
 };
 
-export default function ArticlesPage() {
-  return <IndexView collection={articles} />;
+export default async function ArticlesPage() {
+  return <IndexView collection={await getArticles()} />;
 }

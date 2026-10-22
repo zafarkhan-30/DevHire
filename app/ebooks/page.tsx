@@ -4,7 +4,7 @@ import { EbookCover } from "@/components/ebooks/EbookCover";
 import { NewsletterForm } from "@/components/layout/NewsletterForm";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ArrowRight } from "@/components/ui/SpriteIcons";
-import { ebooks } from "@/content/ebooks";
+import { getEbooks } from "@/lib/cms/ebooks";
 import { breadcrumbs } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   description: "Free practical guides on scoping software projects, modernising legacy systems and building remote engineering teams. Download as PDF.",
 };
 
-export default function EbooksPage() {
+export default async function EbooksPage() {
+  const ebooks = await getEbooks();
   return (
     <div className="page">
       <JsonLd data={breadcrumbs("/ebooks/", "E-books")} />

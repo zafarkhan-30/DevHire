@@ -1,8 +1,8 @@
 import { feedResponse } from "@/lib/feed";
-import { blog } from "@/lib/blog";
+import { getBlog } from "@/lib/cms/posts";
 
 export const dynamic = "force-static";
 
-export function GET() {
-  return feedResponse(blog, "Practical notes on hiring remote developers, running distributed teams and modernising legacy systems.");
+export async function GET() {
+  return feedResponse(await getBlog(), "Practical notes on hiring remote developers, running distributed teams and modernising legacy systems.");
 }
