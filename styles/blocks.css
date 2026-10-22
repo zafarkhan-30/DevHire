@@ -2508,3 +2508,31 @@
   background: var(--primary);
   color: var(--white);
 }
+
+/* Callout and figure inside CMS-written articles */
+.prose__callout {
+  padding: 16px 20px;
+  border-left: 4px solid var(--primary);
+  background: var(--bg-light);
+  border-radius: 0 8px 8px 0;
+}
+
+.prose__callout p {
+  margin: 4px 0 0;
+}
+
+.prose figure {
+  margin: 24px 0;
+}
+
+.prose figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.prose figcaption {
+  margin-top: 8px;
+  font-size: 0.875rem;
+  color: var(--text-muted, #5b6472);
+}

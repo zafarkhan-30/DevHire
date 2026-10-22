@@ -1,8 +1,8 @@
 import { feedResponse } from "@/lib/feed";
-import { articles } from "@/lib/articles";
+import { getArticles } from "@/lib/cms/posts";
 
 export const dynamic = "force-static";
 
-export function GET() {
-  return feedResponse(articles, "In-depth guides on planning, building and modernising software, written by our engineers and delivery leads.");
+export async function GET() {
+  return feedResponse(await getArticles(), "In-depth guides on planning, building and modernising software, written by our engineers and delivery leads.");
 }

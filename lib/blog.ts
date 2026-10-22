@@ -1,11 +1,4 @@
 import type { CSSProperties } from "react";
-import { posts } from "@/content/blog/posts";
-import { createCollection } from "@/lib/collection";
-
-export const blog = createCollection(posts, "/blog", "Blog");
-
-export const { allPosts, latestPosts, findPost, categorySlug, allCategories, postsInCategory } = blog;
-
 export function formatDate(iso: string) {
   return new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(
     new Date(`${iso}T00:00:00Z`),

@@ -1,29 +1,31 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CategoryView } from "@/components/blog/CategoryView";
-import { blog } from "@/lib/blog";
+import { getBlog } from "@/lib/cms/posts";
 
 type Props = { params: Promise<{ category: string }> };
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
-export function generateStaticParams() {
-  return blog.allCategories().map((category) => ({ category: category.slug }));
+export async function generateStaticParams() {
+  return (await getBlog()).allCategories().map((category) => ({ category: category.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = (await params).category;
-  const category = blog.allCategories().find((c) => c.slug === slug);
+  const collection = await getBlog();
+  const category = collection.allCategories().find((c) => c.slug === slug);
   if (!category) return {};
   return {
     title: `${category.name} Blog`,
     description: `Blog on ${category.name.toLowerCase()} from the SyntecHire team.`,
-    alternates: { canonical: blog.categoryPath(slug) },
+    alternates: { canonical: collection.categoryPath(slug) },
   };
 }
 
 export default async function CategoryPage({ params }: Props) {
   const slug = (await params).category;
-  if (!blog.allCategories().some((c) => c.slug === slug)) notFound();
-  return <CategoryView collection={blog} slug={slug} />;
+  const collection = await getBlog();
+  if (!collection.allCategories().some((c) => c.slug === slug)) notFound();
+  return <CategoryView collection={collection} slug={slug} />;
 }

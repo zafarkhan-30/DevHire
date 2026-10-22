@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
   // Stop next dev from writing AGENTS.md and CLAUDE.md into the project.
   agentRules: false,
   pageExtensions: ["ts", "tsx", "md", "mdx"],
+  // Images uploaded in the CMS are served from Sanity's CDN.
+  images: { remotePatterns: [{ protocol: "https", hostname: "cdn.sanity.io" }] },
   async redirects() {
     return [
       // Old-style pages folded into their current equivalents.

@@ -16,6 +16,8 @@ export type Post = {
   tone: "amber" | "violet" | "teal" | "blue";
   // Card and banner image, 1600 x 800 (2:1), in public/images/blog/. No text or logos in the image.
   image?: string;
+  // Search overrides set in the CMS: meta description, noindex, canonical and a social image.
+  seo?: { description?: string; noindex?: boolean; canonical?: string; ogImage?: string };
   // Must match the H2 headings in the article, in order. Drives the contents list.
   sections: string[];
   faqs: { q: string; a: string }[];

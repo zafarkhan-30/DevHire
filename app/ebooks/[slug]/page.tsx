@@ -6,33 +6,35 @@ import { EbookGate } from "@/components/ebooks/EbookGate";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Accent } from "@/components/ui/Accent";
 import { ArrowRight } from "@/components/ui/SpriteIcons";
-import { ebookFile, ebooks, findEbook } from "@/content/ebooks";
+import { ebookFile } from "@/content/ebooks";
+import { findEbook, getEbooks } from "@/lib/cms/ebooks";
 import { site } from "@/content/site";
 import { breadcrumbs, shareImage } from "@/lib/jsonld";
 
 type Props = { params: Promise<{ slug: string }> };
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
-export function generateStaticParams() {
-  return ebooks.map((ebook) => ({ slug: ebook.slug }));
+export async function generateStaticParams() {
+  return (await getEbooks()).map((ebook) => ({ slug: ebook.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const ebook = findEbook((await params).slug);
+  const ebook = await findEbook((await params).slug);
   if (!ebook) return {};
   return {
     title: `${ebook.title} (Free E-book)`,
-    description: ebook.description,
+    description: ebook.seo?.description ?? ebook.description,
     alternates: { canonical: `/ebooks/${ebook.slug}/` },
+    ...(ebook.seo?.noindex ? { robots: { index: false, follow: true } } : {}),
     openGraph: { type: "website", siteName: site.name, title: ebook.title, description: ebook.subtitle, images: [shareImage] },
   };
 }
 
 export default async function EbookPage({ params }: Props) {
-  const ebook = findEbook((await params).slug);
+  const ebook = await findEbook((await params).slug);
   if (!ebook) notFound();
-  const others = ebooks.filter((item) => item.slug !== ebook.slug);
+  const others = (await getEbooks()).filter((item) => item.slug !== ebook.slug);
 
   return (
     <div className="page">

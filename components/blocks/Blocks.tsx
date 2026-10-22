@@ -5,7 +5,8 @@ import { ArrowRight, Check, CircleCheck } from "@/components/ui/SpriteIcons";
 import type { Block, Cta, HeroBlock, Pad, Stat, Tone } from "@/content/types";
 import { testimonials } from "@/content/home";
 import { reviews } from "@/content/reviews";
-import { latestPosts, postImageStyle } from "@/lib/blog";
+import { postImageStyle } from "@/lib/blog";
+import { getBlog } from "@/lib/cms/posts";
 import { Accent } from "@/components/ui/Accent";
 import { Icon } from "@/components/ui/Icon";
 import { LogoRow } from "@/components/ui/LogoRow";
@@ -154,7 +155,7 @@ function Hero({ block }: { block: HeroBlock }) {
   );
 }
 
-function BlockView({ block }: { block: Block }) {
+async function BlockView({ block }: { block: Block }) {
   switch (block.type) {
     case "hero":
       return <Hero block={block} />;
@@ -510,7 +511,7 @@ function BlockView({ block }: { block: Block }) {
     }
 
     case "insights": {
-      const posts = latestPosts(3);
+      const posts = (await getBlog()).latestPosts(3);
       if (posts.length === 0) return null;
       return (
         <section className="section section--muted insights blk blk--pad-lg">
