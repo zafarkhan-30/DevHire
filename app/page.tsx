@@ -16,9 +16,13 @@ import { Timeline } from "@/components/sections/home/Timeline";
 import { TrustedBy } from "@/components/sections/home/TrustedBy";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { faq } from "@/content/home";
+import { site } from "@/content/site";
 import { faqPage } from "@/lib/jsonld";
 
-export const metadata: Metadata = { alternates: { canonical: "/" } };
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+  verification: { google: site.verification.google, other: { "msvalidate.01": site.verification.bing } },
+};
 
 export default function HomePage() {
   return (

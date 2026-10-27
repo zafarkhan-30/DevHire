@@ -39,6 +39,16 @@ export const site = {
   // `leadLabel` is the conversion label from Google Ads (Goals > Conversions > the lead action > Tag setup, the part
   // after the slash in send_to). Left empty, the tag loads but no lead conversion is sent.
   googleAds: { id: "AW-18484279098", leadLabel: "BOX7CIvozosdELru_u1E" },
+  // Analytics tags from the marketing team. Unlike the Ads tag, these are in the root layout's <head> on every page
+  // (app/layout.tsx), so Google's tag checker can see them.
+  googleAnalytics: { id: "G-LBM76H4YLG" },
+  googleTagManager: { id: "GTM-PHRD9328" },
+  clarity: { id: "z43op7c29z" },
+  // Search Console and Bing Webmaster Tools ownership tokens, rendered as meta tags on the home page.
+  verification: {
+    google: "hvXYErMcFqZPRX9rHuq8kKX11Tz4xinlEZocaDRlMOU",
+    bing: "255392EBF13AE20CDC626EB97C6BBDB6",
+  },
   // PLACEHOLDER: real profile URLs. Links left as "#" are hidden, and the "Follow Us" column with them.
   social: [
     { label: "LinkedIn", href: "https://www.linkedin.com/company/synctechire/", icon: "linkedin" },
